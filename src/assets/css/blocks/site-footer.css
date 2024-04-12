@@ -1,33 +1,33 @@
-footer {
+.site-footer {
   margin-block-start: var(--space-l-xl);
   padding: var(--space-s-m);
   color: var(--color-text);
 }
 
-.footer__meta {
+.site-footer .footer__meta {
   --gutter: var(--space-xs);
   --cluster-horizontal-alignment: center;
 }
 
 /* increase tab size */
-.footer__meta a {
+.site-footer .footer__meta a {
   padding: var(--space-xs);
 }
 
-footer svg {
+.site-footer svg {
   inline-size: 1.1em;
   block-size: 1em;
 }
 
-footer .creator {
+.site-footer .creator {
   text-decoration: none;
 }
 
-footer .creator {
+.site-footer .creator {
   text-decoration: none;
 }
 
-footer .creator:hover {
+.site-footer .creator:hover {
   color: transparent;
   background-image: var(--gradient-rainbow);
   background-size: 100%;
@@ -35,6 +35,6 @@ footer .creator:hover {
   background-clip: text;
 }
 
-footer .creator:hover svg {
+.site-footer .creator:hover svg {
   color: var(--color-text);
 }
