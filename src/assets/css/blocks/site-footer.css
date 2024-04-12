@@ -1,38 +1,33 @@
-.site-foot {
+footer {
   margin-block-start: var(--space-l-xl);
   padding: var(--space-s-m);
   color: var(--color-text);
 }
 
-.site-foot__inner {
-  display: flex;
-  gap: var(--space-xs);
-  justify-content: center;
-  align-items: center;
+.footer__meta {
+  --gutter: var(--space-xs);
+  --cluster-horizontal-alignment: center;
 }
 
 /* increase tab size */
-.site-foot__inner a {
+.footer__meta a {
   padding: var(--space-xs);
 }
 
-:not(nav#social).site-foot__inner {
-  flex-wrap: wrap;
-}
-
-.site-foot svg {
+footer svg {
   inline-size: 1.1em;
   block-size: 1em;
 }
 
-.site-foot .creator {
+footer .creator {
   text-decoration: none;
 }
 
-.site-foot .creator {
+footer .creator {
   text-decoration: none;
 }
-.site-foot .creator:hover {
+
+footer .creator:hover {
   color: transparent;
   background-image: var(--gradient-rainbow);
   background-size: 100%;
@@ -40,6 +35,6 @@
   background-clip: text;
 }
 
-.site-foot .creator:hover svg {
+footer .creator:hover svg {
   color: var(--color-text);
 }
