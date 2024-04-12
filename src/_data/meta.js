@@ -26,8 +26,7 @@ export const opengraph_default_alt =
 export const blog = {
   // RSS feed
   name: 'My Web Development Blog',
-  description:
-    'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+  description: 'Tell the word what you are writing about in your blog. It will show up on feed readers.',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {

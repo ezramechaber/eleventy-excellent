@@ -5,11 +5,7 @@
   {% set drawerClass = "site-nav-drawer" %}
 {% endif %}
 
-<nav
-  id="mainnav"
-  class=" {{ drawerClass or 'site-nav' }}"
-  aria-label="{{ meta.navigation.ariaTop }}"
->
+<nav id="mainnav" class=" {{ drawerClass or 'site-nav' }}" aria-label="{{ meta.navigation.ariaTop }}">
   <ul class="cluster" role="list">
     {% for item in navigation.top %}
       <li>

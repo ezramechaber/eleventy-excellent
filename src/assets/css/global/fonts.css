@@ -46,8 +46,7 @@
   @font-face {
     font-family: 'Figtree';
     src:
-      url('/assets/fonts/figtree/figtree-variable[wght].woff2')
-        format('woff2 supports variations'),
+      url('/assets/fonts/figtree/figtree-variable[wght].woff2') format('woff2 supports variations'),
       url('/assets/fonts/figtree/figtree-variable[wght].woff2') format('woff2-variations');
     font-weight: 300 900;
     font-style: normal;
@@ -57,10 +56,8 @@
   @font-face {
     font-family: 'Figtree';
     src:
-      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2')
-        format('woff2 supports variations'),
-      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2')
-        format('woff2-variations');
+      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2') format('woff2 supports variations'),
+      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2') format('woff2-variations');
     font-weight: 300 900;
     font-style: italic;
     font-display: swap;

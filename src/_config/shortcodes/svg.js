@@ -11,12 +11,7 @@
 import {optimize} from 'svgo';
 import {readFileSync} from 'node:fs';
 
-export const svgShortcode = async (
-  svgName,
-  ariaName = '',
-  className = '',
-  styleName = ''
-) => {
+export const svgShortcode = async (svgName, ariaName = '', className = '', styleName = '') => {
   const svgData = readFileSync(`./src/assets/svg/${svgName}.svg`, 'utf8');
 
   const {data} = await optimize(svgData);

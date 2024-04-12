@@ -1,3 +1,3 @@
 export const escapeHtml = string => {
-  return "`" + string + "`";
+  return '`' + string + '`';
 };

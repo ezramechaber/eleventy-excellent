@@ -10,14 +10,7 @@
     {
       "name": "Base",
       "description": "Base font stack for body text.",
-      "value": [
-        "Figtree",
-        "Optima",
-        "Candara",
-        "Noto Sans",
-        "source-sans-pro",
-        "sans-serif"
-      ]
+      "value": ["Figtree", "Optima", "Candara", "Noto Sans", "source-sans-pro", "sans-serif"]
     },
     {
       "name": "Mono",
