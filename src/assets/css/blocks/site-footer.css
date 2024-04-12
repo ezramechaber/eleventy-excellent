@@ -23,10 +23,6 @@
   text-decoration: none;
 }
 
-.site-footer .creator {
-  text-decoration: none;
-}
-
 .site-footer .creator:hover {
   color: transparent;
   background-image: var(--gradient-rainbow);
