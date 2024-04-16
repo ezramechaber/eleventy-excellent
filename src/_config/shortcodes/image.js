@@ -1,5 +1,5 @@
 import Image from '@11ty/eleventy-img';
-import path from 'path';
+import path from 'node:path';
 import htmlmin from 'html-minifier-terser';
 
 /**

@@ -7,8 +7,7 @@ export const jsConfig = eleventyConfig => {
   eleventyConfig.addExtension('js', {
     outputFileExtension: 'js',
     compile: async (content, inputPath) => {
-
-			if (!inputPath.startsWith('./src/assets/scripts/')) {
+      if (!inputPath.startsWith('./src/assets/scripts/')) {
         return;
       }
 
@@ -19,7 +18,7 @@ export const jsConfig = eleventyConfig => {
 
         await esbuild.build({
           target: 'es2020',
-					platform: 'node',
+          platform: 'node',
           entryPoints: [inputPath],
           outfile: outputPath,
           bundle: true,

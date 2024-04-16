@@ -9,7 +9,7 @@ import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
 import markdownitAbbr from 'markdown-it-abbr';
 import {slugifyString} from '../filters/slugify.js';
-import path from 'path';
+import path from 'node:path';
 
 export const markdownLib = markdownIt({
   html: true,
