@@ -75,8 +75,8 @@ export default async function (eleventyConfig) {
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(
-    path => eleventyConfig.addPassthroughCopy(path)
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+    eleventyConfig.addPassthroughCopy(path)
   );
 
   // -- to root
@@ -86,7 +86,7 @@ export default async function (eleventyConfig) {
 
   // -- node_modules
   eleventyConfig.addPassthroughCopy({
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/`
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/components/`
   });
 
   // --------------------- Build Settings
