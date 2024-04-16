@@ -18,7 +18,6 @@ export const jsConfig = eleventyConfig => {
 
         await esbuild.build({
           target: 'es2020',
-          platform: 'node',
           entryPoints: [inputPath],
           outfile: outputPath,
           bundle: true,
