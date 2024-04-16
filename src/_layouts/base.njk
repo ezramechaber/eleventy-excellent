@@ -22,14 +22,14 @@
 
     <!-- 4 synchronous js  -->
     <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
-    {% set jsthemetoggle %}{% include "theme-toggle-inline.js" %}{% endset %}
+    {% set jsthemetoggle %}{% include "scripts/theme-toggle-inline.js" %}{% endset %}
     <script>
       // prettier-ignore
       {{ jsthemetoggle | jsmin | safe }}
     </script>
 
     <!-- independent partial hydration islands architecture: https://github.com/11ty/is-land -->
-    {% set island %}{% include "is-land-inline.js" %}{% endset %}
+    {% set island %}{% include "scripts/is-land-inline.js" %}{% endset %}
     <script>
       // prettier-ignore
       {{ island | jsmin | safe }}
