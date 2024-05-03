@@ -67,6 +67,11 @@ blockquote :last-child {
   font-size: var(--size-step-1);
 }
 
+input,
+textarea {
+  caret-color: var(--color-primary);
+}
+
 svg {
   block-size: 2ex;
   inline-size: auto;
