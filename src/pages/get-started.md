@@ -23,9 +23,10 @@ The [blog posts](/blog/page-0/) also explain / show some features that aren't co
 ## "Docs" lol
 
 <!-- loop docs -->
-
 {% set itemList = collections.docs %}
+{% include 'components/custom-details.njk' %}
 
-<!-- details -->
 
-{% include 'components/details.njk' %}
+
+
+
