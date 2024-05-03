@@ -9,7 +9,7 @@
   <slot name="footer"></slot>
 </custom-card>
 
-<is-land on:visible>
+<is-land on:idle>
   <template data-island="once" webc:raw>
     <link rel="stylesheet" href="/assets/components/custom-card.css" />
   </template>
