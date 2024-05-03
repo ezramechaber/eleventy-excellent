@@ -1,6 +1,6 @@
 /* Global variables.  */
 /* This turned out a little too complex, and probably is overly specific. I'm still fiddling with this. Should work by itself though, once you define your design token colors.
-/* Feel free to delete the modern CSS enhancements starting on line 74. Adjust fallbacks if modern color syntax not supported for text and bg variants. */
+Adjust fallbacks if modern color syntax not supported for text and bg variants. */
 
 /* Basic variable definitions for color schemes */
 :root {
