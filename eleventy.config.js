@@ -47,6 +47,9 @@ export default async function (eleventyConfig) {
     useTransform: true
   });
 
+  // ---------------------  bundle
+  eleventyConfig.addBundle('css', {hoist: true});
+
   // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));

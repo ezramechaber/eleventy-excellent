@@ -21,7 +21,6 @@
     </title>
 
     <!-- 4 synchronous js  -->
-
     <!-- independent partial hydration islands architecture: https://github.com/11ty/is-land -->
     {% set island %}{% include "scripts/is-land-inline.js" %}{% endset %}
     <script>
@@ -29,13 +28,11 @@
       {{ island | jsmin | safe }}
     </script>
 
-    <!--  inline base schema -->
-    {% include "schemas/base-schema.njk" %}
+    <!--  schema settings -->
+    {% include "partials/schema.njk" %}
 
-    <!--  inline blogpost schema  -->
-    {% if schema == 'blog' %}{%- include "schemas/blogpost-schema.njk" -%}{% endif %}
-
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+    <!--  CSS settings -->
+    {% include "partials/css.njk" %}
 
     <!-- preloads -->
     <link

@@ -10,31 +10,40 @@ import postcssImportExtGlob from 'postcss-import-ext-glob';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
-
-// : https://pepelsbey.dev/articles/eleventy-css-js/
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 export const cssConfig = eleventyConfig => {
   eleventyConfig.addTemplateFormats('css');
 
   eleventyConfig.addExtension('css', {
     outputFileExtension: 'css',
-    compile: async (content, path) => {
-      if (path !== './src/assets/css/global.css') {
-        return;
+    compile: async (inputContent, inputPath) => {
+      // Only process the specific file
+      if (!inputPath.endsWith('/src/assets/css/global.css')) {
+        return () => '';
       }
 
       return async () => {
-        let output = await postcss([
+        let result = await postcss([
           postcssImportExtGlob,
           postcssImport,
           tailwindcss,
           autoprefixer,
           cssnano
-        ]).process(content, {
-          from: path
-        });
+        ]).process(inputContent, {from: inputPath});
 
-        return output.css;
+        // Path for the additional output
+        const additionalPath = './src/_includes/css/global-inline.css';
+
+        // Ensure the directory exists (create if it doesn't)
+        await fs.mkdir(path.dirname(additionalPath), {recursive: true});
+
+        // Write the output to the new location
+        await fs.writeFile(additionalPath, result.css);
+
+        // Return the CSS for the primary output location
+        return result.css;
       };
     }
   });
