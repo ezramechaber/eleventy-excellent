@@ -1,0 +1,20 @@
+<is-land on:visible>
+  <style>
+    /* Hide without JS */
+    is-land:not(:defined) custom-theme {
+      display: none;
+    }
+  </style>
+  <custom-theme
+    class="theme-switch | cluster mt-xs"
+    style="--cluster-horizontal-alignment: center; --gutter: 0.5rem"
+    aria-labelledby="theme-switcher-label"
+  >
+    <slot></slot>
+
+    <template data-island="once" webc:raw>
+      <link rel="stylesheet" href="custom-theme.css" />
+      <script src="custom-theme.js"></script>
+    </template>
+  </custom-theme>
+</is-land>
