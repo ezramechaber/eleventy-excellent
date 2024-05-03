@@ -6,7 +6,7 @@
   "license": "ISC",
   "type": "module",
   "engines": {
-    "node": ">=18.x.x"
+    "node": ">=20.x.x"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -21,7 +21,7 @@
     "url": "https://github.com/madrilene/eleventy-excellent.git"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.5",
+    "@11ty/eleventy": "3.0.0-alpha.10",
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
@@ -36,7 +36,7 @@
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.3",
-    "cssnano": "^6.0.0",
+    "cssnano": "^7.0.1",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
     "esbuild": "^0.20.0",
