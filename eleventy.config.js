@@ -82,14 +82,15 @@ export default async function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy(path)
   );
 
-  // -- to root
   eleventyConfig.addPassthroughCopy({
-    'src/assets/images/favicon/*': '/'
-  });
+    // -- to root
+    'src/assets/images/favicon/*': '/',
 
-  // -- node_modules
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/components/`
+    // -- node_modules
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/components/`,
+
+    // -- webc assets
+    'src/_includes/components/**/*.{css,js}': `assets/components/`
   });
 
   // --------------------- Build Settings
