@@ -17,8 +17,7 @@ masonry: true
   <div class="grid" data-layout="50-50" data-rows="masonry">
     {% for item in pagination.items %}
       {% set definedDate = item.date %}
-      <!-- TODO: having to import this every time is tedious -->
-      {% css %}{% include "components/custom-card.css" %}{% endcss %}
+
       <custom-card clickable>
         <h2 slot="headline">
           <a href="{{ item.url | url }}">{{ item.data.title }}</a>

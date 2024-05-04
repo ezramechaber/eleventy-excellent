@@ -72,5 +72,9 @@
 
       customElements.define('custom-theme', customTheme);
     </script>
+
+    <template data-island="once" webc:raw>
+      <link rel="stylesheet" href="/assets/components/custom-theme.css" />
+    </template>
   </custom-theme>
 </is-land>

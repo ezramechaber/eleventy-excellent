@@ -1,5 +1,3 @@
-<!-- Inspired by https://github.com/zachleat/zachleat.com  -->
-
 <style>
   custom-youtube-link {
     display: flex;
@@ -14,3 +12,5 @@
 
 <custom-svg aria-hidden="true" src="./src/assets/svg/platform/youtube.svg"></custom-svg>
 <a :href="href"><span webc:if="label" @text="label" webc:nokeep></span></a>
+
+<!-- Inspired by https://github.com/zachleat/zachleat.com  -->

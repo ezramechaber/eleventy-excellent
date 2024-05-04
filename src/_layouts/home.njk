@@ -29,8 +29,6 @@ masonry: true
         <!-- loop posts -->
         {% set itemList = collections.posts %}
         {% for item in itemList.slice(0, 4) %}
-          <!-- TODO: having to import this every time is tedious -->
-          {% css %}{% include "components/custom-card.css" %}{% endcss %}
           <custom-card clickable>
             <h3 slot="headline">
               <a href="{{ item.url | url }}">{{ item.data.title }}</a>
