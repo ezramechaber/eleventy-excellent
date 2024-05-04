@@ -10,7 +10,6 @@ tags:
 This starter uses a [webC version](https://github.com/zachleat/zachleat.com/blob/main/_components/youtube-lite-player.webc) of Paul Irish's [lite-youtube-embed](https://github.com/paulirish/lite-youtube-embed).
 
 <div>
-<custom-youtube @slug="Ah6je_bBSH8" @label="Alberto Ballesteros - Artista Sin Obra" @subtitle="Alberto Ballesteros - Artista Sin Obra"></custom-youtube>
+<custom-youtube @slug="Ah6je_bBSH8" @label="Alberto Ballesteros - Artista Sin Obra"></custom-youtube>
 </div>
 
-<custom-youtube @slug="Ah6je_bBSH8" @label="Alberto Ballesteros - Artista Sin Obra" @subtitle="Alberto Ballesteros - Artista Sin Obra"></custom-youtube>

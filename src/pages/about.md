@@ -19,4 +19,5 @@ The aim is to spread the idea and use of this _excellent_ workflow. To work with
 
 ## Watch the talk
 
-<custom-youtube @slug="JqnMI1AXl6w" @label="Andy Bell – Be the browser’s mentor, not its micromanager" @subtitle="Andy Bell – Be the browser’s mentor, not its micromanager"> </custom-youtube>
+<div><custom-youtube @slug="JqnMI1AXl6w" @label="Andy Bell – Be the browser’s mentor, not its micromanager"> </custom-youtube></div>
+
