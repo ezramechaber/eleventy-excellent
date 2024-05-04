@@ -48,7 +48,7 @@ export default async function (eleventyConfig) {
   });
 
   // ---------------------  bundle
-  eleventyConfig.addBundle('css', {hoist: true});
+  // eleventyConfig.addBundle('css', {hoist: true});
 
   // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
@@ -87,7 +87,7 @@ export default async function (eleventyConfig) {
     'src/assets/images/favicon/*': '/',
 
     // -- node_modules
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/components/`,
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`,
 
     // -- webc assets
     'src/_includes/components/**/*.{css,js}': `assets/components/`
