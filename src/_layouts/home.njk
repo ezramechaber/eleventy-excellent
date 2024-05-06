@@ -26,8 +26,9 @@ layout: base
 
       <custom-masonry>
         <!-- loop posts -->
-        {% set itemList = collections.posts %}
+        {% set itemList = collections.allPosts %}
         {% for item in itemList.slice(0, 4) %}
+          {% set definedDate = item.date %}
           <custom-card clickable>
             <h3 slot="headline">
               <a href="{{ item.url | url }}">{{ item.data.title }}</a>
