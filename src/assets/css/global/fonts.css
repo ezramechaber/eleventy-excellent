@@ -74,13 +74,3 @@
     local(''),
     url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2');
 }
-
-@font-face {
-  font-family: 'RobotoMono';
-  font-style: normal;
-  font-display: swap;
-  font-weight: normal;
-  src:
-    local(''),
-    url(/assets/fonts/robotomono/robotomono-regular.woff2) format('woff2');
-}
