@@ -1,9 +1,9 @@
-<custom-masonry class="grid" data-rows="masonry" data-layout="50-50">
-  <slot></slot>
+<is-land on:visible>
+  <custom-masonry class="grid" data-rows="masonry" data-layout="50-50" webc:root webc:keep>
+    <slot></slot>
 
-  <is-land on:idle>
     <template data-island="once" webc:raw>
       <script src="/assets/components/custom-masonry.js" defer></script>
     </template>
-  </is-land>
-</custom-masonry>
+  </custom-masonry>
+</is-land>
