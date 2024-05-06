@@ -91,10 +91,6 @@ hr {
   background-color: var(--color-bg-accent-2);
 }
 
-[role='list'] {
-  padding: 0;
-}
-
 /* Base interactive elements */
 
 a {
