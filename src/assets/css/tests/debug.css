@@ -3,8 +3,13 @@
 /* WIP */
 
 :root {
-  --error-outline: 0.25rem solid orange;
+  --highlight-outline: 0.25rem solid cornflowerblue;
+  --warning-outline: 0.25rem solid orange;
   --error-outline: 0.25rem solid red;
+}
+
+* * * * * {
+  outline: var(--highlight-outline);
 }
 
 a:not([href]) {
