@@ -8,7 +8,9 @@ class customEasteregg extends HTMLElement {
     if (customKeyword) {
       this.keywords.push(customKeyword);
     }
-    // Initialize codes and indexes for each keyword
+
+    this.shape = this.getAttribute('shape') || '⭐️';
+    this.particleCount = parseInt(this.getAttribute('particle-count'), 10) || 30;
     this.codes = this.keywords.map(keyword => keyword.split(''));
     this.indexes = new Array(this.keywords.length).fill(0);
   }
@@ -40,13 +42,12 @@ class customEasteregg extends HTMLElement {
     console.log(`Hooray ${keyword}!`);
     import('https://esm.run/canvas-confetti').then(({default: confetti}) => {
       const scalar = 4;
-      const particleCount = 30;
-      const star = confetti.shapeFromText({text: '⭐️', scalar});
+      const customShape = confetti.shapeFromText({text: this.shape, scalar});
 
       confetti({
-        shapes: [star],
+        shapes: [customShape],
         scalar,
-        particleCount
+        particleCount: this.particleCount
       });
     });
   }
