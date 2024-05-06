@@ -1,6 +1,5 @@
 ---
 layout: base
-masonry: true
 ---
 
 <article class="wrapper">
@@ -14,7 +13,7 @@ masonry: true
 
   <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">{{ content | safe }}</div>
 
-  <div class="grid" data-layout="50-50" data-rows="masonry">
+  <custom-masonry>
     {% for item in pagination.items %}
       {% set definedDate = item.date %}
 
@@ -32,7 +31,7 @@ masonry: true
         <p slot="content">{{ item.data.description }}</p>
       </custom-card>
     {% endfor %}
-  </div>
+  </custom-masonry>
 
   <!-- TODO: pagination is reversed. -->
 

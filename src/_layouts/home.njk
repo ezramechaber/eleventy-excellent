@@ -1,6 +1,5 @@
 ---
 layout: base
-masonry: true
 ---
 
 <div class="wrapper">
@@ -25,7 +24,7 @@ masonry: true
         <p>{{ blog.intro }}</p>
       {% endif %}
 
-      <ul class="feature | grid region" role="list" data-rows="masonry" data-layout="50-50">
+      <custom-masonry>
         <!-- loop posts -->
         {% set itemList = collections.posts %}
         {% for item in itemList.slice(0, 4) %}
@@ -43,7 +42,7 @@ masonry: true
             <p slot="content">{{ item.data.description }}</p>
           </custom-card>
         {% endfor %}
-      </ul>
+      </custom-masonry>
     </div>
   </section>
 </div>
