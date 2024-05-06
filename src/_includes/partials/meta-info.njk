@@ -3,13 +3,13 @@
 <meta
   name="description"
   content="
-  {% if discover.description %}
-    {{ discover.description }}
-  {% elif description %}
-    {{ description }}
-  {% else %}
-    {{ meta.siteDescription }}
-  {% endif %}
+  {%- if- discover.description -%}
+    {{- discover.description -}}
+  {%- elif description -%}
+    {{- description -}}
+  {%- else -%}
+    {{- meta.siteDescription -}}
+  {%- endif -%}
   "
 />
 
