@@ -12,4 +12,7 @@
 @import-glob 'compositions/*.css';
 @import-glob 'utilities/*.css';
 
+/* activate for testing */
+/* @import-glob 'tests/*.css'; */
+
 @import 'tailwindcss/utilities';
