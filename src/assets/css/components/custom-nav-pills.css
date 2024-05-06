@@ -1,5 +1,5 @@
 /* Basic link styling */
-.site-nav ul {
+custom-nav ul {
   list-style: none;
   margin: 0;
   gap: var(--space-xs);
@@ -7,7 +7,7 @@
   padding-block-end: var(--space-s);
 }
 
-.site-nav a {
+custom-nav a {
   --text-color: var(--color-text);
   --background-color: var(--color-bg);
   --border-color: var(--color-bg-accent-2);
@@ -21,15 +21,15 @@
 }
 
 /* Change the border-color on :hover and :focus */
-.site-nav a:where(:hover, :focus) {
+custom-nav a:where(:hover, :focus) {
   --background-color: var(--color-text);
   --text-color: var(--color-bg);
   --border-color: var(--color-bg);
 }
 
 /* Change border-color and color for the active page. data-state='active' if a child is active. */
-.site-nav [aria-current='page'],
-.site-nav [data-state='active'] {
+custom-nav [aria-current='page'],
+custom-nav [data-state='active'] {
   --background-color: var(--color-text);
   --text-color: var(--color-bg);
   --border-color: var(--color-bg);
@@ -37,11 +37,11 @@
 
 @media screen(navigation) {
   /* Basic link styling */
-  .site-nav ul {
+  custom-nav ul {
     padding-block-end: 0;
   }
 
-  .site-nav a {
+  custom-nav a {
     --text-color: var(--color-text);
     --background-color: transparent;
     --border-color: transparent;
@@ -56,15 +56,15 @@
   }
 
   /* Change the border-color on :hover and :focus */
-  .site-nav a:where(:hover, :focus) {
+  custom-nav a:where(:hover, :focus) {
     --text-decoration: var(--color-text-accent);
     --text-color: var(--color-text);
     --background-color: transparent;
   }
 
   /* Change border-color and color for the active page */
-  .site-nav [aria-current='page'],
-  .site-nav [data-state='active'] {
+  custom-nav [aria-current='page'],
+  custom-nav [data-state='active'] {
     --text-decoration: var(--color-primary);
     --text-color: var(--color-primary);
     --background-color: transparent;

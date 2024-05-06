@@ -52,12 +52,10 @@ export const details = {
   collapse: 'collapse all'
 };
 export const navigation = {
+  navLabel: 'Menu',
   ariaTop: 'Main',
   ariaBottom: 'Complementary',
-  ariaPlatforms: 'Platforms',
-  // activate alternative mobile menu with drawer
-  drawerNav: false,
-  navLabel: 'Menu'
+  ariaPlatforms: 'Platforms'
 };
 export const themeSwitch = {
   title: 'Theme',

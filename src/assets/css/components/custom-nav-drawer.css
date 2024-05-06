@@ -1,10 +1,10 @@
-.site-nav-drawer {
+custom-nav {
   position: var(--nav-position, absolute);
   inset-inline-end: 0.1rem;
 }
 
 /* Remove default list styling and create layout for list */
-.site-nav-drawer ul {
+custom-nav ul {
   z-index: 1;
   --cluster-vertical-alignment: normal;
   --gutter: var(--space-xs);
@@ -23,15 +23,15 @@
   visibility: var(--nav-list-visibility, visible);
 }
 
-.site-nav-drawer [aria-expanded='false'] + ul {
+custom-nav [aria-expanded='false'] + ul {
   transform: var(--nav-list-transform, translateX(100%));
   visibility: var(--nav-list-visibility, hidden);
 }
 
 /* animates ul only when opening to avoid flash on page load, svg always */
 @media (prefers-reduced-motion: no-preference) {
-  .site-nav-drawer [aria-expanded='true'] + ul,
-  .site-nav-drawer svg {
+  custom-nav [aria-expanded='true'] + ul,
+  custom-nav svg {
     transition:
       transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
       visibility 0.05s linear;
@@ -39,7 +39,7 @@
 }
 
 /* Basic link styling */
-.site-nav-drawer a {
+custom-nav a {
   --text-color: var(--color-text);
   --background-color: var(--color-bg);
   --border-color: transparent;
@@ -53,22 +53,22 @@
 }
 
 /* Change the border-color on :hover and :focus */
-.site-nav-drawer a:where(:hover, :focus) {
+custom-nav a:where(:hover, :focus) {
   --background-color: var(--color-bg-accent);
   --text-color: var(--color-text-accent);
   --border-color: var(--color-bg-accent);
 }
 
 /* Change border-color and color for the active page */
-.site-nav-drawer [aria-current='page'],
-.site-nav-drawer [data-state='active'] {
+custom-nav [aria-current='page'],
+custom-nav [data-state='active'] {
   --background-color: var(--color-bg-accent);
   --text-color: var(--color-text);
   --border-color: var(--color-bg-accent);
 }
 
 /* Reset button styling */
-.site-nav-drawer button {
+custom-nav button {
   all: unset;
   display: var(--nav-button-display, flex);
   align-items: center;
@@ -79,31 +79,31 @@
   padding: var(--space-xs) 0;
 }
 
-.site-nav-drawer span {
+custom-nav span {
   font-size: var(--size-step-min-1);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   padding-inline-end: var(--space-2xs);
 }
 
-.site-nav-drawer svg {
+custom-nav svg {
   block-size: 100%;
   inline-size: auto;
   transform: translateY(-0.1em);
   color: var(--color-text);
 }
 
-.site-nav-drawer [aria-expanded='true'] svg {
+custom-nav [aria-expanded='true'] svg {
   transform: var(--nav-list-rotate, rotate(45deg));
 }
 
 @media screen(navigation) {
-  .site-nav-drawer {
+  custom-nav {
     --nav-button-display: none;
     --nav-position: static;
   }
 
-  .site-nav-drawer ul {
+  custom-nav ul {
     --nav-list-background: transparent;
     --nav-list-layout: row;
     --nav-list-position: static;
@@ -115,7 +115,7 @@
     --nav-list-visibility: visible;
   }
 
-  .site-nav-drawer a {
+  custom-nav a {
     --anchor-padding: var(--space-xs) 0.2em;
     --text-color: var(--color-text);
     --background-color: transparent;
@@ -127,7 +127,7 @@
     text-underline-offset: 0.2em;
   }
 
-  .site-nav-drawer a:where(:hover, :focus) {
+  custom-nav a:where(:hover, :focus) {
     --text-color: var(--color-text);
     --background-color: transparent;
     --border-color: transparent;
@@ -135,8 +135,8 @@
   }
 
   /* Change border-color and color for the active page */
-  .site-nav-drawer [aria-current='page'],
-  .site-nav-drawer [data-state='active'] {
+  custom-nav [aria-current='page'],
+  custom-nav [data-state='active'] {
     --text-color: var(--color-primary);
     --background-color: transparent;
     --border-color: transparent;
