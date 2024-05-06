@@ -19,7 +19,7 @@ custom-nav ul {
   position: var(--nav-list-position, fixed);
   inset-block-start: 0;
   inset-inline-end: 0;
-  inline-size: var(--nav-list-width, min(22rem, 100vw));
+  inline-size: var(--nav-list-width, min(18rem, 100vw));
   visibility: var(--nav-list-visibility, visible);
 }
 
@@ -38,6 +38,10 @@ custom-nav [aria-expanded='false'] + ul {
   }
 }
 
+custom-nav [aria-expanded='true'] + ul {
+  padding-top: var(--space-2xl);
+}
+
 /* Basic link styling */
 custom-nav a {
   --text-color: var(--color-text);
@@ -48,7 +52,7 @@ custom-nav a {
   padding: var(--anchor-padding, var(--space-s));
   text-decoration: none;
   display: block;
-  border-radius: var(--border-radius);
+
   border: 1px solid var(--border-color);
 }
 
