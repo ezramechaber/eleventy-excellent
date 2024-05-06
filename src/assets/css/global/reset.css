@@ -4,8 +4,10 @@
 /* https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/#css-reset-additions */
 
 /* Box sizing rules */
-:where(*, *::before, *::after) {
-  box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 /* Remove default margin */
 :where(body, h1, h2, h3, h4, p, figure, blockquote, dl, dd) {
