@@ -8,6 +8,13 @@
   <slot name="content"></slot>
   <slot name="footer"></slot>
 
+  <style>
+    /* test value */
+    em {
+      font-style: normal;
+    }
+  </style>
+
   <!-- TODO: why is this not being hoisted into the webc css bundle????!!! -->
   <link rel="stylesheet" href="/assets/components/custom-card.css" />
 </custom-card>
