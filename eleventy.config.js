@@ -20,6 +20,9 @@ import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 
 export default async function (eleventyConfig) {
+  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
+  eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
+
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
   eleventyConfig.addLayoutAlias('home', 'home.njk');
@@ -43,12 +46,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
   eleventyConfig.addPlugin(plugins.webc, {
-    components: ['./src/_includes/**/*.webc'],
+    components: ['./src/_includes/components/*.webc'],
     useTransform: true
   });
 
   // ---------------------  bundle
-  // eleventyConfig.addBundle('css', {hoist: true});
+  eleventyConfig.addBundle('css', {hoist: true});
 
   // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
