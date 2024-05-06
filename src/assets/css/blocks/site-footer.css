@@ -20,10 +20,19 @@
 }
 
 .site-footer .creator {
+  font-size: var(--size-step-min-1);
+  margin-block-start: var(--space-xl);
+  display: grid;
+  place-items: center;
+}
+
+.site-footer .creator a {
+  --gutter: var(--space-xs);
+  --cluster-horizontal-alignment: center;
   text-decoration: none;
 }
 
-.site-footer .creator:hover {
+.site-footer .creator a:hover {
   color: transparent;
   background-image: var(--gradient-rainbow);
   background-size: 100%;
