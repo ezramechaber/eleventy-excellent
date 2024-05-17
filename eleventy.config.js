@@ -64,6 +64,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncFilter('jsmin', filters.minifyJs);
   eleventyConfig.addFilter('splitlines', filters.splitlines);
   eleventyConfig.addFilter('striptags', filters.striptags);
+  eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('toAbsoluteUrl', filters.toAbsoluteUrl);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
   eleventyConfig.addFilter('escapeHtml', filters.escapeHtml);
