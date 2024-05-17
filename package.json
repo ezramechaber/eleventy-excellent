@@ -10,6 +10,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "screenshots": "node ./src/_config/utils/generate-screenshots.js",
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
