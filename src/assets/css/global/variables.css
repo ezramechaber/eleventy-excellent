@@ -4,8 +4,6 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
 
 /* Basic variable definitions for color schemes */
 :root {
-  color-scheme: light dark;
-
   --gutter: var(--space-m-l);
   --border-radius: 0.3rem;
   --transition-duration: 250ms;
@@ -82,9 +80,9 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
     --color-text-accent: color-mix(in oklab, var(--color-base-dark) 80%, var(--color-bg));
     --color-bg-accent: color-mix(in oklab, var(--color-bg) 90%, var(--color-text));
     --color-bg-accent-2: color-mix(in oklab, var(--color-bg) 70%, var(--color-text));
-    --color-primary-sub-20: color-mix(in oklab, var(--color-primary-highlight), transparent 20%);
-    --color-secondary-sub-20: color-mix(in oklab, var(--color-secondary-highlight), transparent 20%);
-    --color-tertiary-sub-20: color-mix(in oklab, var(--color-tertiary-highlight), transparent 20%);
+    --color-primary-sub-20: color-mix(in oklab, var(--color-primary-highlight), var(--color-bg) 20%);
+    --color-secondary-sub-20: color-mix(in oklab, var(--color-secondary-highlight), var(--color-bg) 20%);
+    --color-tertiary-sub-20: color-mix(in oklab, var(--color-tertiary-highlight), var(--color-bg) 20%);
   }
 
   @media (prefers-color-scheme: dark) {

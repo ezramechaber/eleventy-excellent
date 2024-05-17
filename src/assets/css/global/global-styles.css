@@ -1,35 +1,40 @@
 /*
-  Global styles
+	Global styles
 
-  Low-specificity, global styles that apply to the whole
-  project: https://cube.fyi/css.html
+	Low-specificity, global styles that apply to the whole
+	project: https://cube.fyi/css.html
 */
 
+/* Base styles */
+html {
+  color-scheme: light dark;
+}
+
 body {
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  font-size: var(--size-step-0);
-  font-family: var(--font-base);
-  line-height: var(--leading-standard);
-  letter-spacing: var(--tracking);
   display: flex;
   flex-direction: column;
-  font-weight: var(--font-medium);
+  font-family: var(--font-base);
+  font-size: var(--size-step-0);
+  font-weight: var(--font-regular);
+  line-height: var(--leading-standard);
+  color: var(--color-text);
+  background-color: var(--color-bg);
   accent-color: var(--color-primary);
+  letter-spacing: var(--tracking);
 }
 
 main {
   flex: auto;
 }
 
-/* Base typesetting */
+/* Typography */
 h1,
 h2,
 h3 {
+  font-family: var(--font-display);
+  font-weight: var(--font-extra-bold);
   line-height: 1.2;
   letter-spacing: var(--tracking-s);
-  font-weight: var(--font-bold);
-  font-family: var(--font-display);
 }
 
 h1 {
@@ -44,7 +49,7 @@ h3 {
   font-size: var(--size-step-2);
 }
 
-/* Set line lengths */
+/* Text formatting */
 p,
 li,
 blockquote:not([class]) {
@@ -52,8 +57,8 @@ blockquote:not([class]) {
 }
 
 blockquote {
-  border-inline-start: 0.5rem solid var(--color-primary);
   padding: var(--space-m-l);
+  border-inline-start: 0.5rem solid var(--color-primary);
   font-size: var(--size-step-2);
 }
 
@@ -67,32 +72,37 @@ blockquote :last-child {
   font-size: var(--size-step-1);
 }
 
+/* Form elements */
 input,
 textarea {
   caret-color: var(--color-primary);
 }
 
+/* SVG */
 svg {
   block-size: 2ex;
   inline-size: auto;
   flex: none;
 }
 
+/* Text styling */
+b,
 strong {
   font-weight: var(--font-extra-bold);
+  font-family: var(--font-display);
 }
 
+/* Horizontal rule */
 hr {
-  border: 0;
   height: 1px;
   width: 10%;
   margin-block: var(--space-m-l);
   margin-inline-start: 0;
   background-color: var(--color-bg-accent-2);
+  border: 0;
 }
 
-/* Base interactive elements */
-
+/* Links */
 a {
   color: currentcolor;
   text-decoration-thickness: 0.08em;
@@ -102,36 +112,26 @@ a:hover {
   text-decoration: none;
 }
 
+/* Focus styles */
 :focus-visible {
   outline: 3px solid;
   outline-offset: 0.3ch;
 }
 
-main:focus {
-  outline: none;
-}
-
-/* Base selection styles that invert whatever colours are rendered */
+/* Text selection */
 ::selection {
   background-color: var(--color-text);
   color: var(--color-bg);
 }
 
+/* Transitions */
 .preload-transitions * {
   transition: none !important;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  ::after,
-  ::before {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+/* Scripting */
+@media (scripting: none) {
+  .require-js {
+    display: none;
   }
 }
