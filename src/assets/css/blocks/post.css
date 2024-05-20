@@ -1,16 +1,16 @@
-.post h1 {
+.post .prose h1 {
   font-size: var(--size-step-6);
 }
 
-.post h2 {
+.post .prose h2 {
   font-size: var(--size-step-3);
 }
 
-.post h3 {
+.post .prose h3 {
   font-size: var(--size-step-2);
 }
 
-.post img {
+.post .prose img {
   max-inline-size: var(--max-img-width, 100%);
   block-size: auto;
   aspect-ratio: 16/9;
@@ -18,12 +18,12 @@
   object-position: center;
 }
 
-.date {
+.post ..prose date {
   font-size: var(--size-step-1);
   color: var(--color-text-light);
 }
 
-.credit {
+.post .prose .credit {
   font-size: var(--size-step-min-1);
   color: var(--color-text-accent);
   background-color: var(--color-bg);
@@ -33,6 +33,6 @@
   max-inline-size: fit-content;
 }
 
-.meta {
+.post .prose .meta {
   font-size: var(--size-step-min-1);
 }
