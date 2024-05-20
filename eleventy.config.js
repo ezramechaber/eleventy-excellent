@@ -65,7 +65,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('toAbsoluteUrl', filters.toAbsoluteUrl);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
-  eleventyConfig.addFilter('escapeHtml', filters.escapeHtml);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
