@@ -16,5 +16,5 @@
   </style>
 
   <!-- TODO: why is this not being hoisted into the webc css bundle????!!! -->
-  <link rel="stylesheet" href="/assets/components/custom-card.css" />
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css" />
 </custom-card>

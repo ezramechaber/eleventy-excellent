@@ -74,7 +74,7 @@
     </script>
 
     <template data-island="once" webc:raw>
-      <link rel="stylesheet" href="/assets/components/custom-theme.css" />
+      <link rel="stylesheet" href="/assets/css/components/custom-theme.css" />
     </template>
   </custom-theme>
 </is-land>
