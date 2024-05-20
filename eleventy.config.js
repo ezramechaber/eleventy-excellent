@@ -88,8 +88,7 @@ export default async function (eleventyConfig) {
     'src/assets/images/favicon/*': '/',
 
     // -- node_modules
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.js': `assets/scripts/components/`,
-    'node_modules/lite-youtube-embed/src/lite-yt-embed.css': `assets/css/components/`
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
 
   // --------------------- Build Settings
