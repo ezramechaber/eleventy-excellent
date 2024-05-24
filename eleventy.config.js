@@ -10,6 +10,11 @@
  * @returns {Object} -
  */
 
+// register dotenv for process.env.* variables to pickup
+import dotenv from 'dotenv';
+dotenv.config();
+
+// add yaml support
 import yaml from 'js-yaml';
 
 //  config import
