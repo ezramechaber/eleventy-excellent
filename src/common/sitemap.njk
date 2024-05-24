@@ -18,7 +18,8 @@ excludeFromSitemap: true
       <url>
         <loc>{{ meta.url }}{{ page.url }}</loc>
         <lastmod>{{ lastmod | toIsoString }}</lastmod>
-      </url>
+        <changefreq>{{ page.data.changeFreq if page.data.changeFreq else "monthly" }}</changefreq>
+    </url>
     {% endif %}
   {% endfor %}
 </urlset>
