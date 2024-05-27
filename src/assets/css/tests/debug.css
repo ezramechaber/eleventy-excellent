@@ -12,6 +12,11 @@
   outline: var(--highlight-outline);
 }
 
+/* highlight empty elements */
+*:empty {
+  outline: var(--highlight-outline);
+}
+
 a:not([href]) {
   outline: var(--error-outline);
   --error: 'The link does not have an href. Did you mean to use a <button>?';
