@@ -101,7 +101,6 @@
   scroll-margin-block-end: 8vh;
 }
 
-/* Dialog styles */
 :where(dialog) {
   border: none;
   background: none;
@@ -110,11 +109,6 @@
   max-height: unset;
 }
 
-:where(dialog:not([open], [popover])) {
-  display: none !important;
-}
-
-/* Popover styles */
 :where([popover]) {
   border: none;
   background: none;
@@ -122,8 +116,15 @@
   color: inherit;
 }
 
+/*  hide dialog elements without open or popover attributes, and elements with a popover attribute that are not in an open state. */
+:where(dialog:not([open], [popover])),
 :where([popover]:not(:popover-open)) {
   display: none !important;
+}
+
+/* Prevent page scroll: https://blog.mayank.co/is-dialog-enough */
+:where(html:has(dialog[open]:modal)) {
+  overflow: hidden;
 }
 
 /* Reduced motion */
