@@ -100,7 +100,7 @@ custom-card[clickable] a:after {
   top: 0;
 }
 
-.prose :is(a, p) {
+custom-card :is(a, p, h2, h3) {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
