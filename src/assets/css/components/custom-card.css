@@ -7,6 +7,10 @@ custom-card {
   border-radius: var(--border-radius);
   max-inline-size: unset;
 }
+/* avoid flow space being added to unused elements with nested slots */
+custom-card > :empty {
+  display: none;
+}
 
 custom-card ::selection {
   color: var(--color-dark);
@@ -15,6 +19,7 @@ custom-card ::selection {
 
 custom-card h2,
 custom-card h3 {
+  --flow-space: var(--space-m);
   grid-row: headline;
   font-size: var(--size-step-2);
 }
@@ -48,6 +53,7 @@ custom-card > p {
 
 custom-card > footer {
   grid-row: footer;
+  font-size: var(--size-step-min-2);
 }
 
 /* variant: no padding */
@@ -92,4 +98,10 @@ custom-card[clickable] a:after {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.prose :is(a, p) {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
