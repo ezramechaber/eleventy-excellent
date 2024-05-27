@@ -1,10 +1,4 @@
 <is-land on:visible>
-  <style>
-    /* Hide without JS */
-    is-land:not(:defined) custom-theme {
-      display: none;
-    }
-  </style>
   <custom-theme
     class="theme-switch | cluster mt-xs"
     style="--cluster-horizontal-alignment: center; --gutter: 0.5rem"
@@ -72,9 +66,5 @@
 
       customElements.define('custom-theme', customTheme);
     </script>
-
-    <template data-island="once" webc:raw>
-      <link rel="stylesheet" href="/assets/css/components/custom-theme.css" />
-    </template>
   </custom-theme>
 </is-land>

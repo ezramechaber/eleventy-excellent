@@ -8,3 +8,12 @@
 </button>
 </custom-theme>
 
+{% css "custom-elements" %}
+{% include "../css/custom-theme.css" %}
+
+	/* Hide without JS */
+	is-land:not(:defined) custom-theme {
+		display: none;
+	}
+
+{% endcss %}
