@@ -1,0 +1,13 @@
+
+	<!-- global CSS -->
+	{%- if eleventy.env.runMode === "serve" %}
+	<!--External files (local dev live reload will refresh without page reload) -->
+		<link rel="stylesheet" href="{% getBundleFileUrl "css", "global" %}">
+	{%- else  %}
+	<!-- Inlined CSS (fastest site performance in production)  -->
+		<style>{% getBundle "css", "global" %}</style>
+	{%- endif %}
+
+	<style>{% getBundle "css", "custom-elements" %}</style>
+
+	{% css "global" %}{% include "css/global.css" %}{% endcss %}
