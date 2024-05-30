@@ -10,6 +10,11 @@
   }
 </script>
 <style>
+  /* Hide without JS */
+  is-land:not(:defined).video-wrapper {
+    display: none;
+  }
+
   is-land lite-youtube {
     background-color: #eee;
     border-radius: 0.5em;
