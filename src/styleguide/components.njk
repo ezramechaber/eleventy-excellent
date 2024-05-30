@@ -1,0 +1,13 @@
+---
+title: Components
+permalink: /components/index.html
+layout: base
+eleventyExcludeFromCollections: true
+---
+
+<article class="region wrapper flow" style="--region-space-top: var(--space-xl-2xl)">
+  <p>Gotcha: in markdown templates wrap the custom element in a div.</p>
+
+  {% set itemList = collections.components %}
+  {% include 'components/custom-details.njk' %}
+</article>

@@ -23,6 +23,10 @@ export default {
       url: '/styleguide/'
     },
     {
+      text: 'Components',
+      url: '/components/'
+    },
+    {
       text: 'Imprint',
       url: '/imprint/'
     },
