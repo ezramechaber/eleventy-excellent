@@ -1,26 +1,33 @@
-.mainnav {
-  position: var(--nav-position, absolute);
-  inset-inline-end: 0.1rem;
-}
-
 /* Remove default list styling and create layout for list */
 .mainnav ul {
-  z-index: 1;
-  --cluster-vertical-alignment: normal;
-  --gutter: var(--space-xs);
   list-style: none;
   margin: 0;
+  --gutter: var(--space-xs);
   line-height: 0.5em;
-  padding: var(--nav-list-padding, var(--space-2xl) var(--space-s));
-  background: var(--nav-list-background, var(--color-bg));
-  box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
-  flex-direction: var(--nav-list-layout, column);
-  block-size: var(--nav-list-height, 100vh);
-  position: var(--nav-list-position, fixed);
-  inset-block-start: 0;
-  inset-inline-end: 0;
-  inline-size: var(--nav-list-width, min(18rem, 100vw));
-  visibility: var(--nav-list-visibility, visible);
+  padding-block-end: var(--space-s);
+}
+
+/* drawerif JS enabled */
+@media (scripting: enabled) {
+  .mainnav {
+    position: var(--nav-position, absolute);
+    inset-inline-end: 0.1rem;
+  }
+
+  .mainnav ul {
+    --cluster-vertical-alignment: normal;
+    z-index: 1;
+    padding: var(--nav-list-padding, var(--space-2xl) var(--space-s));
+    background: var(--nav-list-background, var(--color-bg));
+    box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
+    flex-direction: var(--nav-list-layout, column);
+    block-size: var(--nav-list-height, 100vh);
+    position: var(--nav-list-position, fixed);
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: var(--nav-list-width, min(18rem, 100vw));
+    visibility: var(--nav-list-visibility, visible);
+  }
 }
 
 .mainnav [aria-expanded='false'] + ul {
