@@ -25,7 +25,7 @@
     --yt-poster-img-url: var(--yt-poster-img-url-lazy);
   }
 </style>
-<custom-youtube webc:root>
+<custom-youtube webc:root class="flow">
   <is-land on:visible class="video-wrapper">
     <lite-youtube
       :videoid="slug"
