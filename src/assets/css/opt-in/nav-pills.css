@@ -1,8 +1,8 @@
 /* Basic link styling */
 .mainnav ul {
+  --gutter: var(--space-xs);
   list-style: none;
   margin: 0;
-  gap: var(--space-xs);
   line-height: 0.5em;
   padding-block-end: var(--space-s);
 }
