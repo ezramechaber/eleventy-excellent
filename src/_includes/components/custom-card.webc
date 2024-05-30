@@ -6,5 +6,5 @@
   <slot name="footer"></slot>
 
   <!-- TODO: find out why is this not being hoisted into the webc css bundle??!!  -->
-  <link rel="stylesheet" href="/assets/css/components/custom-card.css" />
+  <link rel="stylesheet" href="/assets/css/opt-in/custom-card.css" />
 </custom-card>

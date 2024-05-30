@@ -11,7 +11,7 @@
 </custom-gallery>
 </is-land>
 
-<link rel="stylesheet" href="/assets/css/components/custom-card.css" />
+<link rel="stylesheet" href="/assets/css/opt-in/custom-card.css" />
 
 <script>
   const buttons = document.querySelectorAll('button[data-index]');
