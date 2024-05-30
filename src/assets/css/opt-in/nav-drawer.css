@@ -1,10 +1,10 @@
-custom-nav {
+.mainnav {
   position: var(--nav-position, absolute);
   inset-inline-end: 0.1rem;
 }
 
 /* Remove default list styling and create layout for list */
-custom-nav ul {
+.mainnav ul {
   z-index: 1;
   --cluster-vertical-alignment: normal;
   --gutter: var(--space-xs);
@@ -23,27 +23,27 @@ custom-nav ul {
   visibility: var(--nav-list-visibility, visible);
 }
 
-custom-nav [aria-expanded='false'] + ul {
+.mainnav [aria-expanded='false'] + ul {
   transform: var(--nav-list-transform, translateX(100%));
   visibility: var(--nav-list-visibility, hidden);
 }
 
 /* animates ul only when opening to avoid flash on page load, svg always */
 @media (prefers-reduced-motion: no-preference) {
-  custom-nav [aria-expanded='true'] + ul,
-  custom-nav svg {
+  .mainnav [aria-expanded='true'] + ul,
+  .mainnav svg {
     transition:
       transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
       visibility 0.05s linear;
   }
 }
 
-custom-nav [aria-expanded='true'] + ul {
+.mainnav [aria-expanded='true'] + ul {
   padding-top: var(--space-2xl);
 }
 
 /* Basic link styling */
-custom-nav a {
+.mainnav a {
   --text-color: var(--color-text);
   --background-color: var(--color-bg);
   --border-color: transparent;
@@ -57,22 +57,22 @@ custom-nav a {
 }
 
 /* Change the border-color on :hover and :focus */
-custom-nav a:where(:hover, :focus) {
+.mainnav a:where(:hover, :focus) {
   --background-color: var(--color-bg-accent);
   --text-color: var(--color-text-accent);
   --border-color: var(--color-bg-accent);
 }
 
 /* Change border-color and color for the active page */
-custom-nav [aria-current='page'],
-custom-nav [data-state='active'] {
+.mainnav [aria-current='page'],
+.mainnav [data-state='active'] {
   --background-color: var(--color-bg-accent);
   --text-color: var(--color-text);
   --border-color: var(--color-bg-accent);
 }
 
 /* Reset button styling */
-custom-nav button {
+.mainnav button {
   all: unset;
   display: var(--nav-button-display, flex);
   align-items: center;
@@ -83,31 +83,31 @@ custom-nav button {
   padding: var(--space-xs) 0;
 }
 
-custom-nav span {
+.mainnav span {
   font-size: var(--size-step-min-1);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   padding-inline-end: var(--space-2xs);
 }
 
-custom-nav svg {
+.mainnav svg {
   block-size: 100%;
   inline-size: auto;
   transform: translateY(-0.1em);
   color: var(--color-text);
 }
 
-custom-nav [aria-expanded='true'] svg {
+.mainnav [aria-expanded='true'] svg {
   transform: var(--nav-list-rotate, rotate(45deg));
 }
 
 @media screen(navigation) {
-  custom-nav {
+  .mainnav {
     --nav-button-display: none;
     --nav-position: static;
   }
 
-  custom-nav ul {
+  .mainnav ul {
     --nav-list-background: transparent;
     --nav-list-layout: row;
     --nav-list-position: static;
@@ -119,7 +119,7 @@ custom-nav [aria-expanded='true'] svg {
     --nav-list-visibility: visible;
   }
 
-  custom-nav a {
+  .mainnav a {
     --anchor-padding: var(--space-xs) 0.2em;
     --text-color: var(--color-text);
     --background-color: transparent;
@@ -131,7 +131,7 @@ custom-nav [aria-expanded='true'] svg {
     text-underline-offset: 0.2em;
   }
 
-  custom-nav a:where(:hover, :focus) {
+  .mainnav a:where(:hover, :focus) {
     --text-color: var(--color-text);
     --background-color: transparent;
     --border-color: transparent;
@@ -139,8 +139,8 @@ custom-nav [aria-expanded='true'] svg {
   }
 
   /* Change border-color and color for the active page */
-  custom-nav [aria-current='page'],
-  custom-nav [data-state='active'] {
+  .mainnav [aria-current='page'],
+  .mainnav [data-state='active'] {
     --text-color: var(--color-primary);
     --background-color: transparent;
     --border-color: transparent;

@@ -17,9 +17,9 @@ export const cssConfig = eleventyConfig => {
       if (inputPath.endsWith('/src/assets/css/global.css')) {
         paths.push('dist/assets/css/global.css');
         paths.push('src/_includes/css/global.css'); // Assuming you might want to keep naming consistent for ease
-      } else if (inputPath.includes('/src/assets/css/components/')) {
+      } else if (inputPath.includes('/src/assets/css/opt-in/')) {
         const baseName = path.basename(inputPath);
-        paths.push(`dist/assets/css/components/${baseName}`);
+        paths.push(`dist/assets/css/opt-in/${baseName}`);
         paths.push(`src/_includes/css/${baseName}`);
       } else {
         return;
