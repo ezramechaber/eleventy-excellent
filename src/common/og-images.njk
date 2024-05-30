@@ -35,7 +35,7 @@ eleventyExcludeFromCollections: true
   {% endif %}
 
   <!-- SVG background, generate your own on: https://app.haikei.app/ or  https://pattern.monster/ -->
-  <svg id="visual" viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <g viewBox="0 0 1200 630" width="1200" height="630">
     <path
       d="M0 114L100 114L100 385L200 385L200 177L300 177L300 203L400 203L400 234L500 234L500 373L600 373L600 70L700 70L700 272L800 272L800 146L900 146L900 159L1000 159L1000 64L1100 64L1100 253L1200 253L1200 58L1200 0L1200 0L1100 0L1100 0L1000 0L1000 0L900 0L900 0L800 0L800 0L700 0L700 0L600 0L600 0L500 0L500 0L400 0L400 0L300 0L300 0L200 0L200 0L100 0L100 0L0 0Z"
       fill="{{ colors[0] }}"
@@ -52,11 +52,10 @@ eleventyExcludeFromCollections: true
       d="M0 631L100 631L100 631L200 631L200 631L300 631L300 631L400 631L400 631L500 631L500 631L600 631L600 631L700 631L700 631L800 631L800 631L900 631L900 631L1000 631L1000 631L1100 631L1100 631L1200 631L1200 631L1200 453L1200 478L1100 478L1100 610L1000 610L1000 472L900 472L900 560L800 560L800 560L700 560L700 553L600 553L600 572L500 572L500 547L400 547L400 509L300 509L300 535L200 535L200 604L100 604L100 598L0 598Z"
       fill="{{ colors[3] }}"
     ></path>
-  </svg>
+  </g>
 
   <!-- if you need to darken or lighten your bg -->
   <rect id="bg" width="100%" height="100%" opacity="0.1" fill="{{ background }}" />
-  <rect id="name-bg" width="100%" height="42px" fill="{{ background }}" transform="translate(150,550)" />
 
   <!-- date -->
   <text
