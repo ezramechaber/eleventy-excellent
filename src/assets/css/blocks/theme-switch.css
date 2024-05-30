@@ -20,3 +20,8 @@
   --button-border: var(--_color-primary-contrast);
   outline-color: var(--_color-primary-contrast);
 }
+
+/* Hide without JS */
+is-land:not(:defined) .theme-switch {
+  display: none;
+}

@@ -15,7 +15,6 @@ window.onload = () => {
     return;
   }
 
-  switcher.removeAttribute('hidden');
   reflectPreference();
 
   lightThemeToggle.addEventListener('click', () => onClick('light'));
