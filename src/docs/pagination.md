@@ -44,7 +44,7 @@ and where the pagination component is included: `src/_layouts/blog.njk`:
 <!-- if the number of items in the collection is greater than the number of items shown on one page -->
 {% if collectionToPaginate.length > pagination.size %}
 <!-- include pagination -->
-{% include 'components/pagination.njk' %}
+{% include 'partials/pagination.njk' %}
 {% endif %}
 ```
 

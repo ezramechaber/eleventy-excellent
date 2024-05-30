@@ -21,7 +21,7 @@ layout: base
         <h2 slot="headline">
           <a href="{{ item.url | url }}">{{ item.data.title }}</a>
         </h2>
-        <span slot="date"> {% include "components/date.njk" %} </span>
+        <span slot="date"> {% include "partials/date.njk" %} </span>
         {%
           if
           item.data.tags.length > 1
@@ -48,6 +48,6 @@ layout: base
   <!-- if the number of items in the collection is greater than the number of items shown on one page -->
   {% if collectionToPaginate.length > pagination.size %}
     <!-- include pagination -->
-    {% include 'components/pagination.njk' %}
+    {% include 'partials/pagination.njk' %}
   {% endif %}
 </article>

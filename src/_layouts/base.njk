@@ -20,21 +20,26 @@
       {% endif %}
     </title>
 
+    <base href="{{ page.url }}" />
+
     <!-- 3 synchronous js  -->
-    {% include "partials/js-inline.njk" %}
+    {% include "head/js-inline.njk" %}
 
     <!-- 4 schema settings -->
-    {% include "partials/schema.njk" %}
+    {% include "head/schema.njk" %}
 
     <!-- 5 CSS  -->
     <!-- <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" /> -->
-    {% include "partials/css-inline.njk" %}
+    {% include "head/css-inline.njk" %}
 
     <!-- 6 preloads  -->
-    {% include "partials/preloads.njk" %}
+    {% include "head/preloads.njk" %}
 
-    <!-- 8 everything else: meta tags, icons, open graph etc.  -->
-    {% include "partials/meta-info.njk" %}
+    <!-- 7 meta tags, icons, open graph etc.  -->
+    {% include "head/meta-info.njk" %}
+
+    <!-- 8 defer  -->
+    {% include "head/js-defer.njk" %}
   </head>
 
   <body class="{{ layout }}">

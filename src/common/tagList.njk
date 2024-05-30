@@ -17,7 +17,7 @@ eleventyComputed:
       <h2 slot="headline">
         <a href="{{ item.url | url }}">{{ item.data.title }}</a>
       </h2>
-      <span slot="date"> {% include "components/date.njk" %} </span>
+      <span slot="date"> {% include "partials/date.njk" %} </span>
       <p slot="content">{{ item.data.description }}</p>
     </custom-card>
   {% endfor %}
