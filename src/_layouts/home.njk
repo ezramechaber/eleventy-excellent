@@ -25,7 +25,7 @@ layout: base
       {% endif %}
 
       <div class="feature |  region">
-        <custom-masonry>
+        <custom-masonry layout="50-50">
           <!-- loop posts -->
           {% set itemList = collections.allPosts %}
           {% for item in itemList.slice(0, 4) %}

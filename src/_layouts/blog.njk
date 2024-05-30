@@ -13,7 +13,7 @@ layout: base
 
   <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">{{ content | safe }}</div>
 
-  <custom-masonry>
+  <custom-masonry layout="50-50">
     {% for item in pagination.items %}
       {% set definedDate = item.date %}
 
