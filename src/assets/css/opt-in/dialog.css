@@ -1,6 +1,6 @@
 dialog {
-  border: none;
   border-radius: var(--border-radius);
+  inset: revert;
 }
 
 dialog + button {
@@ -8,14 +8,13 @@ dialog + button {
   cursor: pointer;
 }
 
+/* Don't indicate interactivity without JS */
+is-land:not(:defined) dialog + button {
+  cursor: default;
+}
+
 dialog::backdrop {
   background-image: var(--gradient-stripes);
   opacity: 0.85;
   filter: brightness(50%);
-}
-
-/* Prevent page scroll: https://blog.mayank.co/is-dialog-enough */
-
-html:has(dialog[open]:modal) {
-  overflow: hidden;
 }

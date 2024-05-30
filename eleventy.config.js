@@ -69,6 +69,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('splitlines', filters.splitlines);
   eleventyConfig.addFilter('striptags', filters.striptags);
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
+  eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('toAbsoluteUrl', filters.toAbsoluteUrl);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
 

@@ -19,7 +19,7 @@ The [blog posts](/blog/page-0/) also explain / show some features that aren't co
 
 <!-- loop docs -->
 {% set itemList = collections.docs %}
-{% include 'components/custom-details.njk' %}
+{% include 'partials/details.njk' %}
 
 
 

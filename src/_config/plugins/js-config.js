@@ -13,9 +13,9 @@ export const jsConfig = eleventyConfig => {
       }
 
       // Inline scripts processing
-      if (inputPath.startsWith('./src/assets/scripts/inline/')) {
+      if (inputPath.startsWith('./src/assets/scripts/include/')) {
         const filename = path.basename(inputPath);
-        const outputFilename = filename.replace(/\.js$/, '-inline.js');
+        const outputFilename = filename;
         const outputPath = `./src/_includes/scripts/${outputFilename}`;
 
         await esbuild.build({

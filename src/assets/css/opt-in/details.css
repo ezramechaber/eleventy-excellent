@@ -1,23 +1,28 @@
-custom-details .control {
+.details .control {
   --gutter: var(--space-xs-s);
   --cluster-horizontal-alignment: flex-end;
   border-block-start: 1px solid var(--color-bg-accent);
   padding-block-start: var(--space-xs);
 }
 
-custom-details details > * + * {
+/* Hide without JS */
+is-land:not(:defined) .details .control {
+  display: none;
+}
+
+.details details > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
 
-custom-details details > p:last-child {
+.details details > p:last-child {
   margin-block-end: var(--space-l);
 }
 
-custom-details summary {
+.details summary {
   grid-column: content;
 }
 
-custom-details summary {
+.details summary {
   display: flex;
   align-items: baseline;
   line-height: 1.2;
@@ -28,13 +33,13 @@ custom-details summary {
   font-size: var(--size-step-1);
 }
 
-custom-details summary:hover,
-custom-details summary:focus-visible,
-custom-details[open] > summary {
+.details summary:hover,
+.details summary:focus-visible,
+.details[open] > summary {
   color: var(--color-primary);
 }
 
-custom-details summary::before {
+.details summary::before {
   content: '+';
   display: block;
   color: var(--color-primary);
@@ -47,21 +52,21 @@ custom-details summary::before {
   margin-inline-start: 0.2ch;
 }
 
-custom-details[open] summary::before {
+.details[open] summary::before {
   content: '-';
 }
 
 /* Hide default marker */
-custom-details summary::-webkit-details-marker,
-custom-details summary::marker {
+.details summary::-webkit-details-marker,
+.details summary::marker {
   content: '';
   display: none;
 }
 
-custom-details summary + * {
+.details summary + * {
   margin-block-start: var(--space-s-m);
 }
 
-custom-details details > * + * {
+.details details > * + * {
   margin-inline-start: 2.4ch;
 }
