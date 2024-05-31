@@ -14,16 +14,6 @@
   is-land:not(:defined).video-wrapper {
     display: none;
   }
-
-  is-land lite-youtube {
-    background-color: #eee;
-    border-radius: 0.5em;
-    background-size: cover;
-  }
-  is-land[ready] lite-youtube {
-    /* gotta set in `style` to override the 480w image from lite-youtube */
-    --yt-poster-img-url: var(--yt-poster-img-url-lazy);
-  }
 </style>
 <custom-youtube webc:root class="flow">
   <is-land on:visible class="video-wrapper">
@@ -40,6 +30,25 @@
         lite-youtube {
           max-inline-size: 100% !important;
           background-size: cover;
+        }
+
+        is-land lite-youtube {
+          background-color: #eee;
+          border-radius: 0.5em;
+          background-size: cover;
+        }
+        is-land[ready] lite-youtube {
+          /* gotta set in `style` to override the 480w image from lite-youtube */
+          --yt-poster-img-url: var(--yt-poster-img-url-lazy);
+        }
+
+        .video-wrapper {
+          aspect-ratio: 16 / 9;
+          width: 100%;
+        }
+
+        is-land.video-wrapper {
+          display: block;
         }
       </style>
       <link rel="stylesheet" href="/assets/components/lite-yt-embed.css" />
