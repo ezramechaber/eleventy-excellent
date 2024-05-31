@@ -9,8 +9,7 @@ eleventyComputed:
   title: '{{ meta.blog.tagSingle }}: {{ tag }}'
 ---
 
-<div class="grid region" data-rows="masonry" data-layout="50-50">
-  <!-- loop posts -->
+<custom-masonry layout="50-50">
   {% set itemList = collections[tag] | reverse %}
   {% for item in itemList %}
     <custom-card clickable>
@@ -21,7 +20,7 @@ eleventyComputed:
       <p slot="content">{{ item.data.description }}</p>
     </custom-card>
   {% endfor %}
-</div>
+</custom-masonry>
 
 <h2>{{ meta.blog.tagMore }}</h2>
 

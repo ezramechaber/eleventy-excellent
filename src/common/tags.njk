@@ -11,8 +11,7 @@ eleventyComputed:
   {% endfor %}
 </div>
 
-<ul class="grid region" role="list" data-rows="masonry" data-layout="50-50">
-  <!-- loop posts -->
+<custom-masonry layout="50-50">
   {% set itemlist = collections.posts %}
   {% for item in itemlist %}
     <custom-card clickable>
@@ -23,4 +22,4 @@ eleventyComputed:
       <p slot="content">{{ item.data.description }}</p>
     </custom-card>
   {% endfor %}
-</ul>
+</custom-masonry>

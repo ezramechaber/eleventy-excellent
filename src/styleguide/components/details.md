@@ -10,6 +10,14 @@ The JavaScript for the `custom-details` component adds functionality to buttons 
 
 On page load, it checks if a hash corresponding to a details ID exists in the URL. If such an ID is found, the corresponding details section is programmatically opened, allowing direct navigation to an open section from a shared URL.
 
+The sorting is set by default on "alphabetic", but you can also pass in "shuffle" or "reverse" as a parameter.
+
+**Usage**
+
 ```
 {{ usage | safe }}
 ```
+
+**Example**
+
+You are in the middle of a custom details component!
