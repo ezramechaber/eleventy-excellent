@@ -1,22 +1,22 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  siteName: 'Ezra Mechaber',
   siteDescription:
-    'Eleventy starter built around the CSS workflow suggested by buildexcellentwebsit.es',
+    'Product person. Brooklyn, NY.',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
   skipContent: 'Skip to content',
   author: {
-    name: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
+    name: 'Ezra Mechaber', // i.e. Lene Saile - page / blog author's name. Must be set.
     avatar: '/favicon.png',
-    email: 'hola@lenesaile.com', // i.e. hola@lenesaile.com - email of the author
-    website: 'https://www.lenesaile.com' // i.e. https.://www.lenesaile.com - the personal site of the author
+    email: 'contact@ezramechaber.com', // i.e. hola@lenesaile.com - email of the author
+    website: 'https://www.ezramechaber.com' // i.e. https.://www.lenesaile.com - the personal site of the author
   },
   creator: {
-    name: 'Lene Saile', // i.e. Lene Saile - creator's (developer) name.
-    email: 'hola@lenesaile.com',
-    website: 'https://www.lenesaile.com',
+    name: 'Ezra Mechaber', // i.e. Lene Saile - creator's (developer) name.
+    email: 'contact@ezramechaber.com',
+    website: 'https://www.ezramechabercom',
     social: 'https://front-end.social/@lene'
   },
   themeColor: '#DD4462', //  Manifest: defines the default theme color for the application
@@ -26,9 +26,9 @@ module.exports = {
     'Visible content: Eleventy starter built around the CSS workflow for Cube CSS, Every Layout, Design Tokens and Tailwind for uitility, based on the concepts explained in buildexcellentwebsit.es', // alt text for default meta image
   blog: {
     // RSS feed
-    name: 'My Web Development Blog',
+    name: 'Ezra Mechaber',
     description:
-      'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+      'Product person. Brooklyn, NY',
     // feed links are looped over in the head. You may add more to the array.
     feedLinks: [
       {
@@ -66,20 +66,6 @@ module.exports = {
     light: 'light',
     dark: 'dark',
     initial: 'select'
-  },
-  greenweb: {
-    // this goues into src/common/greenweb.njk
-    providers: {
-      // if you want to add more than one, edit the array directly.
-      domain: 'netlify.com',
-      service: 'cdn'
-    },
-    credentials: {
-      // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
-      domain: '',
-      doctype: '',
-      url: ''
-    }
   },
   viewRepo: {
     // this is for the view/edit on github link. The value in the package.json will be pulled in.
