@@ -3,11 +3,10 @@ title: Gallery
 usage: '{% include "partials/gallery.njk" %}'
 ---
 
-**Description**
 
-- **Opening/Closing Images**: Clicking a button linked to an image opens its dialog. A close button within each dialog allows the image to be hidden again.
-- Includes `gallery.css` for styling the modal dialogs and backdrop.
-- `gallery.js` manages modal dialog interactions.
+Clicking a button linked to an image opens its dialog. A close button within each dialog allows the image to be hidden again.
+Includes `gallery.css` for styling the modal dialogs and backdrop.
+`gallery.js` manages modal dialog interactions.
 
 **Usage**
 

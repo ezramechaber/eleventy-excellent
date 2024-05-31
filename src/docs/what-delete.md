@@ -10,6 +10,7 @@ If you want to keep the defaults, but get rid of the example content, delete the
 - `builtwith.json` in `src/_data/`
 - all files in `src/posts`
 - the directory and all files in `src/docs`
+- the directory and all files in `src/styleguide`
 - all pages in `src/pages`, though you might want to keep `index.njk` as a starting point
 - You can delete `screenshots`, `blog` and `gallery` in `src/assets/images`.
   Keep the `favicon` and `template` folders though.

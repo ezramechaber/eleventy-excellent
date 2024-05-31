@@ -6,7 +6,7 @@ The favicons used are based on the recommendations from the [How to Favicon arti
 
 All favicons are in `src/assets/images/favicon`, and copied over to the root of the output folder.
 
-You can place them there manually, or use the script to autoate the process:
+You can place them there manually, or use the script to autmate the process:
 
 ```bash
 npm run favicons
