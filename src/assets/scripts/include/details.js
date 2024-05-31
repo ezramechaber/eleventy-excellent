@@ -1,4 +1,4 @@
-const container = document.querySelector('custom-details ');
+const container = document.querySelector('.details');
 const expandAllButton = container.querySelector('#expandAll');
 const collapseAllButton = container.querySelector('#collapseAll');
 const details = container.querySelectorAll('details');
