@@ -6,18 +6,33 @@ layout: page
 youtube: true
 ---
 
-This starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template.
+I’m a product leader at Bloomberg.com. I live in Brooklyn with my wife, our son and daughter, and our dog (hi, Dixon).
 
-It is built around the CSS boilerplate by Andy Bell and inspired by Andy's talk **'Be the browser’s mentor, not its micromanager'**.
+I lead product management teams behind core product for Bloomberg.com, which you probably know for Matt Levine's Money Stuff, but is also the world's leading source of business and financial news.
 
-If you want to know exactly how it all works, [read this article on piccalil.li](https://piccalil.li/blog/a-css-project-boilerplate/).
+People hire me to help them scale their teams, start/codify a data and experimentation practice, and stay customer-obsessed. I get really, really into the details, and I like the technical side of things. Sometimes I'm managing managers, other times I'm rolling up my sleeves as an early-stage IC PM.
 
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
+For advising, consulting, or just chatting, get in touch: [email me](mailto:contact@ezramechaber.com).
 
-- buildexcellentwebsit.es
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
-- Study the [original CSS boilerplate](https://github.com/Set-Creative-Studio/cube-boilerplate/tree/main)
+## Extracurriculars
 
-## Watch the talk
+### Digital Projects
 
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+
+* [Ezra Takes Photos](https://www.ezratakes.photos/)*Photos + EXIF data.*
+* [How to Take the Headache Out of CSS and HTML in Emails](https://dev.to/glitch/how-to-take-the-headache-out-of-css-and-html-in-emails-2kf0)*Automate SCSS compiling, CSS inlining, and previewing for email marketing (Note: I moved to the wonderful [MJML](https://mjml.io/))*
+* [Authentic Candidate Digital Ideas](https://glitch.com/~authentic-ideas)*Automating your 2020 strategy*
+* [Sign Bunny Generator](https://glitch.com/~sign-bunny)*2014 memes in 2019*
+* [808s and Code Mistakes](https://glitch.com/~sound-board)*Dead-simple TR-808 soundboard that's easy to customize*
+* [HTML Validator](https://glitch.com/~validate)*Quick and dirty HTML validator*
+
+### Speaking
+* Social Media Weekend at CUNY J-School*Panelist, Digital Politics*
+* Columbia Business School*Guest Lecturer, The Marketing of an American President*
+* Liberal Party of Canada Bootcamp*Featured Trainer, Digital Campaigning*
+
+### Et cetera
+* [Franny's Last Night in Town](https://medium.com/@ezramechaber/frannys-last-night-in-town-34ee3fcf20ea/)*[Written] A love letter to my favorite Brooklyn restaurant*
+* [Hearing Both Sides of Taylor Swift](https://www.theringer.com/music/2017/11/8/16621926/hearing-both-sides-of-taylor-swift)*[Interviewed] Can a pop star afford to stay apolitical in our current climate?*
+* [Crickets on a Train](https://www.huffpost.com/entry/crickets-new-york-subway-zaida-pugh_n_57c0a0e0e4b02673445011fa)*[Interviewed] I am a New Yorker now*
+* [Women of Soul: Live at the White House](https://soundcloud.com/obamawhitehouse/sets/in-performance-at-the-white)*[Recorded] Jill Scott, Ariana Grande, and more in glorious 320kbps.*
