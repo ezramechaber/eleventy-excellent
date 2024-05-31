@@ -1,20 +1,6 @@
 <!-- toggle drawer menu in _data/meta.js -->
 {% set drawerNav = meta.navigation.drawerNav %}
 
-{% css "inline" %}
-  {% if drawerNav %}
-    {% include "../css/nav-drawer.css" %}
-  {% else %}
-    {% include "../css/nav-pills.css" %}
-  {% endif %}
-{% endcss %}
-
-{% if drawerNav %}
-  {% js "defer" %}
-    {% include "../scripts/nav-drawer-inline.js" %}
-  {% endjs %}
-{% endif %}
-
 <nav id="mainnav" class="mainnav" aria-label="{{ meta.navigation.ariaTop }}">
   <ul class="cluster" role="list">
     {% for item in navigation.top %}
@@ -60,4 +46,18 @@
       </svg>
     </button>
   </template>
+{% endif %}
+
+{% css "inline" %}
+  {% if drawerNav %}
+    {% include "css/nav-drawer.css" %}
+  {% else %}
+    {% include "css/nav-pills.css" %}
+  {% endif %}
+{% endcss %}
+
+{% if drawerNav %}
+  {% js "defer" %}
+    {% include "scripts/nav-drawer-inline.js" %}
+  {% endjs %}
 {% endif %}
