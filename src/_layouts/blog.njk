@@ -34,7 +34,7 @@ layout: base
             {% endfor %}
           </div>
         {% endif %}
-        <p slot="content">{{ item.data.description }}</p>
+        <div slot="content" webc:nokeep>{{ item.data.description  | markdownFormat | safe }}</div>
       </custom-card>
     {% endfor %}
   </custom-masonry>
