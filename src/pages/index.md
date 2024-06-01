@@ -5,7 +5,7 @@ description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flex
 layout: 'home'
 blog:
   title: 'Blog'
-  intro: "Some stuff I'm writing."
+  intro: "The most recent posts."
 ---
 
 ## An Eleventy starter

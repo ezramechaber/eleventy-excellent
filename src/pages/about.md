@@ -36,3 +36,7 @@ For advising, consulting, or just chatting, get in touch: [email me](mailto:cont
 * [Hearing Both Sides of Taylor Swift](https://www.theringer.com/music/2017/11/8/16621926/hearing-both-sides-of-taylor-swift)*[Interviewed] Can a pop star afford to stay apolitical in our current climate?*
 * [Crickets on a Train](https://www.huffpost.com/entry/crickets-new-york-subway-zaida-pugh_n_57c0a0e0e4b02673445011fa)*[Interviewed] I am a New Yorker now*
 * [Women of Soul: Live at the White House](https://soundcloud.com/obamawhitehouse/sets/in-performance-at-the-white)*[Recorded] Jill Scott, Ariana Grande, and more in glorious 320kbps.*
+
+### About This Site
+
+I forked this from [Eleventy Excellent][https://eleventy-excellent.netlify.app/]
