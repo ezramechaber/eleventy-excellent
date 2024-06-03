@@ -7,7 +7,7 @@
     font-weight: 800;
     src:
       local(''),
-      url('/assets/fonts/figtree/figtree-extrabold.woff2') format('woff2');
+      url('../fonts/figtree/figtree-extrabold.woff2') format('woff2');
   }
 
   @font-face {
@@ -17,7 +17,7 @@
     font-weight: 700;
     src:
       local(''),
-      url('/assets/fonts/figtree/figtree-bold.woff2') format('woff2');
+      url('../fonts/figtree/figtree-bold.woff2') format('woff2');
   }
 
   @font-face {
@@ -27,7 +27,7 @@
     font-weight: 500;
     src:
       local(''),
-      url('/assets/fonts/figtree/figtree-medium.woff2') format('woff2');
+      url('../fonts/figtree/figtree-medium.woff2') format('woff2');
   }
 
   @font-face {
@@ -37,7 +37,7 @@
     font-weight: 500;
     src:
       local(''),
-      url('/assets/fonts/figtree/figtree-mediumitalic.woff2') format('woff2');
+      url('../fonts/figtree/figtree-mediumitalic.woff2') format('woff2');
   }
 }
 
@@ -46,9 +46,9 @@
   @font-face {
     font-family: 'Figtree';
     src:
-      url('/assets/fonts/figtree/figtree-variable[wght].woff2')
+      url('../fonts/figtree/figtree-variable[wght].woff2')
         format('woff2 supports variations'),
-      url('/assets/fonts/figtree/figtree-variable[wght].woff2') format('woff2-variations');
+      url('../fonts/figtree/figtree-variable[wght].woff2') format('woff2-variations');
     font-weight: 300 900;
     font-style: normal;
     font-display: swap;
@@ -57,9 +57,9 @@
   @font-face {
     font-family: 'Figtree';
     src:
-      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2')
+      url('../fonts/figtree/figtree-variable-italic[wght].woff2')
         format('woff2 supports variations'),
-      url('/assets/fonts/figtree/figtree-variable-italic[wght].woff2')
+      url('../fonts/figtree/figtree-variable-italic[wght].woff2')
         format('woff2-variations');
     font-weight: 300 900;
     font-style: italic;
@@ -75,7 +75,7 @@
   font-weight: 700;
   src:
     local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2');
+    url(../fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2');
 }
 
 @font-face {
@@ -85,5 +85,5 @@
   font-weight: normal;
   src:
     local(''),
-    url(/assets/fonts/robotomono/robotomono-regular.woff2) format('woff2');
+    url(../fonts/robotomono/robotomono-regular.woff2) format('woff2');
 }
