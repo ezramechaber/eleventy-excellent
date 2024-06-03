@@ -129,6 +129,9 @@ module.exports = eleventyConfig => {
     'src/assets/images/favicon/*': '/'
   });
 
+  // Add Base plugin to make pathPrefix work correctly
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
   // 	--------------------- general config -----------------------
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
@@ -137,7 +140,7 @@ module.exports = eleventyConfig => {
     dataTemplateEngine: 'njk',
 
     // Optional (default is set): If your site deploys to a subdirectory, change `pathPrefix`, for example with with GitHub pages
-    pathPrefix: '/elventy-excellent',
+    pathPrefix: '/eleventy-excellent',
 
     dir: {
       output: '_site',
