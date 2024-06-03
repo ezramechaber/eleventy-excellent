@@ -1,16 +1,15 @@
 ---
 title: About
 permalink: /about/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: ''
 layout: page
 youtube: true
 ---
 
-I’m a product leader at Bloomberg.com. I live in Brooklyn with my wife, our son and daughter, and our dog (hi, Dixon).
-
-I lead product management teams behind core product for Bloomberg.com, which you probably know for Matt Levine's Money Stuff, but is also the world's leading source of business and financial news.
-
-People hire me to help them scale their teams, start/codify a data and experimentation practice, and stay customer-obsessed. I get really, really into the details, and I like the technical side of things. Sometimes I'm managing managers, other times I'm rolling up my sleeves as an early-stage IC PM.
+💼 Monday through Friday, I lead core product teams for Bloomberg.com.
+🌎 I live in Broooklyn, NY with my wife and our two kids.
+⛷️ I like to ski, I'm a recent obsessive.
+⏱️ In the rest of my free time, I climb rocks, and sometimes build up old road bikes.
 
 For advising, consulting, or just chatting, get in touch: [email me](mailto:contact@ezramechaber.com).
 
@@ -27,15 +26,22 @@ For advising, consulting, or just chatting, get in touch: [email me](mailto:cont
 * [HTML Validator](https://glitch.com/~validate)*Quick and dirty HTML validator*
 
 ### Speaking
-* Social Media Weekend at CUNY J-School*Panelist, Digital Politics*
-* Columbia Business School*Guest Lecturer, The Marketing of an American President*
-* Liberal Party of Canada Bootcamp*Featured Trainer, Digital Campaigning*
+* Social Media Weekend at CUNY J-School
+_Panelist, Digital Politics_
+* Columbia Business School
+_Guest Lecturer, The Marketing of an American President_
+* Liberal Party of Canada Bootcamp
+_Featured Trainer, Digital Campaigning_
 
 ### Et cetera
-* [Franny's Last Night in Town](https://medium.com/@ezramechaber/frannys-last-night-in-town-34ee3fcf20ea/)*[Written] A love letter to my favorite Brooklyn restaurant*
-* [Hearing Both Sides of Taylor Swift](https://www.theringer.com/music/2017/11/8/16621926/hearing-both-sides-of-taylor-swift)*[Interviewed] Can a pop star afford to stay apolitical in our current climate?*
-* [Crickets on a Train](https://www.huffpost.com/entry/crickets-new-york-subway-zaida-pugh_n_57c0a0e0e4b02673445011fa)*[Interviewed] I am a New Yorker now*
-* [Women of Soul: Live at the White House](https://soundcloud.com/obamawhitehouse/sets/in-performance-at-the-white)*[Recorded] Jill Scott, Ariana Grande, and more in glorious 320kbps.*
+* [Franny's Last Night in Town](https://medium.com/@ezramechaber/frannys-last-night-in-town-34ee3fcf20ea/)
+_[Written] A love letter to my favorite Brooklyn restaurant_
+* [Hearing Both Sides of Taylor Swift](https://www.theringer.com/music/2017/11/8/16621926/hearing-both-sides-of-taylor-swift)
+_[Interviewed] Can a pop star afford to stay apolitical in our current climate?_
+* [Crickets on a Train](https://www.huffpost.com/entry/crickets-new-york-subway-zaida-pugh_n_57c0a0e0e4b02673445011fa)
+_[Interviewed] I am a New Yorker now_
+* [Women of Soul: Live at the White House](https://soundcloud.com/obamawhitehouse/sets/in-performance-at-the-white)
+_[Recorded] Jill Scott, Ariana Grande, and more in glorious 320kbps._
 
 ### About This Site
 

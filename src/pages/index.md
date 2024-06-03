@@ -1,22 +1,18 @@
 ---
 permalink: /index.html
-title: ''
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: "I'm Ezra"
+description: 'Eleventy starter'
 layout: 'home'
 blog:
   title: 'Blog'
   intro: "The most recent posts."
 ---
 
-## An Eleventy starter
+I lead the core product teams for Bloomberg.com—which you probably know for Matt Levine's [Money Stuff](https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html)—but is also the world's leading source of business and financial news.
 
-This starter is based on [Andy Bell's CSS workflow/boilerplate](/about/).
-In Andy's words, we'd rather hint the browser than micromanage it, using progressive enhancement, CSS layout, fluid type & spacing, and modern CSS features.
-The aim is to create frontends that look good to everyone, regardless of device, connection speed or context.
+People hire me to:
+- Scale product teams
+- Start/codify a data and experimentation practice
+- Stay customer-obsessed.
 
-I have tried to [document a few things](/get-started/).
-
-I keep a [branch of v1](https://github.com/madrilene/eleventy-excellent/tree/v1) because I have changed a lot of things.
-At the same time, I'm already [working on v3](https://github.com/madrilene/eleventy-excellent/tree/v3), where I'm switching to ESM and building components with webC where it makes sense.
-
-**Have fun** and let me know if you find any issues or have ideas for improvements!
+I get really, really into the details, and I like the `technical` side of things. Sometimes I'm managing managers, other times I'm rolling up my sleeves as an early-stage IC PM.

@@ -35,7 +35,7 @@
           <div aria-hidden="true">{% include 'svg/rss.svg' %}</div>
         </a>
 
-        {# {% for key, value in personal.platforms %}
+        {% for key, value in personal.platforms %}
           {% if value != "" %}
             <!-- regular platforms -->
             <a href="{{ value }}" rel="me">
@@ -43,7 +43,7 @@
               <div aria-hidden="true">{% include 'svg/platform-' + key + '.svg' %}</div>
             </a>
           {% endif %}
-        {% endfor %} #}
+        {% endfor %}
       </nav>
     </div>
 
