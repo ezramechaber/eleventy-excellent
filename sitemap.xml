@@ -154,7 +154,7 @@
 
     <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2024-06-03T14:50:34.099Z</lastmod>
+        <lastmod>2024-06-03T14:54:21.031Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -166,7 +166,7 @@
 
     <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2024-06-03T14:50:34.099Z</lastmod>
+        <lastmod>2024-06-03T14:54:21.031Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -178,7 +178,7 @@
 
     <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2024-06-03T14:50:34.099Z</lastmod>
+        <lastmod>2024-06-03T14:54:21.031Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
