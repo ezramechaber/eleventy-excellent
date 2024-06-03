@@ -137,7 +137,7 @@ module.exports = eleventyConfig => {
     dataTemplateEngine: 'njk',
 
     // Optional (default is set): If your site deploys to a subdirectory, change `pathPrefix`, for example with with GitHub pages
-    pathPrefix: '/',
+    pathPrefix: '/elventy-excellent',
 
     dir: {
       output: '_site',
