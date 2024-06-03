@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://localhost:8080/">
+  <title>Ezra Mechaber</title>
+  <subtitle>Product person. Brooklyn, NY</subtitle>
+  <link href="http://localhost:8080/feed.xml" rel="self" />
+  <link href="http://localhost:8080/" />
+  
+  <updated>2024-05-23T00:00:00Z</updated>
+  <id>http://localhost:8080/</id>
+  <author>
+    <name>Ezra Mechaber</name>
+    <email>contact@ezramechaber.com</email>
+  </author>
+  <entry>
+    <title>Sports Betting</title>
+    <link href="http://localhost:8080/blog/sports-betting/" />
+    <updated>2024-05-23T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/sports-betting/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;As someone who is neither inclined towards sports nor betting, but who is endlessly fascinated and intrigued by a hustle, I loved &lt;a href=&quot;https://omny.fm/shows/odd-lots/how-a-professional-sports-bettor-really-makes-mone&quot; rel=&quot;noopener&quot;&gt;this Odd Lots interview with a professional sports gambler&lt;/a&gt;. (Disclosure: Bloomberg is my employer, all opinions mine, blah blah blah.)&lt;/p&gt;
+&lt;p&gt;I have been thinking about the influx of online sports books, legalized by a Supreme Court decision about six years ago. I’ve been thinking about it for two reasons:&lt;/p&gt;
+&lt;ul class=&quot;list&quot;&gt;
+&lt;li&gt;To the extent that I am ever near a television while a game is on, it’s impossible to miss the advertising, marketing, and extent to which gambling has oozed into the experience of sports on television.&lt;/li&gt;
+&lt;li&gt;Shortly after legalization in NYC, &lt;a href=&quot;https://maxread.substack.com/p/i-made-3000-gambling-from-home&quot; rel=&quot;noopener&quot;&gt;Max Read wrote&lt;/a&gt; a cursory explanation of how to take sports book companies up on their loss leading “free money” ads and come out on top.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Anyways, this interview by Joe and Tracy is great:&lt;/p&gt;
+&lt;ul class=&quot;list&quot;&gt;
+&lt;li&gt;It’s possible to arbitrage the books off of each other, searching for mispriced bets.&lt;/li&gt;
+&lt;li&gt;You can bet on anything and some of those things are easier to get an edge on: taller centers win more tip-offs, so it’s not really a 50/50.&lt;/li&gt;
+&lt;li&gt;Even professional gamblers think sports books advertising is a bit unseemly, and unfairly targets children.&lt;/li&gt;
+&lt;/ul&gt;
+</content
+    >
+  </entry>
+  <entry>
+    <title>No Wrong Doors</title>
+    <link href="http://localhost:8080/blog/no-wrong-doors/" />
+    <updated>2024-05-23T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/no-wrong-doors/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;From Will Larson, &lt;a href=&quot;https://lethain.com/no-wrong-doors/&quot; rel=&quot;noopener&quot;&gt;a nice thought experiment&lt;/a&gt; on how to make work bureacracy less brutal:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some governmental agencies have started to adopt No Wrong Door policies, which aim to provide help–often health or mental health services–to individuals even if they show up to the wrong agency to request help. The core insight is that the employees at those agencies are far better equipped to navigate their own bureaucracies than an individual who knows nothing about the bureaucracy’s internal function.&lt;/p&gt;
+&lt;p&gt;For the most part, technology organizations are not complex bureaucracies, but sometimes they do seem to operate that way.&lt;/p&gt;
+&lt;p&gt;…&lt;br /&gt;
+Something I’ve been thinking about recently is how engineering organizations can adopt a variant of the No Wrong Doors policy to directly connect folks with problems with the right team and information. Then the first contact point becomes a support system for navigating the bureaucracy successfully.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content
+    >
+  </entry>
+  <entry>
+    <title>Cautious Clay - Another Half</title>
+    <link href="http://localhost:8080/blog/cautious-clay-another-half/" />
+    <updated>2024-05-21T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/cautious-clay-another-half/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0sAPtWTy125jIkSDOT9YdO?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
+  <entry>
+    <title>This Week’s GPT, a SQL Writer</title>
+    <link href="http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/" />
+    <updated>2024-05-20T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;I write a lot of SQL. I don’t mind it.&lt;/p&gt;
+&lt;p&gt;But I have three problems:&lt;/p&gt;
+&lt;ol class=&quot;list&quot;&gt;
+&lt;li&gt;I constantly forget things like database-specific nuances—what do I do for RedShift? BigQuery? How do they handle this function differently?&lt;/li&gt;
+&lt;li&gt;I have a decent grasp on aggregate functions and transforms but not a great one. I want to compute whether something was stat sig by grabbing the variance? Oof, can’t remember.&lt;/li&gt;
+&lt;li&gt;The data schema in a table I’m working with is a mess with lots of objects and properties inside them. I can’t remember where the thing is that I want.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So I tried to build a quick solution with a GPT assistant. I gave it the following context:&lt;/p&gt;
+&lt;ol class=&quot;list&quot;&gt;
+&lt;li&gt;Our data dictionary for all the kinds of things this table tracks (imagine product analytics, so events, possible values, etc.)&lt;/li&gt;
+&lt;li&gt;Our schema for the table I care most about, with all of the different field names and data types.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And the following prompt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are an extremely terse data scientist familiar with [Database X in Flavor Y]. Help me write queries.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So far it’s a hit. And the Assistants playground in Azure lets me save it so I’m not reinventing the wheel and pasting in context every time.&lt;/p&gt;
+</content
+    >
+  </entry>
+  <entry>
+    <title>Accelerating A/B Tests</title>
+    <link href="http://localhost:8080/blog/accelerating-a/b-tests/" />
+    <updated>2024-05-20T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/accelerating-a/b-tests/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;How do you run more, better, faster A/B tests?&lt;/p&gt;
+&lt;p&gt;This isn’t for everyone: If you aren’t drowning in traffic, if you only have 10 customers, you shouldn’t even bother here. That’s another conversation.&lt;/p&gt;
+&lt;p&gt;But if you’ve got enough traffic that you’re running multiple experiments, multiple PMs running experiments, etc. this is worth a read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dataanalysis.substack.com/p/methods-to-accelerate-ab-testing?r=103xc&amp;amp;triedRedirect=true&quot; rel=&quot;noopener&quot;&gt;Olga’s post in Data Analysis Journal on accelerating A/B testing&lt;/a&gt; covers some of the big ways of running experiments faster, including Winsorizing, CUPED, etc.&lt;/p&gt;
+&lt;p&gt;A bunch of these were new to me.&lt;/p&gt;
+</content
+    >
+  </entry>
+  <entry>
+    <title>Swimming Paul - Lost</title>
+    <link href="http://localhost:8080/blog/swimming-paul-lost/" />
+    <updated>2024-05-17T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/swimming-paul-lost/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0cFXO8OMdeLeShQoEp7pxi?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
+  <entry>
+    <title>Moxy The Band - The Feeling of Letting Go</title>
+    <link href="http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/" />
+    <updated>2023-03-21T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;The 80’s synths are so strong, the bassline slaps, the chorus is large.&lt;/p&gt;
+&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/6fzeWVlHJoHAIFYTLgy7l6?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
+  <entry>
+    <title>boygenius - Not Strong Enough</title>
+    <link href="http://localhost:8080/blog/boygenius-not-strong-enough/" />
+    <updated>2023-03-15T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/boygenius-not-strong-enough/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;A Phoebe Bridgers supergroup/side project. Wowza.&lt;/p&gt;
+&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/72GNW1xKoi5BAhMYAW6e7e?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
+  <entry>
+    <title>Gang of Youths - angel in realtime.</title>
+    <link href="http://localhost:8080/blog/gang-of-youths-angel-in-realtime/" />
+    <updated>2023-02-28T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/gang-of-youths-angel-in-realtime/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;Soaring. “goal of the century” is like Royksopp gone rock.&lt;/p&gt;
+&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/album/4xrHCOnujQW9DDLmntffLP?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;380&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
+  <entry>
+    <title>Perks and benefits</title>
+    <link href="http://localhost:8080/blog/perks-and-benefits/" />
+    <updated>2023-02-27T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/perks-and-benefits/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;I read Tony Faddell’s “Build” last year, and I thought a lot of it would stick with me.&lt;/p&gt;
+&lt;p&gt;Only one thing has truly stuck: Perks and benefits, and why companies should provide benefits but beware of “perks” like the plague.&lt;/p&gt;
+&lt;p&gt;In Faddell’s telling, perks—like free lunch or dog baths—are just things people get used to. And once they’re used to it, you can’t get rid of it, but they also don’t view it as special. It’s become a “right.”&lt;/p&gt;
+&lt;p&gt;That rings mostly true to me? But now that I’m at a different company, it also has me thinking about what I value in perks and benefits.&lt;/p&gt;
+&lt;p&gt;The perk I keep coming back to is an “unlimited book budget.” All the L&amp;amp;D you can read. I reliably spent a couple hundred dollars per year on books like Build, and got to bring what I learned back to my team.&lt;/p&gt;
+&lt;p&gt;It was a good one!&lt;/p&gt;
+</content
+    >
+  </entry>
+</feed>
