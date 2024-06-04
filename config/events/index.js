@@ -9,7 +9,8 @@ const Image = require('@11ty/eleventy-img');
 const ogImagesDir = './src/assets/og-images';
 
 const svgToJpeg = async function () {
-  const socialPreviewImagesDir = 'dist/assets/og-images/';
+  // seems like this should be a relative link but it's not.
+  const socialPreviewImagesDir = '_site/assets/og-images/';
   const files = await fsPromises.readdir(socialPreviewImagesDir);
   if (files.length > 0) {
     files.forEach(function (filename) {
