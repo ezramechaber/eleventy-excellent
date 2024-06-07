@@ -5,12 +5,23 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-06-04T00:00:00Z</updated>
+  <updated>2024-06-07T00:00:00Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Ezra Mechaber</name>
     <email>contact@ezramechaber.com</email>
   </author>
+  <entry>
+    <title>Beatenberg - Ithaca</title>
+    <link href="http://localhost:8080/blog/beatenberg-ithaca/" />
+    <updated>2024-06-07T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/beatenberg-ithaca/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/2U2J8Hyv1CxlAS5cJZ0ODj?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
+    >
+  </entry>
   <entry>
     <title>Via Zach Seward, the State of Media</title>
     <link href="http://localhost:8080/blog/via-zach-seward-the-state-of-media/" />
