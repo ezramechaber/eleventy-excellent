@@ -146,6 +146,18 @@
     
   
   
+
+  
+  
+
+    <url>
+        <loc>http://localhost:8080/blog/civic-band/</loc>
+        <lastmod>2024-06-21T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+  
   
   
   
@@ -178,7 +190,7 @@
 
     <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2024-06-21T15:28:05.098Z</lastmod>
+        <lastmod>2024-06-21T16:42:20.378Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -190,7 +202,7 @@
 
     <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2024-06-21T15:28:05.098Z</lastmod>
+        <lastmod>2024-06-21T16:42:20.378Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -202,7 +214,7 @@
 
     <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2024-06-21T15:28:05.098Z</lastmod>
+        <lastmod>2024-06-21T16:42:20.378Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     

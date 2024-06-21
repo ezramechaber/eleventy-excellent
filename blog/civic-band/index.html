@@ -12,7 +12,7 @@
     <!-- title -->
     <title>
       
-        Tag: music
+        Civic Band
       
     </title>
 
@@ -45,9 +45,36 @@
 
 
     <!--  inline blogpost schema  -->
-    
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "http://localhost:8080#website"
+    },
+    "@id": "",
+    "headline": "Civic Band",
+    "description": "A super cool way to open up gov.",
+    "image": "http://localhost:8080/assets/images/template/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Ezra Mechaber",
+      "url": "http://localhost:8080"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ezra Mechaber"
+    },
+    "datePublished": "2024-06-21T00:00:00.000Z"
+  }
+</script>
 
-    <link rel="stylesheet" href="/assets/css/global.css?2c10-fa83-9acf" />
+
+    <link rel="stylesheet" href="/assets/css/global.css?07f5-fbc6-e19d" />
 
     <!-- preloads -->
     <link
@@ -74,9 +101,6 @@
     <script defer src="https://cloud.umami.is/script.js" data-website-id="8e84a85f-f141-4f9d-98e4-07811f2921ab"></script>
 
     
-      <!-- masonry fallback, if true in frontmatter -->
-      <script src="/assets/scripts/masonry.js?2c10-fa83-9acf" defer></script>
-    
 
     
 
@@ -84,17 +108,17 @@
 
     
       <!-- easteregg js, if true in meta -->
-      <script src="/assets/scripts/easteregg.js?2c10-fa83-9acf" defer></script>
+      <script src="/assets/scripts/easteregg.js?07f5-fbc6-e19d" defer></script>
     
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
-    <base href="/tags/music/" />
+    <base href="/blog/civic-band/" />
 
 <meta
   name="description"
   content="
   
-    Product person. Brooklyn, NY.
+    A super cool way to open up gov.
   
   "
 />
@@ -113,7 +137,7 @@
 <meta name="view-transition" content="same-origin" />
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="http://localhost:8080/tags/music/" />
+<link rel="canonical" href="http://localhost:8080/blog/civic-band/" />
 
 <!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt" />
@@ -121,26 +145,26 @@
 
 
 <!-- Open Graph meta  -->
-<meta property="og:url" content="http://localhost:8080/tags/music/" />
+<meta property="og:url" content="http://localhost:8080/blog/civic-band/" />
 <meta property="og:type" content="website" />
 <meta
   property="og:title"
-  content="Tag: music"
+  content="Civic Band"
 />
 
 <meta
   property="og:image"
-  content="http://localhost:8080/assets/images/template/opengraph-default.jpg"
+  content="http://localhost:8080/assets/og-images/civic-band-preview.jpeg"
 />
 <meta
   property="og:image:alt"
-  content="Visible content: Eleventy starter built around the CSS workflow for Cube CSS, Every Layout, Design Tokens and Tailwind for uitility, based on the concepts explained in buildexcellentwebsit.es"
+  content="Civic Band"
 />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta
   property="og:description"
-  content="Product person. Brooklyn, NY."
+  content="A super cool way to open up gov."
 />
 <meta property="og:site_name" content="Ezra Mechaber" />
 <meta property="og:locale" content="en_EN" />
@@ -166,7 +190,7 @@
 
   </head>
 
-  <body class="tags">
+  <body class="post">
     <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="wrapper">
@@ -202,7 +226,7 @@
         <a
           class="nav"
           href="/blog/"
-          
+          data-state="active"
           >Blog</a
         >
       </li>
@@ -217,284 +241,62 @@
 
 
     <main id="main" class="flow">
-<article class="region">
-  <div class="wrapper flow">
-    <h1 class="gradient-text-linear">Tag: music</h1>
+<article class="region blog" style="--region-space-top: var(--space-xl-2xl)">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">Civic Band</h1>
+
+    
     
 
-<ul class="grid region" role="list" data-rows="masonry" data-layout="50-50">
-	<!-- loop posts -->
-	 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/beatenberg-ithaca/">Beatenberg - Ithaca</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-06-07T00:00:00.000Z">
-  June 7, 2024
+    <p class="meta | cluster" style="--gutter: var(--space-xs-s)">
+      <!-- date -->
+       <time datetime="2024-06-21T00:00:00.000Z">
+  June 21, 2024
 </time>
 
       
+        <!-- tags -->
         
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
+          <a class="button post-tag" href="/tags/tech"> tech </a>
         
       
-    </div>
-    <p>Today&#39;s Music</p>
+    </p>
+
+    <p><a href="https://civic.band/how.html" rel="noopener">Really cool project called CivicBand</a>. It uses publicly available APIs to grab PDFs of meeting notes, then OCRs them, then uploads them via Datasette for exploration. Open data!!</p>
+<blockquote>
+<ol class="list">
+<li>We fetch PDFs of civic minutes anywhere we can get easy API access. We don’t “scrape” the listing sites, at least not right now.</li>
+<li>We break those PDFs up into images of each page of the PDF</li>
+<li>We use tesseract to OCR those images into text</li>
+<li>We put each page of now-text into a sqlite database</li>
+<li>Each site is a datasette instance. We have a generation script that creates the Caddyfile for the whole collection, and the metadata.json for each instance</li>
+<li>The whole thing is deployed to one VPS in Oregon.</li>
+</ol>
+</blockquote>
+<p><a href="https://simonwillison.net/2024/Jun/19/civic-band/" rel="noopener">via Simon Willison.</a></p>
+
+    
+  <hr />
+  <p class="text-step-min-1">
+    
+    <a
+      href="https://github.com/madrilene/eleventy-excellent/tree/main/./src/posts/2024-06-21-civic-band.md"
+      >View this page on GitHub</a
+    >.
+  </p>
+
+
   </div>
-</li>
- 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/cautious-clay-another-half/">Cautious Clay - Another Half</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-21T00:00:00.000Z">
-  May 21, 2024
-</time>
 
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
- 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/swimming-paul-lost/">Swimming Paul - Lost</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-17T00:00:00.000Z">
-  May 17, 2024
-</time>
-
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
- 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/moxy-the-band-the-feeling-of-letting-go/">Moxy The Band - The Feeling of Letting Go</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2023-03-21T00:00:00.000Z">
-  March 21, 2023
-</time>
-
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
- 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/boygenius-not-strong-enough/">boygenius - Not Strong Enough</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2023-03-15T00:00:00.000Z">
-  March 15, 2023
-</time>
-
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
- 
-	<!-- activate tags -->
-	
-	<!-- set heading context -->
-	
-	<!-- card -->
-	<li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/gang-of-youths-angel-in-realtime/">Gang of Youths - angel in realtime.</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2023-02-28T00:00:00.000Z">
-  February 28, 2023
-</time>
-
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
- 
-</ul>
-
-<h2>More tags:</h2>
-
-<ul class="taglist | my-s-m cluster" role="list">
-  
- <li><a
-    href="/tags/ab-testing"
-    class="button"
-    
-  >
-    ab-testing
-  </a></li>
-  
- <li><a
-    href="/tags/ai"
-    class="button"
-    
-  >
-    ai
-  </a></li>
-  
- <li><a
-    href="/tags/etc"
-    class="button"
-    
-  >
-    etc
-  </a></li>
-  
- <li><a
-    href="/tags/media"
-    class="button"
-    
-  >
-    media
-  </a></li>
-  
- <li><a
-    href="/tags/music"
-    class="button"
-    data-state="active"
-  >
-    music
-  </a></li>
-  
- <li><a
-    href="/tags/tech"
-    class="button"
-    
-  >
-    tech
-  </a></li>
-  
- <li><a
-    href="/tags/work"
-    class="button"
-    
-  >
-    work
-  </a></li>
-  
-</ul>
-
-
-
+  <!--  h-card infos: https://indieweb.org/authorship -->
+  <div hidden class="h-entry">
+    <a class="u-url" href="http://localhost:8080/blog/civic-band/">Civic Band</a>
+    <a class="p-name u-url" rel="author" href="http://localhost:8080">Ezra Mechaber</a>
+    <img
+      class="u-author h-card"
+      src="http://localhost:8080/favicon.png"
+      alt="Ezra Mechaber"
+    />
   </div>
 </article>
 </main>

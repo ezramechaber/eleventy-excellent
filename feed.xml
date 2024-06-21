@@ -5,12 +5,35 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-06-07T00:00:00Z</updated>
+  <updated>2024-06-21T00:00:00Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Ezra Mechaber</name>
     <email>contact@ezramechaber.com</email>
   </author>
+  <entry>
+    <title>Civic Band</title>
+    <link href="http://localhost:8080/blog/civic-band/" />
+    <updated>2024-06-21T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/civic-band/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;&lt;a href=&quot;https://civic.band/how.html&quot; rel=&quot;noopener&quot;&gt;Really cool project called CivicBand&lt;/a&gt;. It uses publicly available APIs to grab PDFs of meeting notes, then OCRs them, then uploads them via Datasette for exploration. Open data!!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol class=&quot;list&quot;&gt;
+&lt;li&gt;We fetch PDFs of civic minutes anywhere we can get easy API access. We don’t “scrape” the listing sites, at least not right now.&lt;/li&gt;
+&lt;li&gt;We break those PDFs up into images of each page of the PDF&lt;/li&gt;
+&lt;li&gt;We use tesseract to OCR those images into text&lt;/li&gt;
+&lt;li&gt;We put each page of now-text into a sqlite database&lt;/li&gt;
+&lt;li&gt;Each site is a datasette instance. We have a generation script that creates the Caddyfile for the whole collection, and the metadata.json for each instance&lt;/li&gt;
+&lt;li&gt;The whole thing is deployed to one VPS in Oregon.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://simonwillison.net/2024/Jun/19/civic-band/&quot; rel=&quot;noopener&quot;&gt;via Simon Willison.&lt;/a&gt;&lt;/p&gt;
+</content
+    >
+  </entry>
   <entry>
     <title>Beatenberg - Ithaca</title>
     <link href="http://localhost:8080/blog/beatenberg-ithaca/" />
