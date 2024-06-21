@@ -4,7 +4,7 @@ description: A super cool way to open up gov.
 date: 2024-06-07
 tags:
   - posts
-  - music
+  - tech
 ---
 
 [Really cool project called CivicBand](https://civic.band/how.html). It uses publicly available APIs to grab PDFs of meeting notes, then OCRs them, then uploads them via Datasette for exploration. Open data!!
