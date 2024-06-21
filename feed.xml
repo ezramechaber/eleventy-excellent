@@ -12,6 +12,24 @@
     <email>contact@ezramechaber.com</email>
   </author>
   <entry>
+    <title>The &#39;R&#39; in RAG Stands for &#39;Royalties&#39;</title>
+    <link href="http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/" />
+    <updated>2024-06-21T00:00:00Z</updated>
+    <id>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;O’Reilly is a huge publishing group, and they’re committed to figuring out where their chatbot is sourcing answers, and &lt;a href=&quot;https://www.oreilly.com/radar/the-new-oreilly-answers-the-r-in-rag-stands-for-royalties/&quot; rel=&quot;noopener&quot;&gt;attributing royalties back to the original writers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As they describe it, O’Reilly Answers is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A solution capable of reliably answering questions for learners, crediting the sources it used to generate its answers, and then paying royalties to those sources for their contributions&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In other words: RAG is used to figure out what books to pull from, what answers to give. And because it’s using RAG to grab from specific sources, it can also apportion out royalties based on where it’s drawing from.&lt;/p&gt;
+&lt;p&gt;Seems highly unlikely to be perfect, but as Casey Newton said, &lt;a href=&quot;https://www.platformer.news/how-to-stop-perplexity-oreilly-ai-publishing/&quot; rel=&quot;noopener&quot;&gt;they got the incentive structure right&lt;/a&gt;.&lt;/p&gt;
+</content
+    >
+  </entry>
+  <entry>
     <title>Civic Band</title>
     <link href="http://localhost:8080/blog/civic-band/" />
     <updated>2024-06-21T00:00:00Z</updated>
