@@ -3,7 +3,6 @@ title: About
 permalink: /about/index.html
 description: ''
 layout: page
-youtube: true
 ---
 
 💼 Monday through Friday, I lead core product teams for Bloomberg.com.
