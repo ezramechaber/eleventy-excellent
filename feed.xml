@@ -10,229 +10,116 @@
   <author>
     <name>Ezra Mechaber</name>
     <email>contact@ezramechaber.com</email>
-  </author>
-  <entry>
-    <title>The &#39;R&#39; in RAG Stands for &#39;Royalties&#39;</title>
-    <link href="http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/" />
-    <updated>2024-06-21T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;O’Reilly is a huge publishing group, and they’re committed to figuring out where their chatbot is sourcing answers, and &lt;a href=&quot;https://www.oreilly.com/radar/the-new-oreilly-answers-the-r-in-rag-stands-for-royalties/&quot; rel=&quot;noopener&quot;&gt;attributing royalties back to the original writers&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As they describe it, O’Reilly Answers is:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A solution capable of reliably answering questions for learners, crediting the sources it used to generate its answers, and then paying royalties to those sources for their contributions&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In other words: RAG is used to figure out what books to pull from, what answers to give. And because it’s using RAG to grab from specific sources, it can also apportion out royalties based on where it’s drawing from.&lt;/p&gt;
-&lt;p&gt;Seems highly unlikely to be perfect, but as Casey Newton said, &lt;a href=&quot;https://www.platformer.news/how-to-stop-perplexity-oreilly-ai-publishing/&quot; rel=&quot;noopener&quot;&gt;they got the incentive structure right&lt;/a&gt;.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Civic Band</title>
-    <link href="http://localhost:8080/blog/civic-band/" />
-    <updated>2024-06-21T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/civic-band/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;&lt;a href=&quot;https://civic.band/how.html&quot; rel=&quot;noopener&quot;&gt;Really cool project called CivicBand&lt;/a&gt;. It uses publicly available APIs to grab PDFs of meeting notes, then OCRs them, then uploads them via Datasette for exploration. Open data!!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol class=&quot;list&quot;&gt;
-&lt;li&gt;We fetch PDFs of civic minutes anywhere we can get easy API access. We don’t “scrape” the listing sites, at least not right now.&lt;/li&gt;
-&lt;li&gt;We break those PDFs up into images of each page of the PDF&lt;/li&gt;
-&lt;li&gt;We use tesseract to OCR those images into text&lt;/li&gt;
-&lt;li&gt;We put each page of now-text into a sqlite database&lt;/li&gt;
-&lt;li&gt;Each site is a datasette instance. We have a generation script that creates the Caddyfile for the whole collection, and the metadata.json for each instance&lt;/li&gt;
-&lt;li&gt;The whole thing is deployed to one VPS in Oregon.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://simonwillison.net/2024/Jun/19/civic-band/&quot; rel=&quot;noopener&quot;&gt;via Simon Willison.&lt;/a&gt;&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Beatenberg - Ithaca</title>
-    <link href="http://localhost:8080/blog/beatenberg-ithaca/" />
-    <updated>2024-06-07T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/beatenberg-ithaca/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/2U2J8Hyv1CxlAS5cJZ0ODj?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>Via Zach Seward, the State of Media</title>
-    <link href="http://localhost:8080/blog/via-zach-seward-the-state-of-media/" />
-    <updated>2024-06-04T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/via-zach-seward-the-state-of-media/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;blockquote class=&quot;text-post-media&quot; data-text-post-permalink=&quot;https://www.threads.net/@zseward/post/C7za4jZulaV&quot; data-text-post-version=&quot;0&quot; id=&quot;ig-tp-C7za4jZulaV&quot; style=&quot; background:#FFF; border-width: 1px; border-style: solid; border-color: #00000026; border-radius: 16px; max-width:540px; margin: 1px; min-width:270px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt; &lt;a href=&quot;https://www.threads.net/@zseward/post/C7za4jZulaV&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%; font-family: -apple-system, BlinkMacSystemFont, sans-serif;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; padding: 40px; display: flex; flex-direction: column; align-items: center;&quot;&gt;&lt;div style=&quot; display:block; height:32px; width:32px; padding-bottom:20px;&quot;&gt; &lt;svg aria-label=&quot;Threads&quot; height=&quot;32px&quot; role=&quot;img&quot; viewBox=&quot;0 0 192 192&quot; width=&quot;32px&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt; &lt;path d=&quot;M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt; &lt;div style=&quot; font-size: 15px; line-height: 21px; color: #999999; font-weight: 400; padding-bottom: 4px; &quot;&gt; Post by @zseward&lt;/div&gt; &lt;div style=&quot; font-size: 15px; line-height: 21px; color: #000000; font-weight: 600; &quot;&gt; View on Threads&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://www.threads.net/embed.js&quot;&gt;&lt;/script&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>Sports Betting</title>
-    <link href="http://localhost:8080/blog/sports-betting/" />
-    <updated>2024-05-23T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/sports-betting/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;As someone who is neither inclined towards sports nor betting, but who is endlessly fascinated and intrigued by a hustle, I loved &lt;a href=&quot;https://omny.fm/shows/odd-lots/how-a-professional-sports-bettor-really-makes-mone&quot; rel=&quot;noopener&quot;&gt;this Odd Lots interview with a professional sports gambler&lt;/a&gt;. (Disclosure: Bloomberg is my employer, all opinions mine, blah blah blah.)&lt;/p&gt;
-&lt;p&gt;I have been thinking about the influx of online sports books, legalized by a Supreme Court decision about six years ago. I’ve been thinking about it for two reasons:&lt;/p&gt;
-&lt;ul class=&quot;list&quot;&gt;
-&lt;li&gt;To the extent that I am ever near a television while a game is on, it’s impossible to miss the advertising, marketing, and extent to which gambling has oozed into the experience of sports on television.&lt;/li&gt;
-&lt;li&gt;Shortly after legalization in NYC, &lt;a href=&quot;https://maxread.substack.com/p/i-made-3000-gambling-from-home&quot; rel=&quot;noopener&quot;&gt;Max Read wrote&lt;/a&gt; a cursory explanation of how to take sports book companies up on their loss leading “free money” ads and come out on top.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Anyways, this interview by Joe and Tracy is great:&lt;/p&gt;
-&lt;ul class=&quot;list&quot;&gt;
-&lt;li&gt;It’s possible to arbitrage the books off of each other, searching for mispriced bets.&lt;/li&gt;
-&lt;li&gt;You can bet on anything and some of those things are easier to get an edge on: taller centers win more tip-offs, so it’s not really a 50/50.&lt;/li&gt;
-&lt;li&gt;Even professional gamblers think sports books advertising is a bit unseemly, and unfairly targets children.&lt;/li&gt;
-&lt;/ul&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>No Wrong Doors</title>
-    <link href="http://localhost:8080/blog/no-wrong-doors/" />
-    <updated>2024-05-23T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/no-wrong-doors/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;From Will Larson, &lt;a href=&quot;https://lethain.com/no-wrong-doors/&quot; rel=&quot;noopener&quot;&gt;a nice thought experiment&lt;/a&gt; on how to make work bureacracy less brutal:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Some governmental agencies have started to adopt No Wrong Door policies, which aim to provide help–often health or mental health services–to individuals even if they show up to the wrong agency to request help. The core insight is that the employees at those agencies are far better equipped to navigate their own bureaucracies than an individual who knows nothing about the bureaucracy’s internal function.&lt;/p&gt;
-&lt;p&gt;For the most part, technology organizations are not complex bureaucracies, but sometimes they do seem to operate that way.&lt;/p&gt;
-&lt;p&gt;…&lt;br /&gt;
-Something I’ve been thinking about recently is how engineering organizations can adopt a variant of the No Wrong Doors policy to directly connect folks with problems with the right team and information. Then the first contact point becomes a support system for navigating the bureaucracy successfully.&lt;/p&gt;
-&lt;/blockquote&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Cautious Clay - Another Half</title>
-    <link href="http://localhost:8080/blog/cautious-clay-another-half/" />
-    <updated>2024-05-21T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/cautious-clay-another-half/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0sAPtWTy125jIkSDOT9YdO?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>This Week’s GPT, a SQL Writer</title>
-    <link href="http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/" />
-    <updated>2024-05-20T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;I write a lot of SQL. I don’t mind it.&lt;/p&gt;
-&lt;p&gt;But I have three problems:&lt;/p&gt;
-&lt;ol class=&quot;list&quot;&gt;
-&lt;li&gt;I constantly forget things like database-specific nuances—what do I do for RedShift? BigQuery? How do they handle this function differently?&lt;/li&gt;
-&lt;li&gt;I have a decent grasp on aggregate functions and transforms but not a great one. I want to compute whether something was stat sig by grabbing the variance? Oof, can’t remember.&lt;/li&gt;
-&lt;li&gt;The data schema in a table I’m working with is a mess with lots of objects and properties inside them. I can’t remember where the thing is that I want.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;So I tried to build a quick solution with a GPT assistant. I gave it the following context:&lt;/p&gt;
-&lt;ol class=&quot;list&quot;&gt;
-&lt;li&gt;Our data dictionary for all the kinds of things this table tracks (imagine product analytics, so events, possible values, etc.)&lt;/li&gt;
-&lt;li&gt;Our schema for the table I care most about, with all of the different field names and data types.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;And the following prompt:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You are an extremely terse data scientist familiar with [Database X in Flavor Y]. Help me write queries.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;So far it’s a hit. And the Assistants playground in Azure lets me save it so I’m not reinventing the wheel and pasting in context every time.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Accelerating A/B Tests</title>
-    <link href="http://localhost:8080/blog/accelerating-a/b-tests/" />
-    <updated>2024-05-20T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/accelerating-a/b-tests/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;How do you run more, better, faster A/B tests?&lt;/p&gt;
-&lt;p&gt;This isn’t for everyone: If you aren’t drowning in traffic, if you only have 10 customers, you shouldn’t even bother here. That’s another conversation.&lt;/p&gt;
-&lt;p&gt;But if you’ve got enough traffic that you’re running multiple experiments, multiple PMs running experiments, etc. this is worth a read.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://dataanalysis.substack.com/p/methods-to-accelerate-ab-testing?r=103xc&amp;amp;triedRedirect=true&quot; rel=&quot;noopener&quot;&gt;Olga’s post in Data Analysis Journal on accelerating A/B testing&lt;/a&gt; covers some of the big ways of running experiments faster, including Winsorizing, CUPED, etc.&lt;/p&gt;
-&lt;p&gt;A bunch of these were new to me.&lt;/p&gt;
-</content
-    >
-  </entry>
-  <entry>
-    <title>Swimming Paul - Lost</title>
-    <link href="http://localhost:8080/blog/swimming-paul-lost/" />
-    <updated>2024-05-17T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/swimming-paul-lost/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/0cFXO8OMdeLeShQoEp7pxi?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>Moxy The Band - The Feeling of Letting Go</title>
-    <link href="http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/" />
-    <updated>2023-03-21T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;The 80’s synths are so strong, the bassline slaps, the chorus is large.&lt;/p&gt;
-&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/6fzeWVlHJoHAIFYTLgy7l6?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>boygenius - Not Strong Enough</title>
-    <link href="http://localhost:8080/blog/boygenius-not-strong-enough/" />
-    <updated>2023-03-15T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/boygenius-not-strong-enough/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;A Phoebe Bridgers supergroup/side project. Wowza.&lt;/p&gt;
-&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/track/72GNW1xKoi5BAhMYAW6e7e?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;352&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>Gang of Youths - angel in realtime.</title>
-    <link href="http://localhost:8080/blog/gang-of-youths-angel-in-realtime/" />
-    <updated>2023-02-28T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/gang-of-youths-angel-in-realtime/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;Soaring. “goal of the century” is like Royksopp gone rock.&lt;/p&gt;
-&lt;iframe style=&quot;border-radius:12px&quot; src=&quot;https://open.spotify.com/embed/album/4xrHCOnujQW9DDLmntffLP?utm_source=generator&quot; width=&quot;100%&quot; height=&quot;380&quot; frameBorder=&quot;0&quot; allowfullscreen=&quot;&quot; allow=&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content
-    >
-  </entry>
-  <entry>
-    <title>Perks and benefits</title>
-    <link href="http://localhost:8080/blog/perks-and-benefits/" />
-    <updated>2023-02-27T00:00:00Z</updated>
-    <id>http://localhost:8080/blog/perks-and-benefits/</id>
-    <content
-      xml:lang="en_EN"
-      type="html"
-      >&lt;p&gt;I read Tony Faddell’s “Build” last year, and I thought a lot of it would stick with me.&lt;/p&gt;
-&lt;p&gt;Only one thing has truly stuck: Perks and benefits, and why companies should provide benefits but beware of “perks” like the plague.&lt;/p&gt;
-&lt;p&gt;In Faddell’s telling, perks—like free lunch or dog baths—are just things people get used to. And once they’re used to it, you can’t get rid of it, but they also don’t view it as special. It’s become a “right.”&lt;/p&gt;
-&lt;p&gt;That rings mostly true to me? But now that I’m at a different company, it also has me thinking about what I value in perks and benefits.&lt;/p&gt;
-&lt;p&gt;The perk I keep coming back to is an “unlimited book budget.” All the L&amp;amp;D you can read. I reliably spent a couple hundred dollars per year on books like Build, and got to bring what I learned back to my team.&lt;/p&gt;
-&lt;p&gt;It was a good one!&lt;/p&gt;
-</content
-    >
-  </entry>
-</feed>
+  </author><entry>
+      <title>Perks and benefits</title>
+      <link href="http://localhost:8080/blog/perks-and-benefits/" />
+      <updated>2023-02-27T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/perks-and-benefits/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Gang of Youths - angel in realtime.</title>
+      <link href="http://localhost:8080/blog/gang-of-youths-angel-in-realtime/" />
+      <updated>2023-02-28T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/gang-of-youths-angel-in-realtime/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>boygenius - Not Strong Enough</title>
+      <link href="http://localhost:8080/blog/boygenius-not-strong-enough/" />
+      <updated>2023-03-15T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/boygenius-not-strong-enough/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Moxy The Band - The Feeling of Letting Go</title>
+      <link href="http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/" />
+      <updated>2023-03-21T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Swimming Paul - Lost</title>
+      <link href="http://localhost:8080/blog/swimming-paul-lost/" />
+      <updated>2024-05-17T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/swimming-paul-lost/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Accelerating A/B Tests</title>
+      <link href="http://localhost:8080/blog/accelerating-a/b-tests/" />
+      <updated>2024-05-20T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/accelerating-a/b-tests/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>This Week’s GPT, a SQL Writer</title>
+      <link href="http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/" />
+      <updated>2024-05-20T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Cautious Clay - Another Half</title>
+      <link href="http://localhost:8080/blog/cautious-clay-another-half/" />
+      <updated>2024-05-21T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/cautious-clay-another-half/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>No Wrong Doors</title>
+      <link href="http://localhost:8080/blog/no-wrong-doors/" />
+      <updated>2024-05-23T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/no-wrong-doors/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Sports Betting</title>
+      <link href="http://localhost:8080/blog/sports-betting/" />
+      <updated>2024-05-23T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/sports-betting/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Via Zach Seward, the State of Media</title>
+      <link href="http://localhost:8080/blog/via-zach-seward-the-state-of-media/" />
+      <updated>2024-06-04T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/via-zach-seward-the-state-of-media/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Beatenberg - Ithaca</title>
+      <link href="http://localhost:8080/blog/beatenberg-ithaca/" />
+      <updated>2024-06-07T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/beatenberg-ithaca/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Civic Band</title>
+      <link href="http://localhost:8080/blog/civic-band/" />
+      <updated>2024-06-21T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/civic-band/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>The &#39;R&#39; in RAG Stands for &#39;Royalties&#39;</title>
+      <link href="http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/" />
+      <updated>2024-06-21T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry></feed>

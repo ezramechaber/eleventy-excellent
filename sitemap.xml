@@ -1,232 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/perks-and-benefits/</loc>
         <lastmod>2023-02-27T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/gang-of-youths-angel-in-realtime/</loc>
         <lastmod>2023-02-28T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/boygenius-not-strong-enough/</loc>
         <lastmod>2023-03-15T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/</loc>
         <lastmod>2023-03-21T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/swimming-paul-lost/</loc>
         <lastmod>2024-05-17T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/accelerating-a/b-tests/</loc>
         <lastmod>2024-05-20T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/</loc>
         <lastmod>2024-05-20T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/cautious-clay-another-half/</loc>
         <lastmod>2024-05-21T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/no-wrong-doors/</loc>
         <lastmod>2024-05-23T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/sports-betting/</loc>
         <lastmod>2024-05-23T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/via-zach-seward-the-state-of-media/</loc>
         <lastmod>2024-06-04T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/beatenberg-ithaca/</loc>
         <lastmod>2024-06-07T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/civic-band/</loc>
         <lastmod>2024-06-21T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</loc>
         <lastmod>2024-06-21T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
+    
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2024-06-21T19:00:39.752Z</lastmod>
+        <lastmod>2024-06-22T00:35:21.149Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2024-06-21T19:00:39.752Z</lastmod>
+        <lastmod>2024-06-22T00:35:21.149Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
   
-  
+    
 
-  
-  
+      
+        
+      
 
-    <url>
+      <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2024-06-21T19:00:39.752Z</lastmod>
+        <lastmod>2024-06-22T00:35:21.149Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/imprint/</loc>
+        <lastmod>2024-06-22T00:35:21.149Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/privacy/</loc>
+        <lastmod>2024-06-22T00:35:21.149Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     

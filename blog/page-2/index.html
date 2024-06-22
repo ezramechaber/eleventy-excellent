@@ -1,33 +1,26 @@
-
-
 <!doctype html>
-<html lang="en">
-  <!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
+<html lang="en"><!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
+<head>
+    <!-- 1 charset/viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <!-- charset/http-equiv/viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 2 title -->
+    <title>Blog</title>
 
-    <!-- title -->
-    <title>
-      
-        Blog
-      
-    </title>
+    <base href="/blog/page-2/">
 
-    <!-- 4 synchronous js  -->
-    <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+    <!-- 3 synchronous js  -->
     
+<script><!-- inlined for all pages -->
+(()=>{var m=Object.defineProperty;var p=(h,t,e)=>t in h?m(h,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):h[t]=e;var l=(h,t,e)=>p(h,typeof t!="symbol"?t+"":t,e);var r=class r extends HTMLElement{constructor(){super(),this.ready=new Promise(t=>{this.readyResolve=t})}static getParents(t,e=!1){let a=[];for(;t;){if(t.matches&&t.matches(r.tagName)){if(e&&t===e)break;c.hasConditions(t)&&a.push(t)}t=t.parentNode}return a}static async ready(t,e){if(e||(e=r.getParents(t)),e.length===0)return;let a=await Promise.all(e.map(i=>i.wait()));if(a.length)return a[0]}forceFallback(){window.Island&&Object.assign(r.fallback,window.Island.fallback);for(let t in r.fallback){let e=Array.from(this.querySelectorAll(t)).reverse();for(let a of e){if(!a.isConnected)continue;let i=r.getParents(a);if(i.length===1){let o=r.ready(a,i);r.fallback[t](o,a,r.prefix)}}}}wait(){return this.ready}async connectedCallback(){c.hasConditions(this)&&this.forceFallback(),await this.hydrate()}getTemplates(){return this.querySelectorAll(`template[${r.attr.template}]`)}replaceTemplates(t){for(let e of t){if(r.getParents(e,this).length>0)continue;let a=e.getAttribute(r.attr.template);if(a==="replace"){let i=Array.from(this.childNodes);for(let o of i)this.removeChild(o);this.appendChild(e.content);break}else{let i=e.innerHTML;if(a==="once"&&i){if(r.onceCache.has(i)){e.remove();return}r.onceCache.set(i,!0)}e.replaceWith(e.content)}}}async hydrate(){let t=[];this.parentNode&&t.push(r.ready(this.parentNode));let e=c.getConditions(this);for(let a in e)c.map[a]&&t.push(c.map[a](e[a],this));await Promise.all(t),this.replaceTemplates(this.getTemplates());for(let a of r.onReady.values())await a.call(this,r);this.readyResolve(),this.setAttribute(r.attr.ready,""),this.querySelectorAll(`[${r.attr.defer}]`).forEach(a=>a.removeAttribute(r.attr.defer))}};l(r,"tagName","is-land"),l(r,"prefix","is-land--"),l(r,"attr",{template:"data-island",ready:"ready",defer:"defer-hydration"}),l(r,"onceCache",new Map),l(r,"onReady",new Map),l(r,"fallback",{":not(is-land,:defined,[defer-hydration])":(t,e,a)=>{let i=document.createElement(a+e.localName);for(let n of e.getAttributeNames())i.setAttribute(n,e.getAttribute(n));let o=e.shadowRoot;if(!o){let n=e.querySelector(":scope > template:is([shadowrootmode], [shadowroot])");if(n){let f=n.getAttribute("shadowrootmode")||n.getAttribute("shadowroot")||"closed";o=e.attachShadow({mode:f}),o.appendChild(n.content.cloneNode(!0))}}return o&&i.attachShadow({mode:o.mode}).append(...o.childNodes),i.append(...e.childNodes),e.replaceWith(i),t.then(()=>{i.shadowRoot&&e.shadowRoot.append(...i.shadowRoot.childNodes),e.append(...i.childNodes),i.replaceWith(e)})}});var d=r,s=class s{static hasConditions(t){return Object.keys(s.getConditions(t)).length>0}static getConditions(t){let e={};for(let a of Object.keys(s.map))t.hasAttribute(`on:${a}`)&&(e[a]=t.getAttribute(`on:${a}`));return e}static visible(t,e){if("IntersectionObserver"in window)return new Promise(a=>{let i=new IntersectionObserver(o=>{let[n]=o;n.isIntersecting&&(i.unobserve(n.target),a())});i.observe(e)})}static idle(){let t=new Promise(e=>{document.readyState!=="complete"?window.addEventListener("load",()=>e(),{once:!0}):e()});return"requestIdleCallback"in window?Promise.all([new Promise(e=>{requestIdleCallback(()=>{e()})}),t]):t}static interaction(t,e){let a=["click","touchstart"];return t&&(a=(t||"").split(",").map(i=>i.trim())),new Promise(i=>{function o(n){i();for(let f of a)e.removeEventListener(f,o)}for(let n of a)e.addEventListener(n,o,{once:!0})})}static media(t){let e={matches:!0};if(t&&"matchMedia"in window&&(e=window.matchMedia(t)),!e.matches)return new Promise(a=>{e.addListener(i=>{i.matches&&a()})})}static saveData(t){if(!(!("connection"in navigator)||navigator.connection.saveData===(t!=="false")))return new Promise(()=>{})}};l(s,"map",{visible:s.visible,idle:s.idle,interaction:s.interaction,media:s.media,"save-data":s.saveData});var c=s;"customElements"in window&&(window.customElements.define(d.tagName,d),window.Island=d);var w=d.ready;})();
 
-    <script>
-      // prettier-ignore
-      (()=>{var r="theme-preference",c="light",u="dark",t={value:n()};window.onload=()=>{let e=document.querySelector("#light-theme-toggle"),o=document.querySelector("#dark-theme-toggle"),d=document.querySelector("[data-theme-switcher]");d&&(d.removeAttribute("hidden"),a(),e.addEventListener("click",()=>l("light")),o.addEventListener("click",()=>l("dark")),e.setAttribute("aria-pressed",t.value==="light"),o.setAttribute("aria-pressed",t.value==="dark"))},window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{t.value=e?"dark":"light",i()});function l(e){t.value=e,document.querySelector("#light-theme-toggle").setAttribute("aria-pressed",e==="light"),document.querySelector("#dark-theme-toggle").setAttribute("aria-pressed",e==="dark"),i()}function n(){return localStorage.getItem(r)?localStorage.getItem(r):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function i(){localStorage.setItem(r,t.value),a()}function a(){document.firstElementChild.setAttribute("data-theme",t.value),document.querySelector("#light-theme-toggle")?.setAttribute("aria-label",c),document.querySelector("#dark-theme-toggle")?.setAttribute("aria-label",u)}a()})();
+(()=>{var r="theme-preference",n="light",s="dark",l={dark:"#343434",light:"#FBFBFB"},t={value:d()};window.onload=()=>{let e=document.querySelector("#light-theme-toggle"),a=document.querySelector("#dark-theme-toggle");document.querySelector("[data-theme-switcher]")&&(o(),e.addEventListener("click",()=>c("light")),a.addEventListener("click",()=>c("dark")),e.setAttribute("aria-pressed",t.value==="light"),a.setAttribute("aria-pressed",t.value==="dark"))};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{t.value=e?"dark":"light",i()});function c(e){t.value=e,document.querySelector("#light-theme-toggle").setAttribute("aria-pressed",e==="light"),document.querySelector("#dark-theme-toggle").setAttribute("aria-pressed",e==="dark"),i()}function d(){return localStorage.getItem(r)?localStorage.getItem(r):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function i(){localStorage.setItem(r,t.value),o()}function o(){document.firstElementChild.setAttribute("data-theme",t.value),document.querySelector("#light-theme-toggle")?.setAttribute("aria-label",n),document.querySelector("#dark-theme-toggle")?.setAttribute("aria-label",s),document.querySelector('meta[name="theme-color"]').setAttribute("content",t.value==="dark"?l.dark:l.light)}o();})();</script>
 
-    </script>
 
+    <!-- 4 schema settings -->
     <!--  inline base schema -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -44,125 +37,85 @@
 </script>
 
 
-    <!--  inline blogpost schema  -->
+<!--  inline blogpost schema  -->
+
+
+
+    <!-- 5 CSS  -->
+    <!-- <link rel="stylesheet" href="/assets/css/global.css?300c-4bd2-d456" /> -->
     
+		<!-- Inlined CSS (fastest site performance in production)  -->
+		<style>.transform{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.filter{--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: }*,:after,:before{box-sizing:border-box}:where(*){text-wrap:pretty}:where(h1,h2,h3,h4){text-wrap:balance}:where(html:focus-within){scroll-behavior:smooth}:where(body){line-height:1.5;min-height:100vh;min-height:100dvh;text-rendering:optimizeSpeed}:where(body,h1,h2,h3,h4,p,figure,blockquote,dl,dd){margin:0}:where(ul[role=list],ol[role=list]){list-style:none}:where([role=list]){padding:0}:where(a:not([class])){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto}:where(img,picture,svg,canvas){background-repeat:no-repeat;background-size:cover;block-size:auto;font-style:italic;max-inline-size:100%;shape-margin:.75rem;vertical-align:middle}:where(button){all:unset}:where(button,input,select,textarea){color:inherit;font:inherit}:where(textarea){resize:vertical;resize:block}:where(textarea:not([rows])){min-height:10em}:where(button,label,select,summary,[role=button],[role=option]){cursor:pointer}:where(:target){scroll-margin-block-start:2ex}:where(:focus){scroll-margin-block-end:8vh}:where(dialog){background:none;border:none;inset:unset;max-height:unset;max-width:unset}:where([popover]){background:none;border:none;color:inherit;inset:unset}:where([popover]:not(:popover-open)),:where(dialog:not([open],[popover])){display:none!important}:where(html:has(dialog[open]:modal)){overflow:hidden}@media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,:after,:before{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}@font-face{font-display:swap;font-family:Inclusive Sans;font-style:normal;font-weight:400;src:local(""),url(/assets/fonts/inclusive/inclusivesans-regular.woff2) format("woff2")}@font-face{font-display:swap;font-family:Inclusive Sans;font-style:italic;font-weight:400;src:local(""),url(/assets/fonts/inclusive/inclusivesans-italic.woff2) format("woff2")}@font-face{font-display:swap;font-family:Redhat;font-style:normal;font-weight:900;src:local(""),url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format("woff2")}:root{--color-base-dark:#343434;--color-base-light:#fbfbfb;--color-primary-highlight:#06f;--color-secondary-highlight:#4467dd;--color-tertiary-highlight:#fbbe25;--space-xs:clamp(0.3125rem,0.27rem + 0.19vw,0.4375rem);--space-s:clamp(0.625rem,0.55rem + 0.38vw,0.875rem);--space-m:clamp(0.875rem,0.74rem + 0.67vw,1.3125rem);--space-l:clamp(1.1875rem,0.96rem + 1.15vw,1.9375rem);--space-xl:clamp(2.375rem,2.03rem + 1.73vw,3.5rem);--space-2xl:clamp(3.5625rem,3.04rem + 2.60vw,5.25rem);--space-3xl:clamp(5.9375rem,5.07rem + 4.33vw,8.75rem);--space-xs-s:clamp(0.3125rem,0.14rem + 0.87vw,0.875rem);--space-s-m:clamp(0.625rem,0.41rem + 1.06vw,1.3125rem);--space-m-l:clamp(0.875rem,0.55rem + 1.63vw,1.9375rem);--space-l-xl:clamp(1.1875rem,0.48rem + 3.56vw,3.5rem);--space-l-2xl:clamp(2.375rem,1.49rem + 4.42vw,5.25rem);--space-xl-2xl:clamp(3.5625rem,1.97rem + 7.98vw,8.75rem);--space-2xl-3xl:clamp(5.9375rem,3.46rem + 12.40vw,14rem);--size-step-min-2:clamp(0.8125rem,0.75rem + 0.29vw,1rem);--size-step-min-1:clamp(1rem,0.88rem + 0.58vw,1.375rem);--size-step-0:clamp(1.1875rem,1.01rem + 0.87vw,1.75rem);--size-step-1:clamp(1.4375rem,1.21rem + 1.15vw,2.1875rem);--size-step-2:clamp(1.6875rem,1.36rem + 1.63vw,2.75rem);--size-step-3:clamp(2.0625rem,1.64rem + 2.12vw,3.4375rem);--size-step-4:clamp(2.5rem,1.96rem + 2.69vw,4.25rem);--size-step-5:clamp(2.9375rem,2.19rem + 3.75vw,5.375rem);--size-step-6:clamp(3.5rem,2.52rem + 4.90vw,6.6875rem);--leading-flat:1;--leading-fine:1.2;--leading-standard:1.4;--font-display:Redhat,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;--font-base:Inclusive Sans,system-ui,sans-serif;--font-mono:ui-monospace,Cascadia Code,Source Code Pro,Menlo,Consolas,DejaVu Sans Mono,monospace;--font-regular:400;--font-bold:700;--font-extra-bold:900;--gutter:var(--space-m-l);--border-radius:0.3rem;--transition-duration:250ms;--transition-timing:ease;--wrapper-width:85rem;--tracking:-0.05ch;--tracking-s:-0.075ch;--tracking-wide:0.05ch;--gradient-rainbow:linear-gradient(90deg,#cf4662 10%,#fbbe25 30%,#62c95c 50%,#08bccb 75%,#a977d5 90%);--gradient-conic:conic-gradient(var(--color-primary) 0 28%,var(--color-secondary) 0 67%,var(--color-tertiary) 0 100%);--gradient-stripes:linear-gradient(45deg,var(--color-base-dark) 0 75%,var(--color-primary) 0 85%,var(--color-secondary) 0 92%,var(--color-tertiary) 0 100%)}:root,:root[data-theme=light]{--color-dark:var(--color-base-dark);--color-light:var(--color-base-light);--color-text:var(--color-base-dark);--color-bg:var(--color-base-light);--color-base:var(--color-base-dark);--color-primary:var(--color-primary-highlight);--color-secondary:var(--color-secondary-highlight);--color-tertiary:var(--color-tertiary-highlight);--color-text-accent:#505050;--color-bg-accent:#fdfdfd;--color-bg-accent-2:#f7f7f7}@media (prefers-color-scheme:dark){:root{--color-text:var(--color-base-light);--color-bg:var(--color-base-dark);--color-base:var(--color-base-light);--color-primary:var(--color-primary-highlight);--color-secondary:var(--color-secondary-highlight);--color-tertiary:var(--color-tertiary-highlight);--color-text-accent:#a8a8a8;--color-bg-accent:#383838;--color-bg-accent-2:#404040}}:root[data-theme=dark]{--color-text:var(--color-base-light);--color-bg:var(--color-base-dark);--color-base:var(--color-base-light);--color-primary:var(--color-primary-highlight);--color-secondary:var(--color-secondary-highlight);--color-tertiary:var(--color-tertiary-highlight);--color-text-accent:#a8a8a8;--color-bg-accent:#383838;--color-bg-accent-2:#404040}@supports (background:color-mix(in srgb,red 50%,blue)){:root,:root[data-theme=light]{--color-text-accent:color-mix(in oklab,var(--color-base-dark) 80%,var(--color-bg));--color-bg-accent:color-mix(in oklab,var(--color-bg) 90%,var(--color-text));--color-bg-accent-2:color-mix(in oklab,var(--color-bg) 70%,var(--color-text));--color-primary-sub-20:color-mix(in oklab,var(--color-primary-highlight),var(--color-bg) 20%);--color-secondary-sub-20:color-mix(in oklab,var(--color-secondary-highlight),var(--color-bg) 20%);--color-tertiary-sub-20:color-mix(in oklab,var(--color-tertiary-highlight),var(--color-bg) 20%)}@media (prefers-color-scheme:dark){:root{--color-text-accent:color-mix(in oklab,var(--color-base-light) 70%,var(--color-bg));--color-bg-accent:color-mix(in oklab,var(--color-bg) 92%,var(--color-text));--color-bg-accent-2:color-mix(in oklab,var(--color-bg) 80%,var(--color-text));--color-primary:var(--color-primary-sub-20);--color-secondary:var(--color-secondary-sub-20);--color-tertiary:var(--color-tertiary-sub-20)}}:root[data-theme=dark]{--color-text-accent:color-mix(in oklab,var(--color-base-light) 70%,var(--color-bg));--color-bg-accent:color-mix(in oklab,var(--color-bg) 92%,var(--color-text));--color-bg-accent-2:color-mix(in oklab,var(--color-bg) 80%,var(--color-text));--color-primary:var(--color-primary-sub-20);--color-secondary:var(--color-secondary-sub-20);--color-tertiary:var(--color-tertiary-sub-20)}}@supports (color:hsl(from red h s l)){@media (prefers-color-scheme:dark){:root{--color-primary:hsl(from var(--color-primary-highlight) h calc(s / 1.2) l);--color-secondary:hsl(from var(--color-secondary-highlight) h calc(s / 1.2) l);--color-tertiary:hsl(from var(--color-tertiary-highlight) h calc(s / 1.2) l)}}:root[data-theme=dark]{--color-primary:hsl(from var(--color-primary-highlight) h calc(s / 1.2) l);--color-secondary:hsl(from var(--color-secondary-highlight) h calc(s / 1.2) l);--color-tertiary:hsl(from var(--color-tertiary-highlight) h calc(s / 1.2) l)}}html{color-scheme:light dark}body{accent-color:var(--color-primary);background-color:var(--color-bg);color:var(--color-text);display:flex;flex-direction:column;font-family:var(--font-base);font-size:var(--size-step-0);font-weight:var(--font-regular);letter-spacing:var(--tracking);line-height:var(--leading-standard)}main{flex:auto}h1,h2,h3{font-family:var(--font-display);font-weight:var(--font-extra-bold);letter-spacing:var(--tracking-s);line-height:1.2}h1{font-size:var(--size-step-6)}h2{font-size:var(--size-step-4)}h3{font-size:var(--size-step-2)}blockquote:not([class]),li,p{max-inline-size:65ch}blockquote{border-inline-start:.5rem solid var(--color-primary);font-size:var(--size-step-2);padding:var(--space-m-l)}blockquote>*+*{margin-block-start:var(--space-m-l)}blockquote :last-child{font-family:var(--font-base);font-size:var(--size-step-1);font-style:normal}input,textarea{caret-color:var(--color-primary)}svg{block-size:2ex;flex:none;inline-size:auto}b,strong{font-family:var(--font-display);font-weight:var(--font-extra-bold)}hr{background-color:var(--color-bg-accent-2);border:0;height:1px;margin-block:var(--space-m-l);margin-inline-start:0;width:10%}a{color:currentcolor;text-decoration-thickness:.08em}a:hover{text-decoration:none}:focus-visible{outline:3px solid;outline-offset:.3ch}::-moz-selection{background-color:var(--color-text);color:var(--color-bg)}::selection{background-color:var(--color-text);color:var(--color-bg)}.preload-transitions *{transition:none!important}@media (scripting:none){.require-js{display:none}}:where(.cluster){align-items:var(--cluster-vertical-alignment,center);display:flex;flex-wrap:wrap;gap:var(--gutter,var(--space-s-l));justify-content:var(--cluster-horizontal-alignment,flex-start)}:where(.flow)>*+*{margin-block-start:var(--flow-space,1em)}:where(.grid){display:grid;gap:var(--gutter,var(--space-s-m));grid-template-columns:repeat(var(--grid-placement,auto-fill),minmax(var(--grid-min-item-size,16rem),1fr))}:where(.grid)[data-rows=masonry]{align-items:start;grid-template-rows:masonry}:where(.grid)[data-layout="50-50"]{--grid-placement:auto-fit;--grid-min-item-size:clamp(16rem,50vw,28rem)}:where(.repel){align-items:var(--repel-vertical-alignment,center);display:flex;flex-wrap:wrap;gap:var(--gutter,var(--space-s-l));justify-content:space-between}:where(.repel)[data-nowrap]{flex-wrap:nowrap}:where(.sidebar){display:flex;flex-wrap:wrap;gap:var(--gutter,var(--space-s-l))}:where(.sidebar):not([data-direction])>:first-child{flex-basis:var(--sidebar-target-width,20rem);flex-grow:1}:where(.sidebar):not([data-direction])>:last-child{flex-basis:0;flex-grow:999;min-inline-size:var(--sidebar-content-min-width,50%)}:where(.sidebar)[data-direction=rtl]>:last-child{flex-basis:var(--sidebar-target-width,20rem);flex-grow:1}:where(.sidebar)[data-direction=rtl]>:first-child{flex-basis:0;flex-grow:999;min-inline-size:var(--sidebar-content-min-width,50%)}.wrapper{--gap:clamp(1rem,6vw,3rem);--full:minmax(var(--gap),1fr);--content:min(var(--wrapper-width,85rem),100% - var(--gap) * 2);--popout:minmax(0,2rem);--feature:minmax(0,5rem);display:grid;grid-template-columns:[full-start] var(--full) [feature-start] var(--feature) [popout-start] var(--popout) [content-start] var(--content) [content-end] var(--popout) [popout-end] var(--feature) [feature-end] var(--full) [full-end]}.wrapper>*{grid-column:content}.prose-wrapper{--wrapper-width:64rem}.popout{grid-column:popout}.feature{grid-column:feature}.full{grid-column:full}.button{background-color:var(--button-bg,var(--color-bg));border:2px solid var(--button-border,var(--color-text));border-radius:var(--border-radius);color:var(--button-text,var(--color-text));display:inline-block;font:inherit;font-weight:var(--font-bold);padding:.3rem var(--space-s);text-align:center;text-decoration:none}.button:hover,.button[aria-current=page],.button[aria-pressed=true],.button[data-state=active]{background-size:150% 150%;--button-bg:var(--color-text);--button-text:var(--color-bg);--button-border:var(--color-text)}.button:active{transform:scale(99%)}.button:where(:has(svg)){align-items:center;display:flex;gap:.5em}.button:where(:has(.visually-hidden)){border-radius:50%;padding:.5em}.button:where(:not(:has(svg))){min-inline-size:6ch;text-align:center}.button:where(:not(:has(.visually-hidden))){padding:var(--button-padding,.35em 1em)}:root{--color-code-orange:#e09952;--color-code-blue:var(--color-secondary);--color-code-indigo:#7d59c5;--color-code-violet:#e052bf;--color-code-pink:#e05269;--color-code-gray:#949494;--color-code-bg:color-mix(in oklab,var(--color-bg) 92%,#000)}code,pre{background-color:var(--color-code-bg);border-radius:var(--border-radius);font-family:var(--font-mono);font-size:var(--size-step-min-1)}code[class*=language-],pre[class*=language-]{white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;-webkit-hyphens:none;hyphens:none}pre{grid-column:popout!important;overflow-x:auto;padding:var(--space-m-l)}:where(:not(pre))>code{padding:.1em .4em;position:relative;top:-.05em}pre[class*=language-]{overflow:auto;position:relative}[class*=language-] .namespace{opacity:.7}.token.atrule{color:var(--color-code-pink)}.token.attr-name{color:var(--color-code-orange)}.token.attr-value{color:var(--color-text-accent)}.token.attribute{color:var(--color-code-blue)}.token.boolean{color:var(--color-code-pink)}.token.builtin,.token.cdata,.token.char,.token.class,.token.class-name,.token.color{color:var(--color-code-orange)}.token.comment{color:var(--color-code-gray)}.token.constant,.token.deleted{color:var(--color-code-pink)}.token.doctype{color:var(--color-code-orange)}.token.entity,.token.function{color:var(--color-code-pink)}.token.hexcode{color:var(--color-code-orange)}.token.id,.token.important{color:var(--color-code-pink);font-weight:var(--font-bold)}.token.inserted{color:var(--color-code-orange)}.token.keyword{color:var(--color-code-pink);font-style:italic}.token.number{color:var(--color-text-accent)}.token.operator{color:var(--color-code-gray)}.token.prolog,.token.property{color:var(--color-code-orange)}.token.pseudo-class,.token.pseudo-element{color:var(--color-code-blue)}.token.punctuation{color:var(--color-code-gray)}.token.regex{color:var(--color-code-orange)}.token.selector{color:var(--color-code-pink)}.token.string{color:var(--color-text-accent)}.token.symbol,.token.tag,.token.unit{color:var(--color-code-pink)}.token.url{color:var(--color-code-violet)}.token.variable{color:var(--color-code-pink)}.codepen a{--icon-size:1.2em;align-items:center;display:flex;gap:var(--space-2xs)}.prose .cp_embed_wrapper,.prose .cp_embed_wrapper+script+:not(h2){--flow-space:var(--space-l)}.cp_embed_wrapper{display:grid;grid-column:popout;grid-template-areas:"container";overflow:auto;place-items:center;position:relative;resize:horizontal}.cp_embed_wrapper iframe{grid-area:container;width:100%}article [href^=http]:not([href*="localhost:8080"]):not([href*="ezramechaber.com"]):not(.button){padding-inline-end:.8em}article [href^=http]:not([href*="localhost:8080"]):not([href*="ezramechaber.com"]):not(.no-indicator):after{background-image:url(e/assets/images/template/external.svg);background-position:50%;background-repeat:no-repeat;background-size:60% auto;block-size:1em;content:"(enlace externo)";display:inline-block;inline-size:1em;overflow:hidden;position:absolute;text-indent:1em;white-space:nowrap}.footnotes{font-size:var(--size-step-min-1)}.footnote-ref{color:var(--color-text-accent);font-size:var(--size-step-min-2);margin-inline-start:.1ch;vertical-align:super}.footnote-ref a{padding:.3ch;text-decoration:none}.footnote-backref{background-color:var(--color-bg-accent);border-radius:var(--border-radius);padding-inline:var(--space-xs);text-decoration:none}.footnote-backref:hover{color:var(--color-primary)}.post .prose h1{font-size:var(--size-step-6)}.post .prose h2{font-size:var(--size-step-3)}.post .prose h3{font-size:var(--size-step-2)}.post .prose img{aspect-ratio:16/9;block-size:auto;max-inline-size:var(--max-img-width,100%);-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}.post ..prose date{color:var(--color-text-light);font-size:var(--size-step-1)}.post .prose .credit{background-color:var(--color-bg);border-radius:var(--border-radius);color:var(--color-text-accent);max-inline-size:-moz-fit-content;max-inline-size:fit-content;padding:var(--space-xs) var(--space-s);transform:translateY(-4ch) translateX(-.5ch)}.post .prose .credit,.post .prose .meta{font-size:var(--size-step-min-1)}.prose{--flow-space:var(--space-m-l);--wrapper-width:64rem}.prose :where(pre,pre+*,figure,figure+*){--flow-space:var(--space-m-l)}.prose figcaption{border-bottom:1px solid var(--color-bg-accent);font-size:var(--size-step-min-1);margin-block-end:var(--space-s);padding-block-end:var(--space-xs);text-align:center}:where(.prose :is(h2,h3,h4)){--flow-space:var(--space-xl)}:where(.prose :is(h2+*,h3+*,h4+*):not(figure)){--flow-space:var(--space-m)}.prose .heading-anchor:is(:hover,:focus){text-decoration:none}.heading-anchor{text-decoration:none}.prose mark{background-color:var(--color-tertiary);color:var(--color-base-dark)}.prose :not(.cluster):not(.grid)>li+li{padding-block-start:var(--space-s-m)}.prose :where(ul:not(.grid),ol:not(.grid)){padding-inline-start:1.2ch}.prose :where(ul:not(.grid):not([role=list])) li::marker{color:var(--color-primary);content:"– "}.prose ol li::marker{color:var(--color-primary)}.prose img{border-radius:var(--border-radius)}@media (max-width:640px){.prose a,.prose>*{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;hyphens:auto;word-break:break-word}}.section>.seperator:first-child{transform:rotate(180deg) translateY(-1px)}.section__inner{background-color:var(--spot-color,var(--color-bg-accent));color:var(--color-text)}.section blockquote{font-size:var(--size-step-4);font-weight:var(--font-bold);letter-spacing:var(--tracking-s);line-height:1}.section :is(h1,h2,h3,blockquote){opacity:95%}.seperator{block-size:3.5em;display:block;inline-size:100%;fill:var(--spot-color,var(--color-bg))}.section>.seperator{transform:translateY(-1px)}.site-footer{color:var(--color-text);margin-block-start:var(--space-l-xl);padding:var(--space-s-m)}.site-footer .footer__meta{--gutter:var(--space-xs);--cluster-horizontal-alignment:center}.site-footer .footer__meta a{padding:var(--space-xs)}.site-footer svg{block-size:1em;inline-size:1.1em}.site-footer .creator{display:grid;font-size:var(--size-step-min-1);margin-block-start:var(--space-xl);place-items:center}.site-footer .creator a{--gutter:var(--space-xs);--cluster-horizontal-alignment:center;text-decoration:none}.site-footer .creator a:hover{-webkit-background-clip:text;background-clip:text;background-image:var(--gradient-rainbow);background-repeat:repeat;background-size:100%;color:transparent}.site-footer .creator:hover svg{color:var(--color-text)}.site-header{--gutter:var(--space-s)}.logo{--gutter:var(--space-xs);font-size:var(--size-step-0);padding:var(--space-s) 0;text-decoration:none}.skip-link{clip:rect(1px,1px,1px,1px);block-size:1px;display:block;inline-size:1px;left:1rem;overflow:hidden;position:absolute;top:1rem;z-index:999}.skip-link:focus{clip:auto;background-color:var(--color-text);block-size:auto;border-radius:var(--border-radius);color:var(--color-bg);inline-size:auto;line-height:1;overflow:visible;padding:var(--space-xs) var(--space-s-m)}.skip-link:not(:focus){border:0;clip:rect(0 0 0 0);block-size:auto;inline-size:1px;margin:0;overflow:hidden;padding:0;position:absolute;white-space:nowrap}.styleguide{--region-space-top:var(--space-xl-2xl);--spot-color:color-mix(in oklab,var(--color-bg) 97%,var(--color-text))}.styleguide code{font-size:var(--size-step-min-2)}.styleguide li p:has(code){line-height:var(--leading-flat)}.styleguide section{--region-space-bottom:var(--space-l-xl);--region-space-top:var(--space-l-xl)}.styleguide :is(h2,h3){font-family:var(--font-base);font-size:var(--size-step-0);text-transform:uppercase}.styleguide h2{letter-spacing:var(--tracking-wide)}.styleguide .colors{--cluster-vertical-alignment:flex-start}.styleguide .colors ul{--min:10ch;--gap:var(--space-s-m);display:grid;grid-gap:var(--gap);grid-template-columns:repeat(auto-fit,minmax(min(100%,var(--min)),1fr))}.styleguide .colors li{display:grid;gap:var(--space-xs);grid-row:span 2;grid-template-rows:subgrid}.styleguide .colors li div{aspect-ratio:16/9;block-size:auto;border:1px solid var(--color-text);max-inline-size:var(--max-img-width,100%);-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}.styleguide .space{background-color:var(--color-text);display:block}.styleguide .tabs{align-items:center;border-block-end:1px solid #d1d8e0;display:flex;gap:var(--space-xs);margin-block-end:var(--space-s);padding-block-end:var(--space-s)}table{border:0;inline-size:100%}table br{display:none}thead{border:none;clip:rect(0 0 0 0);block-size:1px;inline-size:1px;margin:-1px;overflow:hidden;padding:0;position:absolute}tr{border:1px solid var(--color-text);display:block;margin-block-end:var(--space-s)}td,th{padding:var(--space-xs) var(--space-s);vertical-align:sub}td{border-block-end:1px solid var(--color-text);display:block;text-align:start}td:before{content:attr(data-label);float:start;font-weight:var(--font-bold)}td:last-child{border-block-end:0}@media (min-width:640px){table{border-collapse:collapse;margin:0;padding:0;table-layout:fixed}table br{display:block}thead{display:table-header-group;position:static;text-align:start}caption{margin:var(--space-xs) 0 var(--space-s)}tr{border:0;display:table-row;margin:0;padding:var(--space-xs)}tr:not(:last-child){border-block-end:1px solid var(--color-bg-accent)}td{border:none}td:before{display:none}td,th{display:table-cell;padding:var(--space-s);text-align:start}}.taglist{--gutter:var(--space-s-m)}.post-tag{--button-bg:var(--color-text);--button-text:var(--color-bg);--button-border:var(--color-text);font-size:var(--size-step-min-2);font-weight:var(--font-bold);padding:.1rem .625rem;text-transform:uppercase}.card .post-tag{--button-bg:var(--color-bg-accent-2);--button-text:var(--color-text);--button-border:var(--color-bg-accent-2)}.tags h1{font-size:var(--size-step-4)}.tags h2{font-size:var(--size-step-2)}.gradient-text{background-image:var(--gradient-conic);background-size:50%;padding:.6rem 0}.gradient-text,.gradient-text-linear{-webkit-background-clip:text;background-clip:text;color:transparent}.gradient-text-linear{background-image:var(--gradient-rainbow);background-repeat:repeat;background-size:100%}.theme-switch h2{font-family:var(--font-base);font-size:var(--size-step-min-1)}.theme-switch .button{--button-border:var(--color-bg-accent-2);border-radius:var(--border-radius);font-size:var(--size-step-min-2);font-weight:var(--font-bold);min-block-size:1.5em;padding:.1rem .625rem;text-transform:uppercase}.theme-switch .button[aria-pressed=true]{--_color-primary-contrast:color-mix(in oklab,var(--color-primary) 85%,var(--color-base-dark));--button-bg:var(--_color-primary-contrast);--button-text:var(--color-base-light);--button-border:var(--_color-primary-contrast);outline-color:var(--_color-primary-contrast)}is-land:not(:defined) .theme-switch{display:none}.blur{filter:blur(.25rem)}.heading-line{align-items:flex-start;display:flex;text-align:left;&:after{background:var(--color-bg-accent-2);block-size:1px;content:"";flex-grow:1;margin-block-start:auto;margin-left:var(--space-s);transform:translateY(-.25em)}}.ontop{position:relative;z-index:1}.region{padding-block-end:var(--region-space-bottom,var(--space-l-xl));padding-block-start:var(--region-space-top,var(--space-l-xl))}.spin{animation:spin 30s linear infinite}@media (prefers-reduced-motion:no-preference){@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}}.visually-hidden{border:0;clip:rect(0 0 0 0);height:0;margin:0;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}.visible{visibility:visible}.collapse{visibility:collapse}.static{position:static}.absolute{position:absolute}.my-s-m{margin-bottom:clamp(.625rem,.41rem + 1.06vw,1.3125rem);margin-top:clamp(.625rem,.41rem + 1.06vw,1.3125rem)}.mt-l-xl{margin-top:clamp(1.1875rem,.48rem + 3.56vw,3.5rem)}.mt-s-m{margin-top:clamp(.625rem,.41rem + 1.06vw,1.3125rem)}.mt-xs{margin-top:clamp(.3125rem,.27rem + .19vw,.4375rem)}.block{display:block}.inline{display:inline}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.resize{resize:both}.text-center{text-align:center}.font-display{font-family:Redhat,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.text-step-0{font-size:clamp(1.1875rem,1.01rem + .87vw,1.75rem)}.text-step-min-1{font-size:clamp(1rem,.88rem + .58vw,1.375rem)}.capitalize{text-transform:capitalize}.text-base-light{color:#fbfbfb}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}</style>
 
-    <link rel="stylesheet" href="/assets/css/global.css?34c6-43f8-4a98" />
+	
 
-    <!-- preloads -->
-    <link
-      rel="preload"
-      href="/assets/fonts/figtree/figtree-variable[wght].woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <!-- preloads in page data -->
-
-    <!-- defered js  -->
-
-    <!-- analytics from umami -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="8e84a85f-f141-4f9d-98e4-07811f2921ab"></script>
-
-    
-      <!-- masonry fallback, if true in frontmatter -->
-      <script src="/assets/scripts/masonry.js?34c6-43f8-4a98" defer></script>
-    
-
-    
-
-    
-
-    
-      <!-- easteregg js, if true in meta -->
-      <script src="/assets/scripts/easteregg.js?34c6-43f8-4a98" defer></script>
-    
-
-    <!-- everything else: meta tags, icons, open graph etc.  -->
-    <base href="/blog/page-2/" />
-
-<meta
-  name="description"
-  content="
+	<!-- opt-in for inlined CSS  -->
+	<style>.pagination{--gutter:var(--space-xs-s)}.pagination li{background-color:var(--pagination-bg,var(--color-bg));border:3px solid var(--pagination-border,var(--color-bg-accent));border-radius:var(--border-radius);color:var(--pagination-text,var(--color-text))}.pagination a{display:block;padding:var(--space-xs) var(--space-s-m);text-decoration:none}.pagination li:not(:has(a)){opacity:.6;padding:var(--space-xs) var(--space-s-m)}.pagination li:has(a:hover){--pagination-bg:var(--color-bg-accent);--pagination-border:var(--color-bg-accent)}.pagination li:has(a[aria-current=page]){--pagination-bg:var(--color-secondary);--pagination-border:var(--color-secondary);--pagination-text:var(--color-base-light)}
+.mainnav{--gutter:var(--space-s);position:var(--nav-position,relative)}.mainnav ul{--gutter:var(--space-xs);--list-block-padding:var(--space-s);--list-inline-padding:0;line-height:.5em;margin:0;padding-block:var(--list-block-padding);padding-inline:var(--list-inline-padding)}.mainnav a{--item-text-color:var(--color-text);--item-background-color:var(--color-bg);--item-border-color:var(--color-bg-accent-2);--item-padding:var(--space-s);background-color:var(--item-background-color);border:1px solid var(--item-border-color);border-radius:var(--border-radius);color:var(--item-text-color);display:block;padding:var(--item-padding);text-decoration:none}.mainnav a:where(:hover,:focus){--item-background-color:var(--color-text);--item-text-color:var(--color-bg);--item-border-color:var(--color-bg)}.mainnav [aria-current=page],.mainnav [data-state=active]{--item-background-color:var(--color-text);--item-border-color:var(--color-bg);--item-text-color:var(--color-bg)}
   
-    All blog posts can be found here
-  
-  "
-/>
+  @media (min-width:662px){.mainnav{--nav-button-display:none;--nav-position:static}.mainnav ul{--list-background:transparent;--list-layout:row;--list-position:static;--list-height:auto;--list-width:100%;--list-shadow:none;--list-transform:none;--list-visibility:visible;--list-width:auto;--list-block-padding:0;--list-inline-padding:0}.mainnav a{--item-padding:var(--space-xs) 0.2em;--item-border-color:transparent;--item-background-color:transparent;--item-text-decoration:transparent;--item-text-color:var(--color-text);text-decoration-color:var(--item-text-decoration,transparent);text-decoration-line:underline;text-decoration-thickness:3px;text-underline-offset:.2em}.mainnav a:where(:hover,:focus){--item-background-color:transparent;--item-text-color:var(--color-text);--item-text-decoration:var(--color-text)}.mainnav [aria-current=page],.mainnav [data-state=active]{--item-border-color:transparent;--item-background-color:transparent;--item-text-color:var(--color-primary);--item-text-decoration:var(--color-primary)}}</style>
 
-<meta name="theme-color" content="#DD4462" />
+
+    <!-- 6 preloads  -->
+    <link rel="preload" href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/assets/fonts/inclusive/inclusivesans-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- preloads in page data -->
+
+
+    <!-- 7 meta tags, icons, open graph etc.  -->
+    
+
+<meta name="description" content="All blog posts can be found here">
+<meta name="theme-color" content="#DD4462">
 <!-- Search Engines -->
-<meta name="robots" content="index,follow" />
-<meta name="googlebot" content="index,follow" />
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
 <!-- Made with Eleventy! -->
-<meta name="generator" content="Eleventy v2.0.1" />
+<meta name="generator" content="Eleventy v3.0.0">
 <!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="telephone=no">
 <!-- supports both dark and light color schemes, page author prefers light as default. -->
-<meta name="color-scheme" content="light dark" />
+<meta name="color-scheme" content="light dark">
 <!-- activates page transitions -->
-<meta name="view-transition" content="same-origin" />
-
+<meta name="view-transition" content="same-origin">
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="http://localhost:8080/blog/page-2/" />
-
+<link rel="canonical" href="http://localhost:8080/blog/page-2/">
 <!-- Links to information about the author(s) of the document -->
-<link rel="author" href="humans.txt" />
+<link rel="author" href="humans.txt">
 
 
 
 <!-- Open Graph meta  -->
-<meta property="og:url" content="http://localhost:8080/blog/page-2/" />
-<meta property="og:type" content="website" />
-<meta
-  property="og:title"
-  content="Blog"
-/>
-
-<meta
-  property="og:image"
-  content="http://localhost:8080/assets/images/template/opengraph-default.jpg"
-/>
-<meta
-  property="og:image:alt"
-  content="Visible content: Eleventy starter built around the CSS workflow for Cube CSS, Every Layout, Design Tokens and Tailwind for uitility, based on the concepts explained in buildexcellentwebsit.es"
-/>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta
-  property="og:description"
-  content="All blog posts can be found here"
-/>
-<meta property="og:site_name" content="Ezra Mechaber" />
-<meta property="og:locale" content="en_EN" />
-<meta property="article:author" content="Ezra Mechaber" />
+<meta property="og:url" content="http://localhost:8080/blog/page-2/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:image" content="http://localhost:8080/assets/images/template/opengraph-default.jpg">
+<meta property="og:image:alt" content>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="All blog posts can be found here">
+<meta property="og:site_name" content="Ezra Mechaber">
+<meta property="og:locale" content="en_EN">
+<meta property="article:author" content="Ezra Mechaber">
 
 <!-- Twitter specific head data was removed in v2 -->
 
 <!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
 
-  <link
-    rel="alternate"
-    type="application/atom+xml"
-    title="Atom Feed: Ezra Mechaber"
-    href="/feed.xml"
-  />
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed: Ezra Mechaber" href="/feed.xml">
 
 
 <!-- Favicon: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+    <!-- 8 defer  -->
+    <script src type="module"></script>
 
   </head>
 
@@ -170,45 +123,30 @@
     <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="wrapper">
-  <div class="repel ontop">
-    <a
-      href="/"
-      class="logo | cluster"
-      
-    >
-      <span>Ezra Mechaber</span>
+  <div class="site-header | repel ontop">
+    <a href="/" class="logo | cluster">
+      <span class="font-display">Ezra Mechaber</span>
     </a>
-    
+    <!-- toggle drawer menu in _data/meta.js -->
 
 
-
-<nav
-  id="mainnav"
-  class=" site-nav"
-  aria-label="Main"
->
-  <ul class="cluster" role="list">
+<nav id="mainnav" aria-label="Main" class="mainnav">
+  <ul role="list" class="cluster">
     
       <li>
-        <a
-          class="nav"
-          href="/about/"
-          
-          >About</a
-        >
+        <a href="/about/" class="nav">About</a>
       </li>
     
       <li>
-        <a
-          class="nav"
-          href="/blog/"
-          data-state="active"
-          >Blog</a
-        >
+        <a href="/blog/" data-state="active" class="nav">Blog</a>
       </li>
     
   </ul>
 </nav>
+
+
+
+
 
 
 
@@ -218,263 +156,190 @@
 
     <main id="main" class="flow">
 <article class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div
-      class="section__inner flow region"
-      style="--region-space-top: var(--space-xl-2xl)"
-    >
+  <header style="--spot-color: var(--color-secondary)" class="full | section">
+    <div style="--region-space-top: var(--space-xl-2xl)" class="section__inner flow region">
       <h1 class="text-center text-base-light">Blog</h1>
     </div>
-    <svg
-  class="seperator"
-  preserveAspectRatio="none"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 1440 320"
->
-  <path
-    d="M0,320L48,32L96,32L144,224L192,256L240,0L288,192L336,288L384,224L432,128L480,256L528,32L576,96L624,64L672,64L720,160L768,32L816,192L864,128L912,128L960,32L1008,224L1056,160L1104,0L1152,64L1200,256L1248,64L1296,224L1344,160L1392,96L1440,32L1440,0L1392,0L1344,0L1296,0L1248,0L1200,0L1152,0L1104,0L1056,0L1008,0L960,0L912,0L864,0L816,0L768,0L720,0L672,0L624,0L576,0L528,0L480,0L432,0L384,0L336,0L288,0L240,0L192,0L144,0L96,0L48,0L0,0Z"
-  ></path>
-</svg>
 
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="none" viewBox="0 0 1440 320" aria-hidden="true" class="seperator"><path d="M0 320 48 32h48l48 192 48 32L240 0l48 192 48 96 48-64 48-96 48 128 48-224 48 64 48-32h48l48 96 48-128 48 160 48-64h48l48-96 48 192 48-64 48-160 48 64 48 192 48-192 48 160 48-64 48-64 48-64V0H0Z"></path></svg>
   </header>
 
-  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
-    <p>This blog has a pagination of <strong>6</strong> posts per page.<br>
+  <div style="--region-space-top: var(--space-xl-2xl)" class="region flow prose"><p>This blog has a pagination of <strong>6</strong> posts per page.<br>
 The pagination is only shown if there are more posts (14) than items per page (6).</p>
+</div>
 
-  </div>
+  <is-land on:visible>
+  <custom-masonry data-rows="masonry" data-layout="50-50" class="grid">
+    
+    
+      
 
-  <ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
-    <!-- loop posts -->
-    
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/cautious-clay-another-half/">Cautious Clay - Another Half</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-21T00:00:00.000Z">
-  May 21, 2024
-</time>
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/cautious-clay-another-half/">Cautious Clay - Another Half</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2024-05-21T00:00:00.000Z"> May 21, 2024 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">music</span>
+              
+            
+          </div>
+  <p>Today's Music</p>
 
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
+  
 
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/this-weeks-gpt-a-sql-writer/">This Week’s GPT, a SQL Writer</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-20T00:00:00.000Z">
-  May 20, 2024
-</time>
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
 
+</custom-card>
+    
       
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> ai </span>
-          
-        
-      
-    </div>
-    <p>Something I built</p>
-  </div>
-</li>
 
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/accelerating-a/b-tests/">Accelerating A/B Tests</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-20T00:00:00.000Z">
-  May 20, 2024
-</time>
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/this-weeks-gpt-a-sql-writer/">This Week’s GPT, a SQL Writer</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2024-05-20T00:00:00.000Z"> May 20, 2024 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">ai</span>
+              
+            
+          </div>
+  <p>Something I built</p>
 
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> work </span>
-          
-        
-          
-            <span class="button post-tag"> ab-testing </span>
-          
-        
-      
-    </div>
-    <p>Something I&#39;m reading</p>
-  </div>
-</li>
+  
 
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/swimming-paul-lost/">Swimming Paul - Lost</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2024-05-17T00:00:00.000Z">
-  May 17, 2024
-</time>
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
 
+</custom-card>
+    
       
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
 
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/moxy-the-band-the-feeling-of-letting-go/">Moxy The Band - The Feeling of Letting Go</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2023-03-21T00:00:00.000Z">
-  March 21, 2023
-</time>
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/accelerating-a/b-tests/">Accelerating A/B Tests</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2024-05-20T00:00:00.000Z"> May 20, 2024 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">work</span>
+              
+            
+              
+                <span class="button post-tag">ab-testing</span>
+              
+            
+          </div>
+  <p>Something I'm reading</p>
 
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
+  
 
-    
-      <!-- activate tags -->
-      
-      <!-- set date context -->
-      
-      <!-- set heading context -->
-      
-      <!-- include card -->
-      <li class="card">
-  <div class="flow">
-    
-      <h2>
-        <a href="/blog/boygenius-not-strong-enough/">boygenius - Not Strong Enough</a>
-      </h2>
-    
-    <div class="cluster text-step-min-1">
-      
-      <time datetime="2023-03-15T00:00:00.000Z">
-  March 15, 2023
-</time>
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
 
-      
-        
-          
-        
-          
-        
-          
-            <span class="button post-tag"> music </span>
-          
-        
-      
-    </div>
-    <p>Today&#39;s Music</p>
-  </div>
-</li>
-
+</custom-card>
     
-  </ul>
+      
+
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/swimming-paul-lost/">Swimming Paul - Lost</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2024-05-17T00:00:00.000Z"> May 17, 2024 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">music</span>
+              
+            
+          </div>
+  <p>Today's Music</p>
+
+  
+
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
+
+</custom-card>
+    
+      
+
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/moxy-the-band-the-feeling-of-letting-go/">Moxy The Band - The Feeling of Letting Go</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2023-03-21T00:00:00.000Z"> March 21, 2023 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">music</span>
+              
+            
+          </div>
+  <p>Today's Music</p>
+
+  
+
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
+
+</custom-card>
+    
+      
+
+      <custom-card clickable class="flow no-indicator">
+  
+  <h2>
+          <a href="/blog/boygenius-not-strong-enough/">boygenius - Not Strong Enough</a>
+        </h2>
+  <div class="meta | cluster"><span> <time datetime="2023-03-15T00:00:00.000Z"> March 15, 2023 </time>
+ </span>
+            
+              
+            
+              
+                <span class="button post-tag">music</span>
+              
+            
+          </div>
+  <p>Today's Music</p>
+
+  
+
+  <!-- TODO: find out why is this not being hoisted into the webc css bundle?  -->
+  <link rel="stylesheet" href="/assets/css/components/custom-card.css">
+
+</custom-card>
+    
+  
+
+    <template data-island="once">
+      <script src="/assets/scripts/components/custom-masonry.js" type="module"></script>
+    </template>
+  </custom-masonry>
+</is-land>
+
 
   <!-- set collection to paginate -->
   
@@ -487,41 +352,21 @@ The pagination is only shown if there are more posts (14) than items per page (6
   <nav role="navigation" aria-labelledby="pagination_label">
     <span id="pagination_label" hidden>Blog</span>
     <span id="prefix" hidden>Page</span>
-    <ol class="pagination | cluster" role="list">
+    <ol role="list" class="pagination | cluster">
       <li>
         
-          <a href="/blog/">
-            Previous
-          </a>
+          <a href="/blog/"> Previous </a>
         
       </li>
       <li>
-            <a
-              href="/blog/"
-              id="link_1"
-              aria-labelledby="prefix link_1"
-              
-            >
-              1</a
-            >
+            <a href="/blog/" id="link_1" aria-labelledby="prefix link_1">
+              1</a>
           </li><li>
-            <a
-              href="/blog/page-2/"
-              id="link_2"
-              aria-labelledby="prefix link_2"
-              aria-current="page"
-            >
-              2</a
-            >
+            <a href="/blog/page-2/" id="link_2" aria-labelledby="prefix link_2" aria-current="page">
+              2</a>
           </li><li>
-            <a
-              href="/blog/page-3/"
-              id="link_3"
-              aria-labelledby="prefix link_3"
-              
-            >
-              3</a
-            >
+            <a href="/blog/page-3/" id="link_3" aria-labelledby="prefix link_3">
+              3</a>
           </li>
       <li>
         
@@ -532,49 +377,28 @@ The pagination is only shown if there are more posts (14) than items per page (6
   </nav>
 </section>
 
+
+
   
 </article>
 </main>
 
-    <footer class="site-foot">
+    <footer class="site-footer">
   <div class="wrapper">
-    <div class="site-foot__inner">
-      <nav
-        class="site-foot__inner text-step-0"
-        aria-label="Complementary"
-      >
-        &copy; 2024
-        <a href="/" 
-          >Ezra Mechaber <small>2.2.6</small>
+    <div class="footer__meta | cluster">
+      <nav aria-label="Complementary" class="footer__meta | cluster text-step-0">
+        © 2024
+        <a href="/"><span class="font-display">Ezra Mechaber</span> <small>3.1.1</small>
         </a>
 
         
       </nav>
 
-      <nav class="site-foot__inner" aria-label="Platforms">
+      <nav aria-label="Platforms" class="footer__meta | cluster">
         <!-- gets the first item from the feed loop set in meta -->
-        <a
-          href="/feed.xml"
-          rel="alternate"
-          type="application/atom+xml"
-        >
+        <a href="/feed.xml" rel="alternate" type="application/atom+xml">
           <span class="visually-hidden">Atom Feed</span>
-          <div aria-hidden="true"><svg
-  role="img"
-  viewBox="0 0 24 24"
-  width="1em"
-  height="1em"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <title>RSS</title>
-  <path d="M4 11a9 9 0 0 1 9 9"></path>
-  <path d="M4 4a16 16 0 0 1 16 16"></path>
-  <circle cx="5" cy="19" r="1"></circle>
-</svg>
-</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
         </a>
 
         
@@ -582,23 +406,7 @@ The pagination is only shown if there are more posts (14) than items per page (6
             <!-- regular platforms -->
             <a href="https://github.com/ezramechaber" rel="me">
               <span class="visually-hidden">Github</span>
-              <div aria-hidden="true"><svg
-  role="img"
-  viewBox="0 0 24 24"
-  width="1em"
-  height="1em"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <title>GitHub</title>
-  <path
-    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-  ></path>
-  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-</svg>
-</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
             </a>
           
         
@@ -606,19 +414,7 @@ The pagination is only shown if there are more posts (14) than items per page (6
             <!-- regular platforms -->
             <a href="https://threads.net/@ezra" rel="me">
               <span class="visually-hidden">Threads</span>
-              <div aria-hidden="true"><svg
-  role="img"
-  viewBox="0 0 448 512"
-  width="1em"
-  height="1em"
-  fill="currentColor"
-  stroke-width="2"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <title>Threads</title>
-<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> -->
-<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-<path d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"/></svg></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" stroke-width="2" viewBox="0 0 448 512" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M331.5 235.7c2.2.9 4.2 1.9 6.3 2.8 29.2 14.1 50.6 35.2 61.8 61.4 15.7 36.5 17.2 95.8-30.3 143.2-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2-32.3-41-48.9-98.1-49.5-169.6v-.5c.5-71.5 17.1-128.6 49.4-169.6 36.3-46.1 90.3-69.7 160.5-70.2h.3c70.3.5 124.9 24 162.3 69.9 18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4-29.2-35.8-73-54.2-130.5-54.6-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3 28 35.6 71.2 53.9 128.2 54.4 51.4-.4 85.4-12.6 113.7-40.9 32.3-32.2 31.7-71.8 21.4-95.9-6.1-14.2-17.1-26-31.9-34.9-3.7 26.9-11.8 48.3-24.7 64.8-17.1 21.8-41.4 33.6-72.7 35.3-23.6 1.3-46.3-4.4-63.9-16-20.8-13.8-33-34.8-34.3-59.3-2.5-48.3 35.7-83 95.2-86.4 21.1-1.2 40.9-.3 59.2 2.8-2.4-14.8-7.3-26.6-14.6-35.2-10-11.7-25.6-17.7-46.2-17.8h-.7c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6.4 99.9 39.5 103.7 107.7l-.2.2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3 25.6-1.4 54.6-11.4 59.5-73.2-13.2-2.9-27.8-4.4-43.4-4.4-4.8 0-9.6.1-14.4.4-42.9 2.4-57.2 23.2-56.2 41.8z"></path></svg>
             </a>
           
         
@@ -626,21 +422,7 @@ The pagination is only shown if there are more posts (14) than items per page (6
             <!-- regular platforms -->
             <a href="https://linkedin.com/in/ezra-mechaber" rel="me">
               <span class="visually-hidden">Linkedin</span>
-              <div aria-hidden="true"><svg
-  role="img"
-  viewBox="0 0 24 24"
-  width="1em"
-  height="1em"
-  fill="currentColor"
-  stroke=""
-  xmlns="http://www.w3.org/2000/svg"
->
-  <title>LinkedIn</title>
-  <path
-    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-  />
-</svg>
-</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
           
         
@@ -648,46 +430,29 @@ The pagination is only shown if there are more posts (14) than items per page (6
     </div>
 
     <!-- theme switch -->
-    <div
-  role="region"
-  class="theme-switch | cluster mt-xs"
-  style="--cluster-horizontal-alignment: center; --gutter: 0.5rem"
-  aria-labelledby="theme-switcher-label"
-  data-theme-switcher
-  hidden
->
-  <h2 id="theme-switcher-label">Theme</h2>
-  <button class="button" id="light-theme-toggle" data-theme="light">
-    <span>light</span>
-  </button>
-  <button class="button" id="dark-theme-toggle" data-theme="dark">
-    <span>dark</span>
-  </button>
-</div>
+    <is-land on:idle><div role="region" aria-labelledby="theme-switcher-label" data-theme-switcher style="--cluster-horizontal-alignment: center; --gutter: 0.5rem" class="theme-switch | cluster mt-xs">
+    <h2 id="theme-switcher-label">Theme</h2>
+    <button id="light-theme-toggle" data-theme="light" class="button">
+      <span>light</span>
+    </button>
+    <button id="dark-theme-toggle" data-theme="dark" class="button">
+      <span>dark</span>
+    </button>
+  </div>
+</is-land>
 
 
-    <div class="text-center mt-m-l">
-      <a class="creator text-step-min-1" href="https://www.ezramechabercom"
-        >Made with <span><svg
-  width="1em"
-  height="1em"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path
-    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z"
-  />
-</svg>
-</span> by
-        Ezra Mechaber</a
-      >
-    </div>
+    <aside class="creator">
+      <a href="https://ezramechaber.com" class="cluster">Made with <span class="visually-hidden">love</span> <span><svg width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3"></path></svg></span> by
+        Ezra Mechaber</a>
+    </aside>
   </div>
 </footer>
 
-  </body>
+
+    <script type="module" src="/assets/scripts/components/custom-easteregg.js"></script>
+    <custom-easteregg></custom-easteregg>
+  
+
+</body>
 </html>
