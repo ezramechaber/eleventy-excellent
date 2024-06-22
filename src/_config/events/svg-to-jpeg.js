@@ -4,7 +4,7 @@ import Image from '@11ty/eleventy-img';
 const ogImagesDir = './src/assets/og-images';
 
 export const svgToJpeg = async function () {
-  const socialPreviewImagesDir = 'dist/assets/og-images/';
+  const socialPreviewImagesDir = '_site/assets/og-images/';
   const files = await fsPromises.readdir(socialPreviewImagesDir);
   if (files.length > 0) {
     files.forEach(async function (filename) {
