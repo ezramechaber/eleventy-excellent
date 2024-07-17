@@ -5,7 +5,7 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-06-21T00:00:00Z</updated>
+  <updated>2024-07-17T00:00:00Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Ezra Mechaber</name>
@@ -119,6 +119,14 @@
       <link href="http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/" />
       <updated>2024-06-21T00:00:00Z</updated>
       <id>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Maggie Rogers - The Kill</title>
+      <link href="http://localhost:8080/blog/maggie-rogers-the-kill/" />
+      <updated>2024-07-17T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/maggie-rogers-the-kill/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
