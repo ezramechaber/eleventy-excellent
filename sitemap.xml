@@ -210,6 +210,19 @@
     
   
     
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/blog/coding-up-subway-bot/</loc>
+        <lastmod>2024-10-10T00:00:00.000Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
   
     
   
@@ -253,7 +266,7 @@
 
       <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2024-09-03T15:09:55.989Z</lastmod>
+        <lastmod>2024-10-10T22:23:05.516Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -266,7 +279,7 @@
 
       <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2024-09-03T15:09:55.989Z</lastmod>
+        <lastmod>2024-10-10T22:23:05.516Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -279,7 +292,7 @@
 
       <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2024-09-03T15:09:55.989Z</lastmod>
+        <lastmod>2024-10-10T22:23:05.516Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -292,7 +305,7 @@
 
       <url>
         <loc>http://localhost:8080/imprint/</loc>
-        <lastmod>2024-09-03T15:09:55.989Z</lastmod>
+        <lastmod>2024-10-10T22:23:05.516Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -305,7 +318,7 @@
 
       <url>
         <loc>http://localhost:8080/privacy/</loc>
-        <lastmod>2024-09-03T15:09:55.989Z</lastmod>
+        <lastmod>2024-10-10T22:23:05.516Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
