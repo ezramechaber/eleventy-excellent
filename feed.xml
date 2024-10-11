@@ -5,7 +5,7 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-10-10T00:00:00Z</updated>
+  <updated>2024-10-11T00:00:00Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Ezra Mechaber</name>
@@ -143,6 +143,14 @@
       <link href="http://localhost:8080/blog/coding-up-subway-bot/" />
       <updated>2024-10-10T00:00:00Z</updated>
       <id>http://localhost:8080/blog/coding-up-subway-bot/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>The Knocks - Slow Song (with Dragonette)</title>
+      <link href="http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/" />
+      <updated>2024-10-11T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
