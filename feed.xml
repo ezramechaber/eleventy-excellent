@@ -5,7 +5,7 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-10-11T00:00:00Z</updated>
+  <updated>2024-11-20T00:00:00Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Ezra Mechaber</name>
@@ -151,6 +151,14 @@
       <link href="http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/" />
       <updated>2024-10-11T00:00:00Z</updated>
       <id>http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Shallou - It&#39;s You</title>
+      <link href="http://localhost:8080/blog/shallou-its-you/" />
+      <updated>2024-11-20T00:00:00Z</updated>
+      <id>http://localhost:8080/blog/shallou-its-you/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
