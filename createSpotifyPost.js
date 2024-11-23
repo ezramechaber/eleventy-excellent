@@ -38,7 +38,7 @@ async function getTrackInfo(trackId, token) {
 
 async function createSpotifyPost() {
   try {
-    const embedCode = await new Promise(resolve => {
+    const lookUpInput = await new Promise(resolve => {
       rl.question('Please paste the Spotify embed code or track URL: ', resolve);
     });
 
@@ -53,7 +53,7 @@ async function createSpotifyPost() {
     ];
 
     for (const pattern of patterns) {
-      const match = embedCode.match(pattern);
+      const match = lookUpInput.match(pattern);
       if (match) {
         trackId = match[1];
         break;
@@ -67,6 +67,7 @@ async function createSpotifyPost() {
 
     console.log(`Extracted track ID: ${trackId}`);
 
+    const embedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/${trackId}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
     const token = await getSpotifyToken();
     const trackInfo = await getTrackInfo(trackId, token);
 
