@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://localhost:8080/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://www.ezramechaber.com/">
   <title>Ezra Mechaber</title>
   <subtitle>Product person. Brooklyn, NY</subtitle>
-  <link href="http://localhost:8080/feed.xml" rel="self" />
-  <link href="http://localhost:8080/" />
+  <link href="https://www.ezramechaber.com/feed.xml" rel="self" />
+  <link href="https://www.ezramechaber.com/" />
   
   <updated>2024-11-23T00:00:00Z</updated>
-  <id>http://localhost:8080/</id>
+  <id>https://www.ezramechaber.com/</id>
   <author>
     <name>Ezra Mechaber</name>
     <email>contact@ezramechaber.com</email>
   </author><entry>
       <title>Perks and benefits</title>
-      <link href="http://localhost:8080/blog/perks-and-benefits/" />
+      <link href="https://www.ezramechaber.com/blog/perks-and-benefits/" />
       <updated>2023-02-27T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/perks-and-benefits/</id>
+      <id>https://www.ezramechaber.com/blog/perks-and-benefits/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Gang of Youths - angel in realtime.</title>
-      <link href="http://localhost:8080/blog/gang-of-youths-angel-in-realtime/" />
+      <link href="https://www.ezramechaber.com/blog/gang-of-youths-angel-in-realtime/" />
       <updated>2023-02-28T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/gang-of-youths-angel-in-realtime/</id>
+      <id>https://www.ezramechaber.com/blog/gang-of-youths-angel-in-realtime/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>boygenius - Not Strong Enough</title>
-      <link href="http://localhost:8080/blog/boygenius-not-strong-enough/" />
+      <link href="https://www.ezramechaber.com/blog/boygenius-not-strong-enough/" />
       <updated>2023-03-15T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/boygenius-not-strong-enough/</id>
+      <id>https://www.ezramechaber.com/blog/boygenius-not-strong-enough/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Moxy The Band - The Feeling of Letting Go</title>
-      <link href="http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/" />
+      <link href="https://www.ezramechaber.com/blog/moxy-the-band-the-feeling-of-letting-go/" />
       <updated>2023-03-21T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/moxy-the-band-the-feeling-of-letting-go/</id>
+      <id>https://www.ezramechaber.com/blog/moxy-the-band-the-feeling-of-letting-go/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Swimming Paul - Lost</title>
-      <link href="http://localhost:8080/blog/swimming-paul-lost/" />
+      <link href="https://www.ezramechaber.com/blog/swimming-paul-lost/" />
       <updated>2024-05-17T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/swimming-paul-lost/</id>
+      <id>https://www.ezramechaber.com/blog/swimming-paul-lost/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Accelerating A/B Tests</title>
-      <link href="http://localhost:8080/blog/accelerating-a/b-tests/" />
+      <link href="https://www.ezramechaber.com/blog/accelerating-a/b-tests/" />
       <updated>2024-05-20T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/accelerating-a/b-tests/</id>
+      <id>https://www.ezramechaber.com/blog/accelerating-a/b-tests/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>This Week’s GPT, a SQL Writer</title>
-      <link href="http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/" />
+      <link href="https://www.ezramechaber.com/blog/this-weeks-gpt-a-sql-writer/" />
       <updated>2024-05-20T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/this-weeks-gpt-a-sql-writer/</id>
+      <id>https://www.ezramechaber.com/blog/this-weeks-gpt-a-sql-writer/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Cautious Clay - Another Half</title>
-      <link href="http://localhost:8080/blog/cautious-clay-another-half/" />
+      <link href="https://www.ezramechaber.com/blog/cautious-clay-another-half/" />
       <updated>2024-05-21T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/cautious-clay-another-half/</id>
+      <id>https://www.ezramechaber.com/blog/cautious-clay-another-half/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>No Wrong Doors</title>
-      <link href="http://localhost:8080/blog/no-wrong-doors/" />
+      <link href="https://www.ezramechaber.com/blog/no-wrong-doors/" />
       <updated>2024-05-23T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/no-wrong-doors/</id>
+      <id>https://www.ezramechaber.com/blog/no-wrong-doors/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Sports Betting</title>
-      <link href="http://localhost:8080/blog/sports-betting/" />
+      <link href="https://www.ezramechaber.com/blog/sports-betting/" />
       <updated>2024-05-23T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/sports-betting/</id>
+      <id>https://www.ezramechaber.com/blog/sports-betting/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Via Zach Seward, the State of Media</title>
-      <link href="http://localhost:8080/blog/via-zach-seward-the-state-of-media/" />
+      <link href="https://www.ezramechaber.com/blog/via-zach-seward-the-state-of-media/" />
       <updated>2024-06-04T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/via-zach-seward-the-state-of-media/</id>
+      <id>https://www.ezramechaber.com/blog/via-zach-seward-the-state-of-media/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Beatenberg - Ithaca</title>
-      <link href="http://localhost:8080/blog/beatenberg-ithaca/" />
+      <link href="https://www.ezramechaber.com/blog/beatenberg-ithaca/" />
       <updated>2024-06-07T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/beatenberg-ithaca/</id>
+      <id>https://www.ezramechaber.com/blog/beatenberg-ithaca/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Civic Band</title>
-      <link href="http://localhost:8080/blog/civic-band/" />
+      <link href="https://www.ezramechaber.com/blog/civic-band/" />
       <updated>2024-06-21T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/civic-band/</id>
+      <id>https://www.ezramechaber.com/blog/civic-band/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>The &#39;R&#39; in RAG Stands for &#39;Royalties&#39;</title>
-      <link href="http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/" />
+      <link href="https://www.ezramechaber.com/blog/the-r-in-rag-stands-for-royalties/" />
       <updated>2024-06-21T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/the-r-in-rag-stands-for-royalties/</id>
+      <id>https://www.ezramechaber.com/blog/the-r-in-rag-stands-for-royalties/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Maggie Rogers - The Kill</title>
-      <link href="http://localhost:8080/blog/maggie-rogers-the-kill/" />
+      <link href="https://www.ezramechaber.com/blog/maggie-rogers-the-kill/" />
       <updated>2024-07-17T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/maggie-rogers-the-kill/</id>
+      <id>https://www.ezramechaber.com/blog/maggie-rogers-the-kill/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>The Paradise and Alan Braxe - In Love With You (Remastered 2023)</title>
-      <link href="http://localhost:8080/blog/the-paradise-and-alan-braxe-in-love-with-you-remastered-2023/" />
+      <link href="https://www.ezramechaber.com/blog/the-paradise-and-alan-braxe-in-love-with-you-remastered-2023/" />
       <updated>2024-09-03T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/the-paradise-and-alan-braxe-in-love-with-you-remastered-2023/</id>
+      <id>https://www.ezramechaber.com/blog/the-paradise-and-alan-braxe-in-love-with-you-remastered-2023/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Coding up &quot;Subway Bot&quot;</title>
-      <link href="http://localhost:8080/blog/coding-up-subway-bot/" />
+      <link href="https://www.ezramechaber.com/blog/coding-up-subway-bot/" />
       <updated>2024-10-10T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/coding-up-subway-bot/</id>
+      <id>https://www.ezramechaber.com/blog/coding-up-subway-bot/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>The Knocks - Slow Song (with Dragonette)</title>
-      <link href="http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/" />
+      <link href="https://www.ezramechaber.com/blog/the-knocks-slow-song-with-dragonette/" />
       <updated>2024-10-11T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/the-knocks-slow-song-with-dragonette/</id>
+      <id>https://www.ezramechaber.com/blog/the-knocks-slow-song-with-dragonette/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Shallou - It&#39;s You</title>
-      <link href="http://localhost:8080/blog/shallou-its-you/" />
+      <link href="https://www.ezramechaber.com/blog/shallou-its-you/" />
       <updated>2024-11-20T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/shallou-its-you/</id>
+      <id>https://www.ezramechaber.com/blog/shallou-its-you/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
     </entry><entry>
       <title>Spending Time with the White House Digital Team</title>
-      <link href="http://localhost:8080/blog/spending-time-with-the-white-house-digital-team/" />
+      <link href="https://www.ezramechaber.com/blog/spending-time-with-the-white-house-digital-team/" />
       <updated>2024-11-23T00:00:00Z</updated>
-      <id>http://localhost:8080/blog/spending-time-with-the-white-house-digital-team/</id>
+      <id>https://www.ezramechaber.com/blog/spending-time-with-the-white-house-digital-team/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
