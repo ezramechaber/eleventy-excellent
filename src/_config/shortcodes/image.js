@@ -42,7 +42,7 @@ export const imageShortcode = async (
     widths: [...widths],
     formats: [...formats],
     urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/',
+    outputDir: './_site/assets/images/',
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -69,7 +69,7 @@ export const imageShortcode = async (
     })
     .join('\n');
 
-  const imgageAttributes = stringifyAttributes({
+  const imageAttributes = stringifyAttributes({
     src: lowsrc.url,
     width: lowsrc.width,
     height: lowsrc.height,
@@ -83,14 +83,14 @@ export const imageShortcode = async (
 				<picture>
 					${imageSources}
 					<img
-					${imgageAttributes}>
+					${imageAttributes}>
 				</picture>
 				<figcaption>${caption}</figcaption>
 			</figure>`
     : `<picture slot="image" class="flow ${className ? `${className}` : ''}">
 				${imageSources}
 				<img
-				${imgageAttributes}>
+				${imageAttributes}>
 			</picture>`;
 
   return htmlmin.minify(imageElement, {collapseWhitespace: true});

@@ -6,19 +6,19 @@ tags:
   - posts
   - work
 gallery:
-  - image: .src/assets/images/gallery/wh-1.jpg
+  - image: ./src/assets/images/gallery/wh-1.jpg
     alt: An awful lot of people
     caption:
-  - image: .src/assets/images/gallery/wh-2.jpg
-    alt: A burn bag that reads "Unclassified only"
+  - image: ./src/assets/images/gallery/wh-2.jpg
+    alt: A burn bag that reads Unclassified only
     caption: 
-  - image: .src/assets/images/gallery/wh-3.jpg
+  - image: ./src/assets/images/gallery/wh-3.jpg
     alt: Images of Joe Biden and Dr. Jill Biden
     caption:
-  - image: .src/assets/images/gallery/wh-4.jpg
-    alt: Sign that says "Not everything is a tweet"
+  - image: ./src/assets/images/gallery/wh-4.jpg
+    alt: Sign that says Not everything is a tweet
     caption: 
-  - image: .src/assets/images/gallery/wh-5.jpg
+  - image: ./src/assets/images/gallery/wh-5.jpg
     alt: The White House at night.
     caption: 
 ---
