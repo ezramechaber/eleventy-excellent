@@ -48,7 +48,7 @@ export const markdownLib = markdownIt({
     imgOptions: {
       widths: [440, 880, 1024],
       urlPath: '/assets/images/',
-      outputDir: './dist/assets/images/',
+      outputDir: './_site/assets/images/',
       formats: ['webp', 'jpeg']
     },
     globalAttributes: {
