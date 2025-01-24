@@ -5,7 +5,7 @@
   <link href="https://www.ezramechaber.com/feed.xml" rel="self" />
   <link href="https://www.ezramechaber.com/" />
   
-  <updated>2024-12-20T00:00:00Z</updated>
+  <updated>2025-01-24T00:00:00Z</updated>
   <id>https://www.ezramechaber.com/</id>
   <author>
     <name>Ezra Mechaber</name>
@@ -183,6 +183,14 @@
       <link href="https://www.ezramechaber.com/blog/kickstarting-continuous-discovery-as-an-ic-pm/" />
       <updated>2024-12-20T00:00:00Z</updated>
       <id>https://www.ezramechaber.com/blog/kickstarting-continuous-discovery-as-an-ic-pm/</id>
+      <content xml:lang="en_EN" type="html">
+				
+ 			</content>
+    </entry><entry>
+      <title>Batch Google Alert Creation Script</title>
+      <link href="https://www.ezramechaber.com/blog/batch-google-alert-creation-script/" />
+      <updated>2025-01-24T00:00:00Z</updated>
+      <id>https://www.ezramechaber.com/blog/batch-google-alert-creation-script/</id>
       <content xml:lang="en_EN" type="html">
 				
  			</content>
