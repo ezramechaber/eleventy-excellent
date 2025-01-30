@@ -16,12 +16,12 @@ For advising, consulting, or just chatting, get in touch: [email me](mailto:cont
 
 ### Digital Projects
 
-* [congestionrevenue.nyc](https://ezramechaber.com/blog/coding-up-subway-bot/)
+* [congestionrevenue.nyc](https://congestionrevenue.nyc/)
 A slightly ham-fisted calculator for MTA's congestion pricing revenue
 * [SubwayBot](https://ezramechaber.com/blog/coding-up-subway-bot/)
 MTA delays => Threads API
 * [Ezra Takes Photos](https://www.ezratakes.photos/)
-Photos + EXIF data
+Photo blog generated from EXIF data
 * [How to Take the Headache Out of CSS and HTML in Emails](https://dev.to/glitch/how-to-take-the-headache-out-of-css-and-html-in-emails-2kf0)
 Automate SCSS compiling, CSS inlining, and previewing for email marketing (Note: I moved to the wonderful [MJML](https://mjml.io/))
 * [Authentic Candidate Digital Ideas](https://glitch.com/~authentic-ideas)
