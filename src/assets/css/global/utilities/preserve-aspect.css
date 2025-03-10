@@ -1,0 +1,6 @@
+/* Preserve aspect ratio for images */
+.preserve-aspect img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+} 

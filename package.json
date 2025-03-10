@@ -17,6 +17,7 @@
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "start": "run-p dev:*",
     "spotify": "node ./createSpotifyPost.js",
+    "new": "node createNewPost.js",
     "build": "run-s clean build:*",
     "build-ghpages": "npx @11ty/eleventy --pathprefix=/"
   },
