@@ -8,11 +8,10 @@ blog:
   intro: "The most recent posts."
 ---
 
-I lead the core product teams for Bloomberg.com—which you probably know for Matt Levine's [Money Stuff](https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html)—but is also the world's leading source of business and financial news.
+I currently lead the product teams behind Bloomberg.com—which you probably know for Matt Levine's [Money Stuff](https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html), and the world's leading source of business and financial news.
 
-People hire me to:
-- Scale product teams
-- Start/codify a data and experimentation practice
-- Stay customer-obsessed.
+My super power is picking up new things extremely quickly. That adaptability has let me play in a ton of different spaces: experimental dev tools startups, unicorn health tech companies, and President Obama's White House.
 
-I get really, really into the details, and I like the `technical` side of things. Sometimes I'm managing managers, other times I'm rolling up my sleeves as an early-stage IC PM.
+Across all of them, I've started/scaled experimentation teams, built products users loved, and kicked off growth loops that help us grow exponentially.
+
+I love to build, [even](https://ezramechaber.com/blog/calshotxyz/)/[especially](https://congestionrevenue.nyc) when I'm leading teams.
